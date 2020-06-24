@@ -1,0 +1,49 @@
+excel:
+  file: data\cases.xlsx
+  sheet_name_reg: register
+  sheet_name_lgn: login
+  sheet_name_chrg: recharge
+  sheet_name_wthdr: withdraw
+  sheet_name_name: updatename
+  sheet_name_info: userinfo
+  sheet_name_add: addloan
+  sheet_name_audit: audit
+  sheet_name_inv: invest
+  sheet_name_loans: loans
+
+
+report:
+  file: reports
+  title: FutureLoan Report
+  description: FutureLoan
+  tester: shaokao
+
+log:
+  name: python29
+  file: logs
+  logger_level: DEBUG
+  stream_level: DEBUG
+  file_level: INFO
+
+db:
+  host: '120.78.128.25'
+  port: 3306
+  user: 'future'
+  password: '123456'
+  database: 'futureloan'
+
+user:
+  mobile_phone: 15841177856
+  pwd: 12345678
+
+admin_user:
+  mobile_phone: 13588666840
+  pwd: 12345678
+
+invest_user:
+  mobile_phone: 13988666808
+  pwd: 12345678
+
+
+host:
+  "http://api.lemonban.com/futureloan"

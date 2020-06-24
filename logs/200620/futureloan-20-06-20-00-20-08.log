@@ -1,0 +1,1099 @@
+[2020-06-20 00:20:11,043]--test_add_loan.py--53--INFO:================正在查询member_id下原项目个数===============
+[2020-06-20 00:20:11,061]--test_add_loan.py--56--INFO:账户id为13217的原项目个数为{'record_num': 351}
+[2020-06-20 00:20:11,061]--test_add_loan.py--60--INFO:******************正在执行add_loan模块用例******************
+[2020-06-20 00:20:11,062]--test_add_loan.py--61--INFO:正在执行第1条用例:用户id输入已注册用户id
+[2020-06-20 00:20:11,062]--test_add_loan.py--62--INFO:请求的数据是{'case_id': 1, 'interface': 'add_loan', 'title': '用户id输入已注册用户id', 'method': 'POST', 'url': '/loan/add', 'data': '{"member_id":13217,"title":"烧烤项目2006200020","amount":500000,"loan_rate":12.0,"loan_term":12,"loan_date_type":1,"bidding_days":10}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5MTF9.Vprinb7vsNY6yjjEWzY9Ya4u-hPKFqZqahEW29XqeEVD0GHbqYjpJzxiJveBvdvnBQJC191oQCopgjZvffokXA"}', 'yes_or_no': 'YES', 'expected': '{"code": 0,"msg": "OK"}', 'actucal': "{'code': 0, 'msg': 'OK', 'data': {'id': 1242484, 'member_id': 13217, 'title': '烧烤项目2006200004', 'amount': 500000.0, 'loan_rate': 12.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-06-20 00:04:07.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:20:11,090]--test_add_loan.py--77--INFO:********************正在查询数据库********************
+[2020-06-20 00:20:11,091]--test_add_loan.py--80--INFO:==============正在查询新增成功后member_id下的项目个数============
+[2020-06-20 00:20:11,109]--test_add_loan.py--84--INFO:账户id为13217新增项目成功后的项目个数为{'record_num': 352}
+[2020-06-20 00:20:11,109]--test_add_loan.py--85--INFO:======================正在项目个数比对=======================
+[2020-06-20 00:20:11,110]--test_add_loan.py--89--INFO:第1条用例执行结果为PASS
+[2020-06-20 00:20:11,110]--test_add_loan.py--96--INFO:*************开始回写数据***************
+[2020-06-20 00:20:11,607]--test_add_loan.py--99--INFO:正在回写实际结果actual：{'code': 0, 'msg': 'OK', 'data': {'id': 1242552, 'member_id': 13217, 'title': '烧烤项目2006200020', 'amount': 500000.0, 'loan_rate': 12.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-06-20 00:20:11.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:20:12,015]--test_add_loan.py--102--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:20:12,015]--test_add_loan.py--103--INFO:*************结束回写数据***************
+[2020-06-20 00:20:12,052]--test_add_loan.py--60--INFO:******************正在执行add_loan模块用例******************
+[2020-06-20 00:20:12,052]--test_add_loan.py--61--INFO:正在执行第2条用例:用户id输入未注册用户id
+[2020-06-20 00:20:12,053]--test_add_loan.py--62--INFO:请求的数据是{'case_id': 2, 'interface': 'add_loan', 'title': '用户id输入未注册用户id', 'method': 'POST', 'url': '/loan/add', 'data': '{"member_id":888888,"title":"烧烤项目2006200020","amount":2000,"loan_rate":12.0,"loan_term":12,"loan_date_type":1,"bidding_days":10}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5MTF9.Vprinb7vsNY6yjjEWzY9Ya4u-hPKFqZqahEW29XqeEVD0GHbqYjpJzxiJveBvdvnBQJC191oQCopgjZvffokXA"}', 'yes_or_no': 'NO', 'expected': '{"code": 2,"msg": "会员不存在"}', 'actucal': "{'code': 2, 'msg': '会员不存在', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:20:12,080]--test_add_loan.py--89--INFO:第2条用例执行结果为PASS
+[2020-06-20 00:20:12,081]--test_add_loan.py--96--INFO:*************开始回写数据***************
+[2020-06-20 00:20:12,592]--test_add_loan.py--99--INFO:正在回写实际结果actual：{'code': 2, 'msg': '会员不存在', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:20:12,998]--test_add_loan.py--102--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:20:12,998]--test_add_loan.py--103--INFO:*************结束回写数据***************
+[2020-06-20 00:20:13,043]--test_add_loan.py--60--INFO:******************正在执行add_loan模块用例******************
+[2020-06-20 00:20:13,043]--test_add_loan.py--61--INFO:正在执行第3条用例:用户id输入为空
+[2020-06-20 00:20:13,043]--test_add_loan.py--62--INFO:请求的数据是{'case_id': 3, 'interface': 'add_loan', 'title': '用户id输入为空', 'method': 'POST', 'url': '/loan/add', 'data': '{"member_id":"","title":"测试项目","amount":4000,"loan_rate":12.0,"loan_term":12,"loan_date_type":1,"bidding_days":10}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5MTF9.Vprinb7vsNY6yjjEWzY9Ya4u-hPKFqZqahEW29XqeEVD0GHbqYjpJzxiJveBvdvnBQJC191oQCopgjZvffokXA"}', 'yes_or_no': 'NO', 'expected': '{"code": 1,"msg": "用户id为空"}', 'actucal': "{'code': 1, 'msg': '用户id为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:20:13,256]--test_add_loan.py--89--INFO:第3条用例执行结果为PASS
+[2020-06-20 00:20:13,257]--test_add_loan.py--96--INFO:*************开始回写数据***************
+[2020-06-20 00:20:13,712]--test_add_loan.py--99--INFO:正在回写实际结果actual：{'code': 1, 'msg': '用户id为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:20:14,118]--test_add_loan.py--102--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:20:14,119]--test_add_loan.py--103--INFO:*************结束回写数据***************
+[2020-06-20 00:20:14,139]--test_add_loan.py--53--INFO:================正在查询member_id下原项目个数===============
+[2020-06-20 00:20:14,152]--test_add_loan.py--56--INFO:账户id为13217的原项目个数为{'record_num': 352}
+[2020-06-20 00:20:14,152]--test_add_loan.py--60--INFO:******************正在执行add_loan模块用例******************
+[2020-06-20 00:20:14,152]--test_add_loan.py--61--INFO:正在执行第4条用例:项目名称title输入汉字
+[2020-06-20 00:20:14,153]--test_add_loan.py--62--INFO:请求的数据是{'case_id': 4, 'interface': 'add_loan', 'title': '项目名称title输入汉字', 'method': 'POST', 'url': '/loan/add', 'data': '{"member_id":"13217","title":"测试项目","amount":4000,"loan_rate":12.0,"loan_term":6,"loan_date_type":1,"bidding_days":10}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5MTF9.Vprinb7vsNY6yjjEWzY9Ya4u-hPKFqZqahEW29XqeEVD0GHbqYjpJzxiJveBvdvnBQJC191oQCopgjZvffokXA"}', 'yes_or_no': 'YES', 'expected': '{"code": 0,"msg": "OK"}', 'actucal': "{'code': 0, 'msg': 'OK', 'data': {'id': 1242485, 'member_id': 13217, 'title': '测试项目', 'amount': 4000.0, 'loan_rate': 12.0, 'loan_term': 6, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-06-20 00:04:10.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:20:14,181]--test_add_loan.py--77--INFO:********************正在查询数据库********************
+[2020-06-20 00:20:14,181]--test_add_loan.py--80--INFO:==============正在查询新增成功后member_id下的项目个数============
+[2020-06-20 00:20:14,195]--test_add_loan.py--84--INFO:账户id为13217新增项目成功后的项目个数为{'record_num': 353}
+[2020-06-20 00:20:14,196]--test_add_loan.py--85--INFO:======================正在项目个数比对=======================
+[2020-06-20 00:20:14,196]--test_add_loan.py--89--INFO:第4条用例执行结果为PASS
+[2020-06-20 00:20:14,196]--test_add_loan.py--96--INFO:*************开始回写数据***************
+[2020-06-20 00:20:14,636]--test_add_loan.py--99--INFO:正在回写实际结果actual：{'code': 0, 'msg': 'OK', 'data': {'id': 1242553, 'member_id': 13217, 'title': '测试项目', 'amount': 4000.0, 'loan_rate': 12.0, 'loan_term': 6, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-06-20 00:20:14.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:20:15,058]--test_add_loan.py--102--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:20:15,059]--test_add_loan.py--103--INFO:*************结束回写数据***************
+[2020-06-20 00:20:15,081]--test_add_loan.py--53--INFO:================正在查询member_id下原项目个数===============
+[2020-06-20 00:20:15,093]--test_add_loan.py--56--INFO:账户id为13217的原项目个数为{'record_num': 353}
+[2020-06-20 00:20:15,093]--test_add_loan.py--60--INFO:******************正在执行add_loan模块用例******************
+[2020-06-20 00:20:15,093]--test_add_loan.py--61--INFO:正在执行第5条用例:项目名称title输入字符串
+[2020-06-20 00:20:15,094]--test_add_loan.py--62--INFO:请求的数据是{'case_id': 5, 'interface': 'add_loan', 'title': '项目名称title输入字符串', 'method': 'POST', 'url': '/loan/add', 'data': '{"member_id":"13217","title":"shaokao","amount":4000,"loan_rate":12.0,"loan_term":12,"loan_date_type":1,"bidding_days":10}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5MTF9.Vprinb7vsNY6yjjEWzY9Ya4u-hPKFqZqahEW29XqeEVD0GHbqYjpJzxiJveBvdvnBQJC191oQCopgjZvffokXA"}', 'yes_or_no': 'YES', 'expected': '{"code": 0,"msg": "OK"}', 'actucal': "{'code': 0, 'msg': 'OK', 'data': {'id': 1242486, 'member_id': 13217, 'title': 'shaokao', 'amount': 4000.0, 'loan_rate': 12.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-06-20 00:04:11.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:20:15,120]--test_add_loan.py--77--INFO:********************正在查询数据库********************
+[2020-06-20 00:20:15,120]--test_add_loan.py--80--INFO:==============正在查询新增成功后member_id下的项目个数============
+[2020-06-20 00:20:15,132]--test_add_loan.py--84--INFO:账户id为13217新增项目成功后的项目个数为{'record_num': 354}
+[2020-06-20 00:20:15,132]--test_add_loan.py--85--INFO:======================正在项目个数比对=======================
+[2020-06-20 00:20:15,132]--test_add_loan.py--89--INFO:第5条用例执行结果为PASS
+[2020-06-20 00:20:15,133]--test_add_loan.py--96--INFO:*************开始回写数据***************
+[2020-06-20 00:20:15,698]--test_add_loan.py--99--INFO:正在回写实际结果actual：{'code': 0, 'msg': 'OK', 'data': {'id': 1242554, 'member_id': 13217, 'title': 'shaokao', 'amount': 4000.0, 'loan_rate': 12.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-06-20 00:20:15.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:20:16,122]--test_add_loan.py--102--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:20:16,122]--test_add_loan.py--103--INFO:*************结束回写数据***************
+[2020-06-20 00:20:16,159]--test_add_loan.py--53--INFO:================正在查询member_id下原项目个数===============
+[2020-06-20 00:20:16,180]--test_add_loan.py--56--INFO:账户id为13217的原项目个数为{'record_num': 354}
+[2020-06-20 00:20:16,181]--test_add_loan.py--60--INFO:******************正在执行add_loan模块用例******************
+[2020-06-20 00:20:16,181]--test_add_loan.py--61--INFO:正在执行第6条用例:项目名称title输入数字
+[2020-06-20 00:20:16,181]--test_add_loan.py--62--INFO:请求的数据是{'case_id': 6, 'interface': 'add_loan', 'title': '项目名称title输入数字', 'method': 'POST', 'url': '/loan/add', 'data': '{"member_id":"13217","title":"618618","amount":4000,"loan_rate":12.0,"loan_term":12,"loan_date_type":1,"bidding_days":10}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5MTF9.Vprinb7vsNY6yjjEWzY9Ya4u-hPKFqZqahEW29XqeEVD0GHbqYjpJzxiJveBvdvnBQJC191oQCopgjZvffokXA"}', 'yes_or_no': 'YES', 'expected': '{"code": 0,"msg": "OK"}', 'actucal': "{'code': 0, 'msg': 'OK', 'data': {'id': 1242487, 'member_id': 13217, 'title': '618618', 'amount': 4000.0, 'loan_rate': 12.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-06-20 00:04:12.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:20:16,212]--test_add_loan.py--77--INFO:********************正在查询数据库********************
+[2020-06-20 00:20:16,212]--test_add_loan.py--80--INFO:==============正在查询新增成功后member_id下的项目个数============
+[2020-06-20 00:20:16,237]--test_add_loan.py--84--INFO:账户id为13217新增项目成功后的项目个数为{'record_num': 355}
+[2020-06-20 00:20:16,237]--test_add_loan.py--85--INFO:======================正在项目个数比对=======================
+[2020-06-20 00:20:16,237]--test_add_loan.py--89--INFO:第6条用例执行结果为PASS
+[2020-06-20 00:20:16,238]--test_add_loan.py--96--INFO:*************开始回写数据***************
+[2020-06-20 00:20:16,710]--test_add_loan.py--99--INFO:正在回写实际结果actual：{'code': 0, 'msg': 'OK', 'data': {'id': 1242555, 'member_id': 13217, 'title': '618618', 'amount': 4000.0, 'loan_rate': 12.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-06-20 00:20:16.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:20:17,137]--test_add_loan.py--102--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:20:17,138]--test_add_loan.py--103--INFO:*************结束回写数据***************
+[2020-06-20 00:20:17,176]--test_add_loan.py--53--INFO:================正在查询member_id下原项目个数===============
+[2020-06-20 00:20:17,199]--test_add_loan.py--56--INFO:账户id为13217的原项目个数为{'record_num': 355}
+[2020-06-20 00:20:17,199]--test_add_loan.py--60--INFO:******************正在执行add_loan模块用例******************
+[2020-06-20 00:20:17,199]--test_add_loan.py--61--INFO:正在执行第7条用例:项目名称title输入汉字、字符串及数字组合
+[2020-06-20 00:20:17,200]--test_add_loan.py--62--INFO:请求的数据是{'case_id': 7, 'interface': 'add_loan', 'title': '项目名称title输入汉字、字符串及数字组合', 'method': 'POST', 'url': '/loan/add', 'data': '{"member_id":13217,"title":"烧烤项目2006200020","amount":500000,"loan_rate":12.0,"loan_term":12,"loan_date_type":1,"bidding_days":10}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5MTF9.Vprinb7vsNY6yjjEWzY9Ya4u-hPKFqZqahEW29XqeEVD0GHbqYjpJzxiJveBvdvnBQJC191oQCopgjZvffokXA"}', 'yes_or_no': 'YES', 'expected': '{"code": 0,"msg": "OK"}', 'actucal': "{'code': 0, 'msg': 'OK', 'data': {'id': 1242488, 'member_id': 13217, 'title': '烧烤项目2006200004', 'amount': 500000.0, 'loan_rate': 12.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-06-20 00:04:13.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:20:17,229]--test_add_loan.py--77--INFO:********************正在查询数据库********************
+[2020-06-20 00:20:17,229]--test_add_loan.py--80--INFO:==============正在查询新增成功后member_id下的项目个数============
+[2020-06-20 00:20:17,250]--test_add_loan.py--84--INFO:账户id为13217新增项目成功后的项目个数为{'record_num': 356}
+[2020-06-20 00:20:17,251]--test_add_loan.py--85--INFO:======================正在项目个数比对=======================
+[2020-06-20 00:20:17,251]--test_add_loan.py--89--INFO:第7条用例执行结果为PASS
+[2020-06-20 00:20:17,251]--test_add_loan.py--96--INFO:*************开始回写数据***************
+[2020-06-20 00:20:17,693]--test_add_loan.py--99--INFO:正在回写实际结果actual：{'code': 0, 'msg': 'OK', 'data': {'id': 1242556, 'member_id': 13217, 'title': '烧烤项目2006200020', 'amount': 500000.0, 'loan_rate': 12.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-06-20 00:20:17.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:20:18,112]--test_add_loan.py--102--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:20:18,112]--test_add_loan.py--103--INFO:*************结束回写数据***************
+[2020-06-20 00:20:18,144]--test_add_loan.py--60--INFO:******************正在执行add_loan模块用例******************
+[2020-06-20 00:20:18,144]--test_add_loan.py--61--INFO:正在执行第8条用例:项目名称title输入为空
+[2020-06-20 00:20:18,145]--test_add_loan.py--62--INFO:请求的数据是{'case_id': 8, 'interface': 'add_loan', 'title': '项目名称title输入为空', 'method': 'POST', 'url': '/loan/add', 'data': '{"member_id":13217,"title":"","amount":500000,"loan_rate":12.0,"loan_term":12,"loan_date_type":1,"bidding_days":10}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5MTF9.Vprinb7vsNY6yjjEWzY9Ya4u-hPKFqZqahEW29XqeEVD0GHbqYjpJzxiJveBvdvnBQJC191oQCopgjZvffokXA"}', 'yes_or_no': 'NO', 'expected': '{"code": 1,"msg": "标题为空"}', 'actucal': "{'code': 1, 'msg': '标题为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:20:18,164]--test_add_loan.py--89--INFO:第8条用例执行结果为PASS
+[2020-06-20 00:20:18,165]--test_add_loan.py--96--INFO:*************开始回写数据***************
+[2020-06-20 00:20:18,623]--test_add_loan.py--99--INFO:正在回写实际结果actual：{'code': 1, 'msg': '标题为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:20:19,039]--test_add_loan.py--102--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:20:19,040]--test_add_loan.py--103--INFO:*************结束回写数据***************
+[2020-06-20 00:20:19,064]--test_add_loan.py--53--INFO:================正在查询member_id下原项目个数===============
+[2020-06-20 00:20:19,077]--test_add_loan.py--56--INFO:账户id为13217的原项目个数为{'record_num': 356}
+[2020-06-20 00:20:19,078]--test_add_loan.py--60--INFO:******************正在执行add_loan模块用例******************
+[2020-06-20 00:20:19,078]--test_add_loan.py--61--INFO:正在执行第9条用例:借款金额amount输入正整数
+[2020-06-20 00:20:19,078]--test_add_loan.py--62--INFO:请求的数据是{'case_id': 9, 'interface': 'add_loan', 'title': '借款金额amount输入正整数', 'method': 'POST', 'url': '/loan/add', 'data': '{"member_id":13217,"title":"烧烤项目2006200020","amount":500000,"loan_rate":12.0,"loan_term":12,"loan_date_type":1,"bidding_days":10}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5MTF9.Vprinb7vsNY6yjjEWzY9Ya4u-hPKFqZqahEW29XqeEVD0GHbqYjpJzxiJveBvdvnBQJC191oQCopgjZvffokXA"}', 'yes_or_no': 'YES', 'expected': '{"code": 0,"msg": "OK"}', 'actucal': "{'code': 0, 'msg': 'OK', 'data': {'id': 1242489, 'member_id': 13217, 'title': '烧烤项目2006200004', 'amount': 500000.0, 'loan_rate': 12.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-06-20 00:04:16.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:20:19,105]--test_add_loan.py--77--INFO:********************正在查询数据库********************
+[2020-06-20 00:20:19,106]--test_add_loan.py--80--INFO:==============正在查询新增成功后member_id下的项目个数============
+[2020-06-20 00:20:19,119]--test_add_loan.py--84--INFO:账户id为13217新增项目成功后的项目个数为{'record_num': 357}
+[2020-06-20 00:20:19,119]--test_add_loan.py--85--INFO:======================正在项目个数比对=======================
+[2020-06-20 00:20:19,120]--test_add_loan.py--89--INFO:第9条用例执行结果为PASS
+[2020-06-20 00:20:19,121]--test_add_loan.py--96--INFO:*************开始回写数据***************
+[2020-06-20 00:20:19,556]--test_add_loan.py--99--INFO:正在回写实际结果actual：{'code': 0, 'msg': 'OK', 'data': {'id': 1242557, 'member_id': 13217, 'title': '烧烤项目2006200020', 'amount': 500000.0, 'loan_rate': 12.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-06-20 00:20:19.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:20:19,962]--test_add_loan.py--102--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:20:19,962]--test_add_loan.py--103--INFO:*************结束回写数据***************
+[2020-06-20 00:20:19,982]--test_add_loan.py--60--INFO:******************正在执行add_loan模块用例******************
+[2020-06-20 00:20:19,983]--test_add_loan.py--61--INFO:正在执行第10条用例:借款金额amount输入0
+[2020-06-20 00:20:19,983]--test_add_loan.py--62--INFO:请求的数据是{'case_id': 10, 'interface': 'add_loan', 'title': '借款金额amount输入0', 'method': 'POST', 'url': '/loan/add', 'data': '{"member_id":13217,"title":"烧烤项目2006200020","amount":0,"loan_rate":12.0,"loan_term":12,"loan_date_type":1,"bidding_days":10}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5MTF9.Vprinb7vsNY6yjjEWzY9Ya4u-hPKFqZqahEW29XqeEVD0GHbqYjpJzxiJveBvdvnBQJC191oQCopgjZvffokXA"}', 'yes_or_no': 'NO', 'expected': '{"code": 2,"msg": "借款金额范围错误"}', 'actucal': "{'code': 2, 'msg': '借款金额范围错误', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:20:20,005]--test_add_loan.py--89--INFO:第10条用例执行结果为PASS
+[2020-06-20 00:20:20,005]--test_add_loan.py--96--INFO:*************开始回写数据***************
+[2020-06-20 00:20:20,448]--test_add_loan.py--99--INFO:正在回写实际结果actual：{'code': 2, 'msg': '借款金额范围错误', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:20:20,933]--test_add_loan.py--102--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:20:20,934]--test_add_loan.py--103--INFO:*************结束回写数据***************
+[2020-06-20 00:20:20,971]--test_add_loan.py--60--INFO:******************正在执行add_loan模块用例******************
+[2020-06-20 00:20:20,971]--test_add_loan.py--61--INFO:正在执行第11条用例:借款金额amount输入负数
+[2020-06-20 00:20:20,971]--test_add_loan.py--62--INFO:请求的数据是{'case_id': 11, 'interface': 'add_loan', 'title': '借款金额amount输入负数', 'method': 'POST', 'url': '/loan/add', 'data': '{"member_id":13217,"title":"烧烤项目2006200020","amount":-100,"loan_rate":12.0,"loan_term":12,"loan_date_type":1,"bidding_days":10}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5MTF9.Vprinb7vsNY6yjjEWzY9Ya4u-hPKFqZqahEW29XqeEVD0GHbqYjpJzxiJveBvdvnBQJC191oQCopgjZvffokXA"}', 'yes_or_no': 'NO', 'expected': '{"code": 2,"msg": "借款金额范围错误"}', 'actucal': "{'code': 2, 'msg': '借款金额范围错误', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:20:21,000]--test_add_loan.py--89--INFO:第11条用例执行结果为PASS
+[2020-06-20 00:20:21,000]--test_add_loan.py--96--INFO:*************开始回写数据***************
+[2020-06-20 00:20:21,430]--test_add_loan.py--99--INFO:正在回写实际结果actual：{'code': 2, 'msg': '借款金额范围错误', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:20:21,861]--test_add_loan.py--102--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:20:21,862]--test_add_loan.py--103--INFO:*************结束回写数据***************
+[2020-06-20 00:20:21,899]--test_add_loan.py--60--INFO:******************正在执行add_loan模块用例******************
+[2020-06-20 00:20:21,900]--test_add_loan.py--61--INFO:正在执行第12条用例:借款金额amount输入小数
+[2020-06-20 00:20:21,900]--test_add_loan.py--62--INFO:请求的数据是{'case_id': 12, 'interface': 'add_loan', 'title': '借款金额amount输入小数', 'method': 'POST', 'url': '/loan/add', 'data': '{"member_id":13217,"title":"烧烤项目2006200020","amount":"1000.25","loan_rate":12.0,"loan_term":12,"loan_date_type":1,"bidding_days":10}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5MTF9.Vprinb7vsNY6yjjEWzY9Ya4u-hPKFqZqahEW29XqeEVD0GHbqYjpJzxiJveBvdvnBQJC191oQCopgjZvffokXA"}', 'yes_or_no': 'NO', 'expected': '{"code": 2,"msg": "借款金额范围错误"}', 'actucal': "{'code': 2, 'msg': '借款金额范围错误', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:20:21,924]--test_add_loan.py--89--INFO:第12条用例执行结果为PASS
+[2020-06-20 00:20:21,924]--test_add_loan.py--96--INFO:*************开始回写数据***************
+[2020-06-20 00:20:22,441]--test_add_loan.py--99--INFO:正在回写实际结果actual：{'code': 2, 'msg': '借款金额范围错误', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:20:22,889]--test_add_loan.py--102--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:20:22,890]--test_add_loan.py--103--INFO:*************结束回写数据***************
+[2020-06-20 00:20:22,932]--test_add_loan.py--60--INFO:******************正在执行add_loan模块用例******************
+[2020-06-20 00:20:22,932]--test_add_loan.py--61--INFO:正在执行第13条用例:借款金额amount输入为空
+[2020-06-20 00:20:22,932]--test_add_loan.py--62--INFO:请求的数据是{'case_id': 13, 'interface': 'add_loan', 'title': '借款金额amount输入为空', 'method': 'POST', 'url': '/loan/add', 'data': '{"member_id":13217,"title":"烧烤项目2006200020","amount":"","loan_rate":12.0,"loan_term":12,"loan_date_type":1,"bidding_days":10}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5MTF9.Vprinb7vsNY6yjjEWzY9Ya4u-hPKFqZqahEW29XqeEVD0GHbqYjpJzxiJveBvdvnBQJC191oQCopgjZvffokXA"}', 'yes_or_no': 'NO', 'expected': '{"code": 1,"msg": "借款金额为空"}', 'actucal': "{'code': 1, 'msg': '借款金额为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:20:22,955]--test_add_loan.py--89--INFO:第13条用例执行结果为PASS
+[2020-06-20 00:20:22,955]--test_add_loan.py--96--INFO:*************开始回写数据***************
+[2020-06-20 00:20:23,428]--test_add_loan.py--99--INFO:正在回写实际结果actual：{'code': 1, 'msg': '借款金额为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:20:23,932]--test_add_loan.py--102--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:20:23,933]--test_add_loan.py--103--INFO:*************结束回写数据***************
+[2020-06-20 00:20:24,113]--test_add_loan.py--53--INFO:================正在查询member_id下原项目个数===============
+[2020-06-20 00:20:24,136]--test_add_loan.py--56--INFO:账户id为13217的原项目个数为{'record_num': 357}
+[2020-06-20 00:20:24,137]--test_add_loan.py--60--INFO:******************正在执行add_loan模块用例******************
+[2020-06-20 00:20:24,137]--test_add_loan.py--61--INFO:正在执行第14条用例:年利率loan_rate输入正整数
+[2020-06-20 00:20:24,138]--test_add_loan.py--62--INFO:请求的数据是{'case_id': 14, 'interface': 'add_loan', 'title': '年利率loan_rate输入正整数', 'method': 'POST', 'url': '/loan/add', 'data': '{"member_id":13217,"title":"烧烤项目2006200020","amount":400000,"loan_rate":12,"loan_term":12,"loan_date_type":1,"bidding_days":10}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5MTF9.Vprinb7vsNY6yjjEWzY9Ya4u-hPKFqZqahEW29XqeEVD0GHbqYjpJzxiJveBvdvnBQJC191oQCopgjZvffokXA"}', 'yes_or_no': 'YES', 'expected': '{"code": 0,"msg": "OK"}', 'actucal': "{'code': 0, 'msg': 'OK', 'data': {'id': 1242490, 'member_id': 13217, 'title': '烧烤项目2006200004', 'amount': 400000.0, 'loan_rate': 12.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-06-20 00:04:20.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:20:24,229]--test_add_loan.py--77--INFO:********************正在查询数据库********************
+[2020-06-20 00:20:24,229]--test_add_loan.py--80--INFO:==============正在查询新增成功后member_id下的项目个数============
+[2020-06-20 00:20:24,249]--test_add_loan.py--84--INFO:账户id为13217新增项目成功后的项目个数为{'record_num': 358}
+[2020-06-20 00:20:24,249]--test_add_loan.py--85--INFO:======================正在项目个数比对=======================
+[2020-06-20 00:20:24,250]--test_add_loan.py--89--INFO:第14条用例执行结果为PASS
+[2020-06-20 00:20:24,250]--test_add_loan.py--96--INFO:*************开始回写数据***************
+[2020-06-20 00:20:24,772]--test_add_loan.py--99--INFO:正在回写实际结果actual：{'code': 0, 'msg': 'OK', 'data': {'id': 1242558, 'member_id': 13217, 'title': '烧烤项目2006200020', 'amount': 400000.0, 'loan_rate': 12.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-06-20 00:20:24.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:20:25,274]--test_add_loan.py--102--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:20:25,275]--test_add_loan.py--103--INFO:*************结束回写数据***************
+[2020-06-20 00:20:25,296]--test_add_loan.py--60--INFO:******************正在执行add_loan模块用例******************
+[2020-06-20 00:20:25,307]--test_add_loan.py--61--INFO:正在执行第15条用例:年利率loan_rate输入0
+[2020-06-20 00:20:25,307]--test_add_loan.py--62--INFO:请求的数据是{'case_id': 15, 'interface': 'add_loan', 'title': '年利率loan_rate输入0', 'method': 'POST', 'url': '/loan/add', 'data': '{"member_id":13217,"title":"烧烤项目2006200020","amount":"400000","loan_rate":0,"loan_term":12,"loan_date_type":1,"bidding_days":10}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5MTF9.Vprinb7vsNY6yjjEWzY9Ya4u-hPKFqZqahEW29XqeEVD0GHbqYjpJzxiJveBvdvnBQJC191oQCopgjZvffokXA"}', 'yes_or_no': 'NO', 'expected': '{"code": 2,"msg": "借款利率范围错误"}', 'actucal': "{'code': 2, 'msg': '借款利率范围错误', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:20:25,328]--test_add_loan.py--89--INFO:第15条用例执行结果为PASS
+[2020-06-20 00:20:25,329]--test_add_loan.py--96--INFO:*************开始回写数据***************
+[2020-06-20 00:20:25,817]--test_add_loan.py--99--INFO:正在回写实际结果actual：{'code': 2, 'msg': '借款利率范围错误', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:20:26,292]--test_add_loan.py--102--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:20:26,293]--test_add_loan.py--103--INFO:*************结束回写数据***************
+[2020-06-20 00:20:26,318]--test_add_loan.py--60--INFO:******************正在执行add_loan模块用例******************
+[2020-06-20 00:20:26,318]--test_add_loan.py--61--INFO:正在执行第16条用例:年利率loan_rate输入负数
+[2020-06-20 00:20:26,318]--test_add_loan.py--62--INFO:请求的数据是{'case_id': 16, 'interface': 'add_loan', 'title': '年利率loan_rate输入负数', 'method': 'POST', 'url': '/loan/add', 'data': '{"member_id":13217,"title":"烧烤项目2006200020","amount":"400000","loan_rate":-12,"loan_term":12,"loan_date_type":1,"bidding_days":10}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5MTF9.Vprinb7vsNY6yjjEWzY9Ya4u-hPKFqZqahEW29XqeEVD0GHbqYjpJzxiJveBvdvnBQJC191oQCopgjZvffokXA"}', 'yes_or_no': 'NO', 'expected': '{"code": 2,"msg": "借款利率范围错误"}', 'actucal': "{'code': 2, 'msg': '借款利率范围错误', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:20:26,347]--test_add_loan.py--89--INFO:第16条用例执行结果为PASS
+[2020-06-20 00:20:26,348]--test_add_loan.py--96--INFO:*************开始回写数据***************
+[2020-06-20 00:20:27,012]--test_add_loan.py--99--INFO:正在回写实际结果actual：{'code': 2, 'msg': '借款利率范围错误', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:20:27,486]--test_add_loan.py--102--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:20:27,486]--test_add_loan.py--103--INFO:*************结束回写数据***************
+[2020-06-20 00:20:27,514]--test_add_loan.py--53--INFO:================正在查询member_id下原项目个数===============
+[2020-06-20 00:20:27,527]--test_add_loan.py--56--INFO:账户id为13217的原项目个数为{'record_num': 358}
+[2020-06-20 00:20:27,527]--test_add_loan.py--60--INFO:******************正在执行add_loan模块用例******************
+[2020-06-20 00:20:27,527]--test_add_loan.py--61--INFO:正在执行第17条用例:年利率loan_rate输入小数
+[2020-06-20 00:20:27,527]--test_add_loan.py--62--INFO:请求的数据是{'case_id': 17, 'interface': 'add_loan', 'title': '年利率loan_rate输入小数', 'method': 'POST', 'url': '/loan/add', 'data': '{"member_id":13217,"title":"烧烤项目2006200020","amount":"400000","loan_rate":12.88,"loan_term":12,"loan_date_type":1,"bidding_days":10}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5MTF9.Vprinb7vsNY6yjjEWzY9Ya4u-hPKFqZqahEW29XqeEVD0GHbqYjpJzxiJveBvdvnBQJC191oQCopgjZvffokXA"}', 'yes_or_no': 'YES', 'expected': '{"code": 0,"msg": "OK"}', 'actucal': "{'code': 0, 'msg': 'OK', 'data': {'id': 1242491, 'member_id': 13217, 'title': '烧烤项目2006200004', 'amount': 400000.0, 'loan_rate': 12.9, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-06-20 00:04:24.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:20:27,564]--test_add_loan.py--77--INFO:********************正在查询数据库********************
+[2020-06-20 00:20:27,565]--test_add_loan.py--80--INFO:==============正在查询新增成功后member_id下的项目个数============
+[2020-06-20 00:20:27,578]--test_add_loan.py--84--INFO:账户id为13217新增项目成功后的项目个数为{'record_num': 359}
+[2020-06-20 00:20:27,578]--test_add_loan.py--85--INFO:======================正在项目个数比对=======================
+[2020-06-20 00:20:27,578]--test_add_loan.py--89--INFO:第17条用例执行结果为PASS
+[2020-06-20 00:20:27,579]--test_add_loan.py--96--INFO:*************开始回写数据***************
+[2020-06-20 00:20:28,108]--test_add_loan.py--99--INFO:正在回写实际结果actual：{'code': 0, 'msg': 'OK', 'data': {'id': 1242559, 'member_id': 13217, 'title': '烧烤项目2006200020', 'amount': 400000.0, 'loan_rate': 12.9, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-06-20 00:20:27.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:20:28,597]--test_add_loan.py--102--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:20:28,597]--test_add_loan.py--103--INFO:*************结束回写数据***************
+[2020-06-20 00:20:28,631]--test_add_loan.py--60--INFO:******************正在执行add_loan模块用例******************
+[2020-06-20 00:20:28,632]--test_add_loan.py--61--INFO:正在执行第18条用例:年利率loan_rate输入为空
+[2020-06-20 00:20:28,632]--test_add_loan.py--62--INFO:请求的数据是{'case_id': 18, 'interface': 'add_loan', 'title': '年利率loan_rate输入为空', 'method': 'POST', 'url': '/loan/add', 'data': '{"member_id":13217,"title":"烧烤项目2006200020","amount":"400000","loan_rate":"","loan_term":12,"loan_date_type":1,"bidding_days":10}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5MTF9.Vprinb7vsNY6yjjEWzY9Ya4u-hPKFqZqahEW29XqeEVD0GHbqYjpJzxiJveBvdvnBQJC191oQCopgjZvffokXA"}', 'yes_or_no': 'NO', 'expected': '{"code": 1,"msg": "利率为空"}', 'actucal': "{'code': 1, 'msg': '利率为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:20:28,656]--test_add_loan.py--89--INFO:第18条用例执行结果为PASS
+[2020-06-20 00:20:28,657]--test_add_loan.py--96--INFO:*************开始回写数据***************
+[2020-06-20 00:20:29,159]--test_add_loan.py--99--INFO:正在回写实际结果actual：{'code': 1, 'msg': '利率为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:20:29,631]--test_add_loan.py--102--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:20:29,632]--test_add_loan.py--103--INFO:*************结束回写数据***************
+[2020-06-20 00:20:29,782]--test_add_loan.py--53--INFO:================正在查询member_id下原项目个数===============
+[2020-06-20 00:20:29,805]--test_add_loan.py--56--INFO:账户id为13217的原项目个数为{'record_num': 359}
+[2020-06-20 00:20:29,806]--test_add_loan.py--60--INFO:******************正在执行add_loan模块用例******************
+[2020-06-20 00:20:29,806]--test_add_loan.py--61--INFO:正在执行第19条用例:借款期限loan_term单位为月，输入1
+[2020-06-20 00:20:29,807]--test_add_loan.py--62--INFO:请求的数据是{'case_id': 19, 'interface': 'add_loan', 'title': '借款期限loan_term单位为月，输入1', 'method': 'POST', 'url': '/loan/add', 'data': '{"member_id":13217,"title":"烧烤项目2006200020","amount":"400000","loan_rate":6.88,"loan_term":1,"loan_date_type":1,"bidding_days":10}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5MTF9.Vprinb7vsNY6yjjEWzY9Ya4u-hPKFqZqahEW29XqeEVD0GHbqYjpJzxiJveBvdvnBQJC191oQCopgjZvffokXA"}', 'yes_or_no': 'YES', 'expected': '{"code": 0,"msg": "OK"}', 'actucal': "{'code': 0, 'msg': 'OK', 'data': {'id': 1242492, 'member_id': 13217, 'title': '烧烤项目2006200004', 'amount': 400000.0, 'loan_rate': 6.9, 'loan_term': 1, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-06-20 00:04:26.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:20:29,849]--test_add_loan.py--77--INFO:********************正在查询数据库********************
+[2020-06-20 00:20:29,850]--test_add_loan.py--80--INFO:==============正在查询新增成功后member_id下的项目个数============
+[2020-06-20 00:20:29,872]--test_add_loan.py--84--INFO:账户id为13217新增项目成功后的项目个数为{'record_num': 360}
+[2020-06-20 00:20:29,872]--test_add_loan.py--85--INFO:======================正在项目个数比对=======================
+[2020-06-20 00:20:29,873]--test_add_loan.py--89--INFO:第19条用例执行结果为PASS
+[2020-06-20 00:20:29,873]--test_add_loan.py--96--INFO:*************开始回写数据***************
+[2020-06-20 00:20:30,384]--test_add_loan.py--99--INFO:正在回写实际结果actual：{'code': 0, 'msg': 'OK', 'data': {'id': 1242560, 'member_id': 13217, 'title': '烧烤项目2006200020', 'amount': 400000.0, 'loan_rate': 6.9, 'loan_term': 1, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-06-20 00:20:29.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:20:30,811]--test_add_loan.py--102--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:20:30,812]--test_add_loan.py--103--INFO:*************结束回写数据***************
+[2020-06-20 00:20:30,838]--test_add_loan.py--53--INFO:================正在查询member_id下原项目个数===============
+[2020-06-20 00:20:30,851]--test_add_loan.py--56--INFO:账户id为13217的原项目个数为{'record_num': 360}
+[2020-06-20 00:20:30,852]--test_add_loan.py--60--INFO:******************正在执行add_loan模块用例******************
+[2020-06-20 00:20:30,852]--test_add_loan.py--61--INFO:正在执行第20条用例:借款期限loan_term单位为月，输入36
+[2020-06-20 00:20:30,853]--test_add_loan.py--62--INFO:请求的数据是{'case_id': 20, 'interface': 'add_loan', 'title': '借款期限loan_term单位为月，输入36', 'method': 'POST', 'url': '/loan/add', 'data': '{"member_id":13217,"title":"烧烤项目2006200020","amount":"400000","loan_rate":6.88,"loan_term":36,"loan_date_type":1,"bidding_days":10}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5MTF9.Vprinb7vsNY6yjjEWzY9Ya4u-hPKFqZqahEW29XqeEVD0GHbqYjpJzxiJveBvdvnBQJC191oQCopgjZvffokXA"}', 'yes_or_no': 'YES', 'expected': '{"code": 0,"msg": "OK"}', 'actucal': "{'code': 0, 'msg': 'OK', 'data': {'id': 1242493, 'member_id': 13217, 'title': '烧烤项目2006200004', 'amount': 400000.0, 'loan_rate': 6.9, 'loan_term': 36, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-06-20 00:04:27.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:20:30,882]--test_add_loan.py--77--INFO:********************正在查询数据库********************
+[2020-06-20 00:20:30,882]--test_add_loan.py--80--INFO:==============正在查询新增成功后member_id下的项目个数============
+[2020-06-20 00:20:30,896]--test_add_loan.py--84--INFO:账户id为13217新增项目成功后的项目个数为{'record_num': 361}
+[2020-06-20 00:20:30,896]--test_add_loan.py--85--INFO:======================正在项目个数比对=======================
+[2020-06-20 00:20:30,896]--test_add_loan.py--89--INFO:第20条用例执行结果为PASS
+[2020-06-20 00:20:30,896]--test_add_loan.py--96--INFO:*************开始回写数据***************
+[2020-06-20 00:20:31,361]--test_add_loan.py--99--INFO:正在回写实际结果actual：{'code': 0, 'msg': 'OK', 'data': {'id': 1242561, 'member_id': 13217, 'title': '烧烤项目2006200020', 'amount': 400000.0, 'loan_rate': 6.9, 'loan_term': 36, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-06-20 00:20:30.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:20:31,761]--test_add_loan.py--102--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:20:31,762]--test_add_loan.py--103--INFO:*************结束回写数据***************
+[2020-06-20 00:20:31,787]--test_add_loan.py--60--INFO:******************正在执行add_loan模块用例******************
+[2020-06-20 00:20:31,787]--test_add_loan.py--61--INFO:正在执行第21条用例:借款期限loan_term单位为月，输入37
+[2020-06-20 00:20:31,788]--test_add_loan.py--62--INFO:请求的数据是{'case_id': 21, 'interface': 'add_loan', 'title': '借款期限loan_term单位为月，输入37', 'method': 'POST', 'url': '/loan/add', 'data': '{"member_id":13217,"title":"烧烤项目2006200020","amount":"400000","loan_rate":6.88,"loan_term":37,"loan_date_type":1,"bidding_days":10}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5MTF9.Vprinb7vsNY6yjjEWzY9Ya4u-hPKFqZqahEW29XqeEVD0GHbqYjpJzxiJveBvdvnBQJC191oQCopgjZvffokXA"}', 'yes_or_no': 'NO', 'expected': '{"code": 2,"msg": "借款期限单位为月的项目,期限范围为1到36个月(包含1个月和36个月)"}', 'actucal': "{'code': 2, 'msg': '借款期限单位为月的项目,期限范围为1到36个月(包含1个月和36个月)', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:20:31,809]--test_add_loan.py--89--INFO:第21条用例执行结果为PASS
+[2020-06-20 00:20:31,809]--test_add_loan.py--96--INFO:*************开始回写数据***************
+[2020-06-20 00:20:32,232]--test_add_loan.py--99--INFO:正在回写实际结果actual：{'code': 2, 'msg': '借款期限单位为月的项目,期限范围为1到36个月(包含1个月和36个月)', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:20:32,717]--test_add_loan.py--102--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:20:32,717]--test_add_loan.py--103--INFO:*************结束回写数据***************
+[2020-06-20 00:20:32,754]--test_add_loan.py--53--INFO:================正在查询member_id下原项目个数===============
+[2020-06-20 00:20:32,774]--test_add_loan.py--56--INFO:账户id为13217的原项目个数为{'record_num': 361}
+[2020-06-20 00:20:32,774]--test_add_loan.py--60--INFO:******************正在执行add_loan模块用例******************
+[2020-06-20 00:20:32,774]--test_add_loan.py--61--INFO:正在执行第22条用例:借款期限loan_term单位为天，输入10
+[2020-06-20 00:20:32,774]--test_add_loan.py--62--INFO:请求的数据是{'case_id': 22, 'interface': 'add_loan', 'title': '借款期限loan_term单位为天，输入10', 'method': 'POST', 'url': '/loan/add', 'data': '{"member_id":13217,"title":"烧烤项目2006200020","amount":"400000","loan_rate":6.88,"loan_term":10,"loan_date_type":2,"bidding_days":10}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5MTF9.Vprinb7vsNY6yjjEWzY9Ya4u-hPKFqZqahEW29XqeEVD0GHbqYjpJzxiJveBvdvnBQJC191oQCopgjZvffokXA"}', 'yes_or_no': 'YES', 'expected': '{"code": 0,"msg": "OK"}', 'actucal': "{'code': 0, 'msg': 'OK', 'data': {'id': 1242494, 'member_id': 13217, 'title': '烧烤项目2006200004', 'amount': 400000.0, 'loan_rate': 6.9, 'loan_term': 10, 'loan_date_type': 2, 'bidding_days': 5, 'create_time': '2020-06-20 00:04:29.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:20:32,802]--test_add_loan.py--77--INFO:********************正在查询数据库********************
+[2020-06-20 00:20:32,803]--test_add_loan.py--80--INFO:==============正在查询新增成功后member_id下的项目个数============
+[2020-06-20 00:20:32,822]--test_add_loan.py--84--INFO:账户id为13217新增项目成功后的项目个数为{'record_num': 362}
+[2020-06-20 00:20:32,822]--test_add_loan.py--85--INFO:======================正在项目个数比对=======================
+[2020-06-20 00:20:32,823]--test_add_loan.py--89--INFO:第22条用例执行结果为PASS
+[2020-06-20 00:20:32,823]--test_add_loan.py--96--INFO:*************开始回写数据***************
+[2020-06-20 00:20:33,259]--test_add_loan.py--99--INFO:正在回写实际结果actual：{'code': 0, 'msg': 'OK', 'data': {'id': 1242562, 'member_id': 13217, 'title': '烧烤项目2006200020', 'amount': 400000.0, 'loan_rate': 6.9, 'loan_term': 10, 'loan_date_type': 2, 'bidding_days': 5, 'create_time': '2020-06-20 00:20:32.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:20:33,678]--test_add_loan.py--102--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:20:33,678]--test_add_loan.py--103--INFO:*************结束回写数据***************
+[2020-06-20 00:20:33,700]--test_add_loan.py--53--INFO:================正在查询member_id下原项目个数===============
+[2020-06-20 00:20:33,712]--test_add_loan.py--56--INFO:账户id为13217的原项目个数为{'record_num': 362}
+[2020-06-20 00:20:33,713]--test_add_loan.py--60--INFO:******************正在执行add_loan模块用例******************
+[2020-06-20 00:20:33,713]--test_add_loan.py--61--INFO:正在执行第23条用例:借款期限loan_term单位为天，输入45
+[2020-06-20 00:20:33,713]--test_add_loan.py--62--INFO:请求的数据是{'case_id': 23, 'interface': 'add_loan', 'title': '借款期限loan_term单位为天，输入45', 'method': 'POST', 'url': '/loan/add', 'data': '{"member_id":13217,"title":"烧烤项目2006200020","amount":"400000","loan_rate":6.88,"loan_term":45,"loan_date_type":2,"bidding_days":10}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5MTF9.Vprinb7vsNY6yjjEWzY9Ya4u-hPKFqZqahEW29XqeEVD0GHbqYjpJzxiJveBvdvnBQJC191oQCopgjZvffokXA"}', 'yes_or_no': 'YES', 'expected': '{"code": 0,"msg": "OK"}', 'actucal': "{'code': 0, 'msg': 'OK', 'data': {'id': 1242495, 'member_id': 13217, 'title': '烧烤项目2006200004', 'amount': 400000.0, 'loan_rate': 6.9, 'loan_term': 45, 'loan_date_type': 2, 'bidding_days': 5, 'create_time': '2020-06-20 00:04:30.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:20:33,741]--test_add_loan.py--77--INFO:********************正在查询数据库********************
+[2020-06-20 00:20:33,741]--test_add_loan.py--80--INFO:==============正在查询新增成功后member_id下的项目个数============
+[2020-06-20 00:20:33,754]--test_add_loan.py--84--INFO:账户id为13217新增项目成功后的项目个数为{'record_num': 363}
+[2020-06-20 00:20:33,755]--test_add_loan.py--85--INFO:======================正在项目个数比对=======================
+[2020-06-20 00:20:33,755]--test_add_loan.py--89--INFO:第23条用例执行结果为PASS
+[2020-06-20 00:20:33,756]--test_add_loan.py--96--INFO:*************开始回写数据***************
+[2020-06-20 00:20:34,193]--test_add_loan.py--99--INFO:正在回写实际结果actual：{'code': 0, 'msg': 'OK', 'data': {'id': 1242563, 'member_id': 13217, 'title': '烧烤项目2006200020', 'amount': 400000.0, 'loan_rate': 6.9, 'loan_term': 45, 'loan_date_type': 2, 'bidding_days': 5, 'create_time': '2020-06-20 00:20:33.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:20:34,612]--test_add_loan.py--102--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:20:34,612]--test_add_loan.py--103--INFO:*************结束回写数据***************
+[2020-06-20 00:20:34,649]--test_add_loan.py--60--INFO:******************正在执行add_loan模块用例******************
+[2020-06-20 00:20:34,649]--test_add_loan.py--61--INFO:正在执行第24条用例:借款期限loan_term单位为天，输入9
+[2020-06-20 00:20:34,649]--test_add_loan.py--62--INFO:请求的数据是{'case_id': 24, 'interface': 'add_loan', 'title': '借款期限loan_term单位为天，输入9', 'method': 'POST', 'url': '/loan/add', 'data': '{"member_id":13217,"title":"烧烤项目2006200020","amount":"400000","loan_rate":6.88,"loan_term":9,"loan_date_type":2,"bidding_days":10}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5MTF9.Vprinb7vsNY6yjjEWzY9Ya4u-hPKFqZqahEW29XqeEVD0GHbqYjpJzxiJveBvdvnBQJC191oQCopgjZvffokXA"}', 'yes_or_no': 'NO', 'expected': '{"code": 2,"msg": "借款期限单位为天的项目,期限范围为10到45天(包含10天和45天)"}', 'actucal': "{'code': 2, 'msg': '借款期限单位为天的项目,期限范围为10到45天(包含10天和45天)', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:20:34,673]--test_add_loan.py--89--INFO:第24条用例执行结果为PASS
+[2020-06-20 00:20:34,673]--test_add_loan.py--96--INFO:*************开始回写数据***************
+[2020-06-20 00:20:35,143]--test_add_loan.py--99--INFO:正在回写实际结果actual：{'code': 2, 'msg': '借款期限单位为天的项目,期限范围为10到45天(包含10天和45天)', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:20:35,602]--test_add_loan.py--102--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:20:35,604]--test_add_loan.py--103--INFO:*************结束回写数据***************
+[2020-06-20 00:20:35,631]--test_add_loan.py--60--INFO:******************正在执行add_loan模块用例******************
+[2020-06-20 00:20:35,631]--test_add_loan.py--61--INFO:正在执行第25条用例:借款期限loan_term单位为天，输入46
+[2020-06-20 00:20:35,632]--test_add_loan.py--62--INFO:请求的数据是{'case_id': 25, 'interface': 'add_loan', 'title': '借款期限loan_term单位为天，输入46', 'method': 'POST', 'url': '/loan/add', 'data': '{"member_id":13217,"title":"烧烤项目2006200020","amount":"400000","loan_rate":6.88,"loan_term":46,"loan_date_type":2,"bidding_days":10}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5MTF9.Vprinb7vsNY6yjjEWzY9Ya4u-hPKFqZqahEW29XqeEVD0GHbqYjpJzxiJveBvdvnBQJC191oQCopgjZvffokXA"}', 'yes_or_no': 'NO', 'expected': '{"code": 2,"msg": "借款期限单位为天的项目,期限范围为10到45天(包含10天和45天)"}', 'actucal': "{'code': 2, 'msg': '借款期限单位为天的项目,期限范围为10到45天(包含10天和45天)', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:20:35,652]--test_add_loan.py--89--INFO:第25条用例执行结果为PASS
+[2020-06-20 00:20:35,652]--test_add_loan.py--96--INFO:*************开始回写数据***************
+[2020-06-20 00:20:36,094]--test_add_loan.py--99--INFO:正在回写实际结果actual：{'code': 2, 'msg': '借款期限单位为天的项目,期限范围为10到45天(包含10天和45天)', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:20:36,540]--test_add_loan.py--102--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:20:36,541]--test_add_loan.py--103--INFO:*************结束回写数据***************
+[2020-06-20 00:20:36,563]--test_add_loan.py--60--INFO:******************正在执行add_loan模块用例******************
+[2020-06-20 00:20:36,564]--test_add_loan.py--61--INFO:正在执行第26条用例:借款期限loan_term输入0
+[2020-06-20 00:20:36,564]--test_add_loan.py--62--INFO:请求的数据是{'case_id': 26, 'interface': 'add_loan', 'title': '借款期限loan_term输入0', 'method': 'POST', 'url': '/loan/add', 'data': '{"member_id":13217,"title":"烧烤项目2006200020","amount":"400000","loan_rate":12,"loan_term":0,"loan_date_type":1,"bidding_days":10}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5MTF9.Vprinb7vsNY6yjjEWzY9Ya4u-hPKFqZqahEW29XqeEVD0GHbqYjpJzxiJveBvdvnBQJC191oQCopgjZvffokXA"}', 'yes_or_no': 'NO', 'expected': '{"code": 2,"msg": "借款期限单位为月的项目,期限范围为1到36个月(包含1个月和36个月)"}', 'actucal': "{'code': 2, 'msg': '借款期限单位为月的项目,期限范围为1到36个月(包含1个月和36个月)', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:20:36,588]--test_add_loan.py--89--INFO:第26条用例执行结果为PASS
+[2020-06-20 00:20:36,589]--test_add_loan.py--96--INFO:*************开始回写数据***************
+[2020-06-20 00:20:37,074]--test_add_loan.py--99--INFO:正在回写实际结果actual：{'code': 2, 'msg': '借款期限单位为月的项目,期限范围为1到36个月(包含1个月和36个月)', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:20:37,495]--test_add_loan.py--102--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:20:37,496]--test_add_loan.py--103--INFO:*************结束回写数据***************
+[2020-06-20 00:20:37,520]--test_add_loan.py--60--INFO:******************正在执行add_loan模块用例******************
+[2020-06-20 00:20:37,521]--test_add_loan.py--61--INFO:正在执行第27条用例:借款期限loan_term输入负数
+[2020-06-20 00:20:37,521]--test_add_loan.py--62--INFO:请求的数据是{'case_id': 27, 'interface': 'add_loan', 'title': '借款期限loan_term输入负数', 'method': 'POST', 'url': '/loan/add', 'data': '{"member_id":13217,"title":"烧烤项目2006200020","amount":"400000","loan_rate":12,"loan_term":-12,"loan_date_type":1,"bidding_days":10}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5MTF9.Vprinb7vsNY6yjjEWzY9Ya4u-hPKFqZqahEW29XqeEVD0GHbqYjpJzxiJveBvdvnBQJC191oQCopgjZvffokXA"}', 'yes_or_no': 'NO', 'expected': '{"code": 2,"msg": "借款期限单位为月的项目,期限范围为1到36个月(包含1个月和36个月)"}', 'actucal': "{'code': 2, 'msg': '借款期限单位为月的项目,期限范围为1到36个月(包含1个月和36个月)', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:20:37,542]--test_add_loan.py--89--INFO:第27条用例执行结果为PASS
+[2020-06-20 00:20:37,542]--test_add_loan.py--96--INFO:*************开始回写数据***************
+[2020-06-20 00:20:38,041]--test_add_loan.py--99--INFO:正在回写实际结果actual：{'code': 2, 'msg': '借款期限单位为月的项目,期限范围为1到36个月(包含1个月和36个月)', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:20:38,462]--test_add_loan.py--102--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:20:38,462]--test_add_loan.py--103--INFO:*************结束回写数据***************
+[2020-06-20 00:20:38,497]--test_add_loan.py--60--INFO:******************正在执行add_loan模块用例******************
+[2020-06-20 00:20:38,497]--test_add_loan.py--61--INFO:正在执行第28条用例:借款期限loan_term输入小数
+[2020-06-20 00:20:38,498]--test_add_loan.py--62--INFO:请求的数据是{'case_id': 28, 'interface': 'add_loan', 'title': '借款期限loan_term输入小数', 'method': 'POST', 'url': '/loan/add', 'data': '{"member_id":13217,"title":"烧烤项目2006200020","amount":"400000","loan_rate":12,"loan_term":12.8,"loan_date_type":1,"bidding_days":10}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5MTF9.Vprinb7vsNY6yjjEWzY9Ya4u-hPKFqZqahEW29XqeEVD0GHbqYjpJzxiJveBvdvnBQJC191oQCopgjZvffokXA"}', 'yes_or_no': 'NO', 'expected': '{"code": 2,"msg": "余额必须大于0并且小于或者等于5000000"}', 'actucal': "{'code': 0, 'msg': 'OK', 'data': {'id': 1242496, 'member_id': 13217, 'title': '烧烤项目2006200004', 'amount': 400000.0, 'loan_rate': 12.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-06-20 00:04:37.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'FAILED'}
+[2020-06-20 00:20:38,525]--test_add_loan.py--91--ERROR:执行接口测试出现错误，错误是False is not true
+[2020-06-20 00:20:38,526]--test_add_loan.py--94--ERROR:第28条用例执行结果为FAILED
+[2020-06-20 00:20:38,526]--test_add_loan.py--96--INFO:*************开始回写数据***************
+[2020-06-20 00:20:38,953]--test_add_loan.py--99--INFO:正在回写实际结果actual：{'code': 0, 'msg': 'OK', 'data': {'id': 1242564, 'member_id': 13217, 'title': '烧烤项目2006200020', 'amount': 400000.0, 'loan_rate': 12.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-06-20 00:20:38.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:20:39,376]--test_add_loan.py--102--INFO:正在回写测试结果test_result：FAILED
+[2020-06-20 00:20:39,376]--test_add_loan.py--103--INFO:*************结束回写数据***************
+[2020-06-20 00:20:39,409]--test_add_loan.py--60--INFO:******************正在执行add_loan模块用例******************
+[2020-06-20 00:20:39,409]--test_add_loan.py--61--INFO:正在执行第29条用例:借款期限loan_term输入为空
+[2020-06-20 00:20:39,409]--test_add_loan.py--62--INFO:请求的数据是{'case_id': 29, 'interface': 'add_loan', 'title': '借款期限loan_term输入为空', 'method': 'POST', 'url': '/loan/add', 'data': '{"member_id":13217,"title":"烧烤项目2006200020","amount":"400000","loan_rate":12,"loan_term":"","loan_date_type":1,"bidding_days":10}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5MTF9.Vprinb7vsNY6yjjEWzY9Ya4u-hPKFqZqahEW29XqeEVD0GHbqYjpJzxiJveBvdvnBQJC191oQCopgjZvffokXA"}', 'yes_or_no': 'NO', 'expected': '{"code": 1,"msg": "借款期限为空"}', 'actucal': "{'code': 1, 'msg': '借款期限为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:20:39,430]--test_add_loan.py--89--INFO:第29条用例执行结果为PASS
+[2020-06-20 00:20:39,430]--test_add_loan.py--96--INFO:*************开始回写数据***************
+[2020-06-20 00:20:39,941]--test_add_loan.py--99--INFO:正在回写实际结果actual：{'code': 1, 'msg': '借款期限为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:20:40,363]--test_add_loan.py--102--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:20:40,364]--test_add_loan.py--103--INFO:*************结束回写数据***************
+[2020-06-20 00:20:40,702]--test_add_loan.py--53--INFO:================正在查询member_id下原项目个数===============
+[2020-06-20 00:20:40,725]--test_add_loan.py--56--INFO:账户id为13217的原项目个数为{'record_num': 364}
+[2020-06-20 00:20:40,726]--test_add_loan.py--60--INFO:******************正在执行add_loan模块用例******************
+[2020-06-20 00:20:40,726]--test_add_loan.py--61--INFO:正在执行第30条用例:借款期限类型loan_date_type输入为1
+[2020-06-20 00:20:40,726]--test_add_loan.py--62--INFO:请求的数据是{'case_id': 30, 'interface': 'add_loan', 'title': '借款期限类型loan_date_type输入为1', 'method': 'POST', 'url': '/loan/add', 'data': '{"member_id":13217,"title":"烧烤项目2006200020","amount":"400000","loan_rate":12,"loan_term":24,"loan_date_type":1,"bidding_days":10}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5MTF9.Vprinb7vsNY6yjjEWzY9Ya4u-hPKFqZqahEW29XqeEVD0GHbqYjpJzxiJveBvdvnBQJC191oQCopgjZvffokXA"}', 'yes_or_no': 'YES', 'expected': '{"code": 0,"msg": "OK"}', 'actucal': "{'code': 0, 'msg': 'OK', 'data': {'id': 1242497, 'member_id': 13217, 'title': '烧烤项目2006200004', 'amount': 400000.0, 'loan_rate': 12.0, 'loan_term': 24, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-06-20 00:04:39.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:20:40,753]--test_add_loan.py--77--INFO:********************正在查询数据库********************
+[2020-06-20 00:20:40,753]--test_add_loan.py--80--INFO:==============正在查询新增成功后member_id下的项目个数============
+[2020-06-20 00:20:40,774]--test_add_loan.py--84--INFO:账户id为13217新增项目成功后的项目个数为{'record_num': 365}
+[2020-06-20 00:20:40,775]--test_add_loan.py--85--INFO:======================正在项目个数比对=======================
+[2020-06-20 00:20:40,775]--test_add_loan.py--89--INFO:第30条用例执行结果为PASS
+[2020-06-20 00:20:40,775]--test_add_loan.py--96--INFO:*************开始回写数据***************
+[2020-06-20 00:20:41,272]--test_add_loan.py--99--INFO:正在回写实际结果actual：{'code': 0, 'msg': 'OK', 'data': {'id': 1242565, 'member_id': 13217, 'title': '烧烤项目2006200020', 'amount': 400000.0, 'loan_rate': 12.0, 'loan_term': 24, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-06-20 00:20:40.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:20:41,676]--test_add_loan.py--102--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:20:41,676]--test_add_loan.py--103--INFO:*************结束回写数据***************
+[2020-06-20 00:20:41,699]--test_add_loan.py--53--INFO:================正在查询member_id下原项目个数===============
+[2020-06-20 00:20:41,713]--test_add_loan.py--56--INFO:账户id为13217的原项目个数为{'record_num': 365}
+[2020-06-20 00:20:41,714]--test_add_loan.py--60--INFO:******************正在执行add_loan模块用例******************
+[2020-06-20 00:20:41,714]--test_add_loan.py--61--INFO:正在执行第31条用例:借款期限类型loan_date_type输入为2
+[2020-06-20 00:20:41,714]--test_add_loan.py--62--INFO:请求的数据是{'case_id': 31, 'interface': 'add_loan', 'title': '借款期限类型loan_date_type输入为2', 'method': 'POST', 'url': '/loan/add', 'data': '{"member_id":13217,"title":"烧烤项目2006200020","amount":"400000","loan_rate":12,"loan_term":30,"loan_date_type":2,"bidding_days":10}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5MTF9.Vprinb7vsNY6yjjEWzY9Ya4u-hPKFqZqahEW29XqeEVD0GHbqYjpJzxiJveBvdvnBQJC191oQCopgjZvffokXA"}', 'yes_or_no': 'YES', 'expected': '{"code": 0,"msg": "OK"}', 'actucal': "{'code': 0, 'msg': 'OK', 'data': {'id': 1242498, 'member_id': 13217, 'title': '烧烤项目2006200004', 'amount': 400000.0, 'loan_rate': 12.0, 'loan_term': 30, 'loan_date_type': 2, 'bidding_days': 5, 'create_time': '2020-06-20 00:04:40.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:20:41,741]--test_add_loan.py--77--INFO:********************正在查询数据库********************
+[2020-06-20 00:20:41,741]--test_add_loan.py--80--INFO:==============正在查询新增成功后member_id下的项目个数============
+[2020-06-20 00:20:41,756]--test_add_loan.py--84--INFO:账户id为13217新增项目成功后的项目个数为{'record_num': 366}
+[2020-06-20 00:20:41,756]--test_add_loan.py--85--INFO:======================正在项目个数比对=======================
+[2020-06-20 00:20:41,756]--test_add_loan.py--89--INFO:第31条用例执行结果为PASS
+[2020-06-20 00:20:41,757]--test_add_loan.py--96--INFO:*************开始回写数据***************
+[2020-06-20 00:20:42,199]--test_add_loan.py--99--INFO:正在回写实际结果actual：{'code': 0, 'msg': 'OK', 'data': {'id': 1242566, 'member_id': 13217, 'title': '烧烤项目2006200020', 'amount': 400000.0, 'loan_rate': 12.0, 'loan_term': 30, 'loan_date_type': 2, 'bidding_days': 5, 'create_time': '2020-06-20 00:20:41.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:20:42,625]--test_add_loan.py--102--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:20:42,625]--test_add_loan.py--103--INFO:*************结束回写数据***************
+[2020-06-20 00:20:42,665]--test_add_loan.py--60--INFO:******************正在执行add_loan模块用例******************
+[2020-06-20 00:20:42,665]--test_add_loan.py--61--INFO:正在执行第32条用例:借款期限类型loan_date_type输入为其他数字
+[2020-06-20 00:20:42,666]--test_add_loan.py--62--INFO:请求的数据是{'case_id': 32, 'interface': 'add_loan', 'title': '借款期限类型loan_date_type输入为其他数字', 'method': 'POST', 'url': '/loan/add', 'data': '{"member_id":13217,"title":"烧烤项目2006200020","amount":"400000","loan_rate":12,"loan_term":24,"loan_date_type":3,"bidding_days":10}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5MTF9.Vprinb7vsNY6yjjEWzY9Ya4u-hPKFqZqahEW29XqeEVD0GHbqYjpJzxiJveBvdvnBQJC191oQCopgjZvffokXA"}', 'yes_or_no': 'NO', 'expected': '{"code": 2,"msg": "借款类型不存在"}', 'actucal': "{'code': 2, 'msg': '借款类型不存在', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:20:42,689]--test_add_loan.py--89--INFO:第32条用例执行结果为PASS
+[2020-06-20 00:20:42,690]--test_add_loan.py--96--INFO:*************开始回写数据***************
+[2020-06-20 00:20:43,128]--test_add_loan.py--99--INFO:正在回写实际结果actual：{'code': 2, 'msg': '借款类型不存在', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:20:43,676]--test_add_loan.py--102--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:20:43,676]--test_add_loan.py--103--INFO:*************结束回写数据***************
+[2020-06-20 00:20:43,708]--test_add_loan.py--60--INFO:******************正在执行add_loan模块用例******************
+[2020-06-20 00:20:43,708]--test_add_loan.py--61--INFO:正在执行第33条用例:借款期限类型loan_date_type输入为空
+[2020-06-20 00:20:43,709]--test_add_loan.py--62--INFO:请求的数据是{'case_id': 33, 'interface': 'add_loan', 'title': '借款期限类型loan_date_type输入为空', 'method': 'POST', 'url': '/loan/add', 'data': '{"member_id":13217,"title":"烧烤项目2006200020","amount":"400000","loan_rate":12,"loan_term":24,"loan_date_type":"","bidding_days":10}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5MTF9.Vprinb7vsNY6yjjEWzY9Ya4u-hPKFqZqahEW29XqeEVD0GHbqYjpJzxiJveBvdvnBQJC191oQCopgjZvffokXA"}', 'yes_or_no': 'NO', 'expected': '{"code": 1,"msg": "借款日期类型为空"}', 'actucal': "{'code': 1, 'msg': '借款日期类型为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:20:43,728]--test_add_loan.py--89--INFO:第33条用例执行结果为PASS
+[2020-06-20 00:20:43,728]--test_add_loan.py--96--INFO:*************开始回写数据***************
+[2020-06-20 00:20:44,173]--test_add_loan.py--99--INFO:正在回写实际结果actual：{'code': 1, 'msg': '借款日期类型为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:20:44,576]--test_add_loan.py--102--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:20:44,576]--test_add_loan.py--103--INFO:*************结束回写数据***************
+[2020-06-20 00:20:44,612]--test_add_loan.py--53--INFO:================正在查询member_id下原项目个数===============
+[2020-06-20 00:20:44,635]--test_add_loan.py--56--INFO:账户id为13217的原项目个数为{'record_num': 366}
+[2020-06-20 00:20:44,635]--test_add_loan.py--60--INFO:******************正在执行add_loan模块用例******************
+[2020-06-20 00:20:44,636]--test_add_loan.py--61--INFO:正在执行第34条用例:竞标天数bidding_days输入为1
+[2020-06-20 00:20:44,636]--test_add_loan.py--62--INFO:请求的数据是{'case_id': 34, 'interface': 'add_loan', 'title': '竞标天数bidding_days输入为1', 'method': 'POST', 'url': '/loan/add', 'data': '{"member_id":13217,"title":"烧烤项目2006200020","amount":"400000","loan_rate":12,"loan_term":12,"loan_date_type":1,"bidding_days":10}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5MTF9.Vprinb7vsNY6yjjEWzY9Ya4u-hPKFqZqahEW29XqeEVD0GHbqYjpJzxiJveBvdvnBQJC191oQCopgjZvffokXA"}', 'yes_or_no': 'YES', 'expected': '{"code": 0,"msg": "OK"}', 'actucal': "{'code': 0, 'msg': 'OK', 'data': {'id': 1242499, 'member_id': 13217, 'title': '烧烤项目2006200004', 'amount': 400000.0, 'loan_rate': 12.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-06-20 00:04:42.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:20:44,661]--test_add_loan.py--77--INFO:********************正在查询数据库********************
+[2020-06-20 00:20:44,661]--test_add_loan.py--80--INFO:==============正在查询新增成功后member_id下的项目个数============
+[2020-06-20 00:20:44,683]--test_add_loan.py--84--INFO:账户id为13217新增项目成功后的项目个数为{'record_num': 367}
+[2020-06-20 00:20:44,683]--test_add_loan.py--85--INFO:======================正在项目个数比对=======================
+[2020-06-20 00:20:44,684]--test_add_loan.py--89--INFO:第34条用例执行结果为PASS
+[2020-06-20 00:20:44,684]--test_add_loan.py--96--INFO:*************开始回写数据***************
+[2020-06-20 00:20:45,171]--test_add_loan.py--99--INFO:正在回写实际结果actual：{'code': 0, 'msg': 'OK', 'data': {'id': 1242567, 'member_id': 13217, 'title': '烧烤项目2006200020', 'amount': 400000.0, 'loan_rate': 12.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-06-20 00:20:44.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:20:45,596]--test_add_loan.py--102--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:20:45,596]--test_add_loan.py--103--INFO:*************结束回写数据***************
+[2020-06-20 00:20:45,632]--test_add_loan.py--53--INFO:================正在查询member_id下原项目个数===============
+[2020-06-20 00:20:45,651]--test_add_loan.py--56--INFO:账户id为13217的原项目个数为{'record_num': 367}
+[2020-06-20 00:20:45,652]--test_add_loan.py--60--INFO:******************正在执行add_loan模块用例******************
+[2020-06-20 00:20:45,653]--test_add_loan.py--61--INFO:正在执行第35条用例:竞标天数bidding_days输入为10
+[2020-06-20 00:20:45,653]--test_add_loan.py--62--INFO:请求的数据是{'case_id': 35, 'interface': 'add_loan', 'title': '竞标天数bidding_days输入为10', 'method': 'POST', 'url': '/loan/add', 'data': '{"member_id":13217,"title":"烧烤项目2006200020","amount":"400000","loan_rate":12,"loan_term":30,"loan_date_type":2,"bidding_days":10}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5MTF9.Vprinb7vsNY6yjjEWzY9Ya4u-hPKFqZqahEW29XqeEVD0GHbqYjpJzxiJveBvdvnBQJC191oQCopgjZvffokXA"}', 'yes_or_no': 'YES', 'expected': '{"code": 0,"msg": "OK"}', 'actucal': "{'code': 0, 'msg': 'OK', 'data': {'id': 1242500, 'member_id': 13217, 'title': '烧烤项目2006200004', 'amount': 400000.0, 'loan_rate': 12.0, 'loan_term': 30, 'loan_date_type': 2, 'bidding_days': 5, 'create_time': '2020-06-20 00:04:43.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:20:45,683]--test_add_loan.py--77--INFO:********************正在查询数据库********************
+[2020-06-20 00:20:45,684]--test_add_loan.py--80--INFO:==============正在查询新增成功后member_id下的项目个数============
+[2020-06-20 00:20:45,703]--test_add_loan.py--84--INFO:账户id为13217新增项目成功后的项目个数为{'record_num': 368}
+[2020-06-20 00:20:45,703]--test_add_loan.py--85--INFO:======================正在项目个数比对=======================
+[2020-06-20 00:20:45,704]--test_add_loan.py--89--INFO:第35条用例执行结果为PASS
+[2020-06-20 00:20:45,704]--test_add_loan.py--96--INFO:*************开始回写数据***************
+[2020-06-20 00:20:46,175]--test_add_loan.py--99--INFO:正在回写实际结果actual：{'code': 0, 'msg': 'OK', 'data': {'id': 1242568, 'member_id': 13217, 'title': '烧烤项目2006200020', 'amount': 400000.0, 'loan_rate': 12.0, 'loan_term': 30, 'loan_date_type': 2, 'bidding_days': 5, 'create_time': '2020-06-20 00:20:45.0', 'bidding_start_time': None, 'full_time': None, 'status': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:20:46,625]--test_add_loan.py--102--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:20:46,625]--test_add_loan.py--103--INFO:*************结束回写数据***************
+[2020-06-20 00:20:46,646]--test_add_loan.py--60--INFO:******************正在执行add_loan模块用例******************
+[2020-06-20 00:20:46,647]--test_add_loan.py--61--INFO:正在执行第36条用例:竞标天数bidding_days输入为0
+[2020-06-20 00:20:46,647]--test_add_loan.py--62--INFO:请求的数据是{'case_id': 36, 'interface': 'add_loan', 'title': '竞标天数bidding_days输入为0', 'method': 'POST', 'url': '/loan/add', 'data': '{"member_id":13217,"title":"烧烤项目2006200020","amount":"400000","loan_rate":12,"loan_term":24,"loan_date_type":1,"bidding_days":0}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5MTF9.Vprinb7vsNY6yjjEWzY9Ya4u-hPKFqZqahEW29XqeEVD0GHbqYjpJzxiJveBvdvnBQJC191oQCopgjZvffokXA"}', 'yes_or_no': 'NO', 'expected': '{"code": 2,"msg": "竞标期限为1-10天"}', 'actucal': "{'code': 2, 'msg': '竞标期限为1-10天', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:20:46,669]--test_add_loan.py--89--INFO:第36条用例执行结果为PASS
+[2020-06-20 00:20:46,669]--test_add_loan.py--96--INFO:*************开始回写数据***************
+[2020-06-20 00:20:47,107]--test_add_loan.py--99--INFO:正在回写实际结果actual：{'code': 2, 'msg': '竞标期限为1-10天', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:20:47,517]--test_add_loan.py--102--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:20:47,518]--test_add_loan.py--103--INFO:*************结束回写数据***************
+[2020-06-20 00:20:47,558]--test_add_loan.py--60--INFO:******************正在执行add_loan模块用例******************
+[2020-06-20 00:20:47,559]--test_add_loan.py--61--INFO:正在执行第37条用例:竞标天数bidding_days输入为11
+[2020-06-20 00:20:47,559]--test_add_loan.py--62--INFO:请求的数据是{'case_id': 37, 'interface': 'add_loan', 'title': '竞标天数bidding_days输入为11', 'method': 'POST', 'url': '/loan/add', 'data': '{"member_id":13217,"title":"烧烤项目2006200020","amount":"400000","loan_rate":12,"loan_term":12,"loan_date_type":1,"bidding_days":11}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5MTF9.Vprinb7vsNY6yjjEWzY9Ya4u-hPKFqZqahEW29XqeEVD0GHbqYjpJzxiJveBvdvnBQJC191oQCopgjZvffokXA"}', 'yes_or_no': 'NO', 'expected': '{"code": 2,"msg": "竞标期限为1-10天"}', 'actucal': "{'code': 2, 'msg': '竞标期限为1-10天', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:20:47,579]--test_add_loan.py--89--INFO:第37条用例执行结果为PASS
+[2020-06-20 00:20:47,580]--test_add_loan.py--96--INFO:*************开始回写数据***************
+[2020-06-20 00:20:48,052]--test_add_loan.py--99--INFO:正在回写实际结果actual：{'code': 2, 'msg': '竞标期限为1-10天', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:20:48,467]--test_add_loan.py--102--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:20:48,469]--test_add_loan.py--103--INFO:*************结束回写数据***************
+[2020-06-20 00:20:48,509]--test_add_loan.py--60--INFO:******************正在执行add_loan模块用例******************
+[2020-06-20 00:20:48,509]--test_add_loan.py--61--INFO:正在执行第38条用例:竞标天数bidding_days输入为负数
+[2020-06-20 00:20:48,509]--test_add_loan.py--62--INFO:请求的数据是{'case_id': 38, 'interface': 'add_loan', 'title': '竞标天数bidding_days输入为负数', 'method': 'POST', 'url': '/loan/add', 'data': '{"member_id":13217,"title":"烧烤项目2006200020","amount":"400000","loan_rate":12,"loan_term":12,"loan_date_type":1,"bidding_days":-11}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5MTF9.Vprinb7vsNY6yjjEWzY9Ya4u-hPKFqZqahEW29XqeEVD0GHbqYjpJzxiJveBvdvnBQJC191oQCopgjZvffokXA"}', 'yes_or_no': 'NO', 'expected': '{"code": 2,"msg": "竞标期限为1-10天"}', 'actucal': "{'code': 2, 'msg': '竞标期限为1-10天', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:20:48,532]--test_add_loan.py--89--INFO:第38条用例执行结果为PASS
+[2020-06-20 00:20:48,532]--test_add_loan.py--96--INFO:*************开始回写数据***************
+[2020-06-20 00:20:49,106]--test_add_loan.py--99--INFO:正在回写实际结果actual：{'code': 2, 'msg': '竞标期限为1-10天', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:20:49,509]--test_add_loan.py--102--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:20:49,509]--test_add_loan.py--103--INFO:*************结束回写数据***************
+[2020-06-20 00:20:49,536]--test_add_loan.py--60--INFO:******************正在执行add_loan模块用例******************
+[2020-06-20 00:20:49,536]--test_add_loan.py--61--INFO:正在执行第39条用例:竞标天数bidding_days输入为小数
+[2020-06-20 00:20:49,537]--test_add_loan.py--62--INFO:请求的数据是{'case_id': 39, 'interface': 'add_loan', 'title': '竞标天数bidding_days输入为小数', 'method': 'POST', 'url': '/loan/add', 'data': '{"member_id":13217,"title":"烧烤项目2006200020","amount":"400000","loan_rate":12,"loan_term":12,"loan_date_type":1,"bidding_days":20.88}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5MTF9.Vprinb7vsNY6yjjEWzY9Ya4u-hPKFqZqahEW29XqeEVD0GHbqYjpJzxiJveBvdvnBQJC191oQCopgjZvffokXA"}', 'yes_or_no': 'NO', 'expected': '{"code": 2,"msg": "竞标期限为1-10天"}', 'actucal': "{'code': 2, 'msg': '竞标期限为1-10天', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:20:49,561]--test_add_loan.py--89--INFO:第39条用例执行结果为PASS
+[2020-06-20 00:20:49,561]--test_add_loan.py--96--INFO:*************开始回写数据***************
+[2020-06-20 00:20:50,045]--test_add_loan.py--99--INFO:正在回写实际结果actual：{'code': 2, 'msg': '竞标期限为1-10天', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:20:50,450]--test_add_loan.py--102--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:20:50,451]--test_add_loan.py--103--INFO:*************结束回写数据***************
+[2020-06-20 00:20:50,470]--test_add_loan.py--60--INFO:******************正在执行add_loan模块用例******************
+[2020-06-20 00:20:50,470]--test_add_loan.py--61--INFO:正在执行第40条用例:竞标天数bidding_days输入为空
+[2020-06-20 00:20:50,470]--test_add_loan.py--62--INFO:请求的数据是{'case_id': 40, 'interface': 'add_loan', 'title': '竞标天数bidding_days输入为空', 'method': 'POST', 'url': '/loan/add', 'data': '{"member_id":13217,"title":"烧烤项目2006200020","amount":"400000","loan_rate":12,"loan_term":12,"loan_date_type":1,"bidding_days":""}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5MTF9.Vprinb7vsNY6yjjEWzY9Ya4u-hPKFqZqahEW29XqeEVD0GHbqYjpJzxiJveBvdvnBQJC191oQCopgjZvffokXA"}', 'yes_or_no': 'NO', 'expected': '{"code": 1,"msg": "竞标期限为空"}', 'actucal': "{'code': 1, 'msg': '竞标期限为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:20:50,490]--test_add_loan.py--89--INFO:第40条用例执行结果为PASS
+[2020-06-20 00:20:50,491]--test_add_loan.py--96--INFO:*************开始回写数据***************
+[2020-06-20 00:20:50,916]--test_add_loan.py--99--INFO:正在回写实际结果actual：{'code': 1, 'msg': '竞标期限为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:20:51,378]--test_add_loan.py--102--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:20:51,379]--test_add_loan.py--103--INFO:*************结束回写数据***************
+[2020-06-20 00:20:51,904]--test_audit.py--39--INFO:******************正在执行audit模块用例******************
+[2020-06-20 00:20:51,904]--test_audit.py--40--INFO:正在执行第1条用例:项目loan_id输入状态为1的loan_id
+[2020-06-20 00:20:51,904]--test_audit.py--41--INFO:请求的数据是{'case_id': 1, 'interface': 'audit', 'title': '项目loan_id输入状态为1的loan_id', 'method': 'PATCH', 'url': '/loan/audit', 'data': '{"loan_id":#id#,"approved_or_not":"true"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"#adtoken#"}', 'yes_or_no': 'YES', 'expected': '{"code": 0,"msg": "OK","status":2}', 'actucal': "{'code': 0, 'msg': 'OK', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:20:51,920]--test_audit.py--47--INFO:项目id为1242569审批前的状态为1
+[2020-06-20 00:20:51,948]--test_audit.py--90--INFO:======================正在查询项目状态=======================
+[2020-06-20 00:20:51,963]--test_audit.py--94--INFO:项目id为1242569审批后的状态为2
+[2020-06-20 00:20:51,963]--test_audit.py--95--INFO:======================正在状态比对=======================
+[2020-06-20 00:20:51,963]--test_audit.py--104--INFO:第1条用例执行结果为PASS
+[2020-06-20 00:20:51,963]--test_audit.py--110--INFO:*************开始回写数据***************
+[2020-06-20 00:20:52,475]--test_audit.py--112--INFO:正在回写实际结果actual：{'code': 0, 'msg': 'OK', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:20:52,922]--test_audit.py--114--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:20:52,922]--test_audit.py--115--INFO:*************结束回写数据***************
+[2020-06-20 00:20:53,018]--test_audit.py--39--INFO:******************正在执行audit模块用例******************
+[2020-06-20 00:20:53,018]--test_audit.py--40--INFO:正在执行第2条用例:项目loan_id输入状态为2的loan_id
+[2020-06-20 00:20:53,019]--test_audit.py--41--INFO:请求的数据是{'case_id': 2, 'interface': 'audit', 'title': '项目loan_id输入状态为2的loan_id', 'method': 'PATCH', 'url': '/loan/audit', 'data': '{"loan_id":#jbz#,"approved_or_not":"true"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"#adtoken#"}', 'yes_or_no': 'YES', 'expected': '{"code": 2,"msg": "项目不在审核中状态","status":2}', 'actucal': "{'code': 2, 'msg': '项目不在审核中状态', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:20:53,032]--test_audit.py--55--INFO:项目id为9审批前的状态为2
+[2020-06-20 00:20:53,055]--test_audit.py--90--INFO:======================正在查询项目状态=======================
+[2020-06-20 00:20:53,066]--test_audit.py--100--INFO:项目id为9审批后的状态为2
+[2020-06-20 00:20:53,067]--test_audit.py--101--INFO:======================正在状态比对=======================
+[2020-06-20 00:20:53,068]--test_audit.py--104--INFO:第2条用例执行结果为PASS
+[2020-06-20 00:20:53,068]--test_audit.py--110--INFO:*************开始回写数据***************
+[2020-06-20 00:20:53,570]--test_audit.py--112--INFO:正在回写实际结果actual：{'code': 2, 'msg': '项目不在审核中状态', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:20:54,044]--test_audit.py--114--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:20:54,045]--test_audit.py--115--INFO:*************结束回写数据***************
+[2020-06-20 00:20:54,141]--test_audit.py--39--INFO:******************正在执行audit模块用例******************
+[2020-06-20 00:20:54,141]--test_audit.py--40--INFO:正在执行第3条用例:项目loan_id输入状态为3的loan_id
+[2020-06-20 00:20:54,142]--test_audit.py--41--INFO:请求的数据是{'case_id': 3, 'interface': 'audit', 'title': '项目loan_id输入状态为3的loan_id', 'method': 'PATCH', 'url': '/loan/audit', 'data': '{"loan_id":#hkz#,"approved_or_not":"true"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"#adtoken#"}', 'yes_or_no': 'YES', 'expected': '{"code": 2,"msg": "项目不在审核中状态","status":3}', 'actucal': "{'code': 2, 'msg': '项目不在审核中状态', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:20:54,152]--test_audit.py--61--INFO:项目id为1审批前的状态为3
+[2020-06-20 00:20:54,175]--test_audit.py--90--INFO:======================正在查询项目状态=======================
+[2020-06-20 00:20:54,185]--test_audit.py--100--INFO:项目id为1审批后的状态为3
+[2020-06-20 00:20:54,186]--test_audit.py--101--INFO:======================正在状态比对=======================
+[2020-06-20 00:20:54,186]--test_audit.py--104--INFO:第3条用例执行结果为PASS
+[2020-06-20 00:20:54,186]--test_audit.py--110--INFO:*************开始回写数据***************
+[2020-06-20 00:20:54,715]--test_audit.py--112--INFO:正在回写实际结果actual：{'code': 2, 'msg': '项目不在审核中状态', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:20:55,289]--test_audit.py--114--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:20:55,289]--test_audit.py--115--INFO:*************结束回写数据***************
+[2020-06-20 00:20:55,388]--test_audit.py--39--INFO:******************正在执行audit模块用例******************
+[2020-06-20 00:20:55,388]--test_audit.py--40--INFO:正在执行第4条用例:项目loan_id输入状态为4的loan_id
+[2020-06-20 00:20:55,388]--test_audit.py--41--INFO:请求的数据是{'case_id': 4, 'interface': 'audit', 'title': '项目loan_id输入状态为4的loan_id', 'method': 'PATCH', 'url': '/loan/audit', 'data': '{"loan_id":#hwc#,"approved_or_not":"true"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"#adtoken#"}', 'yes_or_no': 'YES', 'expected': '{"code": 2,"msg": "项目不在审核中状态","status":4}', 'actucal': "{'code': 2, 'msg': '项目不在审核中状态', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:20:55,401]--test_audit.py--67--INFO:项目id为1239094审批前的状态为4
+[2020-06-20 00:20:55,425]--test_audit.py--90--INFO:======================正在查询项目状态=======================
+[2020-06-20 00:20:55,434]--test_audit.py--100--INFO:项目id为1239094审批后的状态为4
+[2020-06-20 00:20:55,435]--test_audit.py--101--INFO:======================正在状态比对=======================
+[2020-06-20 00:20:55,435]--test_audit.py--104--INFO:第4条用例执行结果为PASS
+[2020-06-20 00:20:55,436]--test_audit.py--110--INFO:*************开始回写数据***************
+[2020-06-20 00:20:55,957]--test_audit.py--112--INFO:正在回写实际结果actual：{'code': 2, 'msg': '项目不在审核中状态', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:20:56,482]--test_audit.py--114--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:20:56,482]--test_audit.py--115--INFO:*************结束回写数据***************
+[2020-06-20 00:20:56,592]--test_audit.py--39--INFO:******************正在执行audit模块用例******************
+[2020-06-20 00:20:56,592]--test_audit.py--40--INFO:正在执行第5条用例:项目loan_id输入状态为5的loan_id
+[2020-06-20 00:20:56,593]--test_audit.py--41--INFO:请求的数据是{'case_id': 5, 'interface': 'audit', 'title': '项目loan_id输入状态为5的loan_id', 'method': 'PATCH', 'url': '/loan/audit', 'data': '{"loan_id":#btg#,"approved_or_not":"true"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"#adtoken#"}', 'yes_or_no': 'YES', 'expected': '{"code": 2,"msg": "项目不在审核中状态","status":5}', 'actucal': "{'code': 2, 'msg': '项目不在审核中状态', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:20:56,602]--test_audit.py--73--INFO:项目id为2审批前的状态为5
+[2020-06-20 00:20:56,624]--test_audit.py--90--INFO:======================正在查询项目状态=======================
+[2020-06-20 00:20:56,635]--test_audit.py--100--INFO:项目id为2审批后的状态为5
+[2020-06-20 00:20:56,635]--test_audit.py--101--INFO:======================正在状态比对=======================
+[2020-06-20 00:20:56,636]--test_audit.py--104--INFO:第5条用例执行结果为PASS
+[2020-06-20 00:20:56,636]--test_audit.py--110--INFO:*************开始回写数据***************
+[2020-06-20 00:20:57,160]--test_audit.py--112--INFO:正在回写实际结果actual：{'code': 2, 'msg': '项目不在审核中状态', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:20:57,655]--test_audit.py--114--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:20:57,656]--test_audit.py--115--INFO:*************结束回写数据***************
+[2020-06-20 00:20:57,765]--test_audit.py--39--INFO:******************正在执行audit模块用例******************
+[2020-06-20 00:20:57,765]--test_audit.py--40--INFO:正在执行第6条用例:项目loan_id输入不存在的loan_id
+[2020-06-20 00:20:57,766]--test_audit.py--41--INFO:请求的数据是{'case_id': 6, 'interface': 'audit', 'title': '项目loan_id输入不存在的loan_id', 'method': 'PATCH', 'url': '/loan/audit', 'data': '{"loan_id":9999999,"approved_or_not":"true"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"#adtoken#"}', 'yes_or_no': 'NO', 'expected': '{"code": 2,"msg": "项目不存在"}', 'actucal': "{'code': 2, 'msg': '项目不存在', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:20:57,792]--test_audit.py--104--INFO:第6条用例执行结果为PASS
+[2020-06-20 00:20:57,793]--test_audit.py--110--INFO:*************开始回写数据***************
+[2020-06-20 00:20:58,393]--test_audit.py--112--INFO:正在回写实际结果actual：{'code': 2, 'msg': '项目不存在', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:20:58,889]--test_audit.py--114--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:20:58,889]--test_audit.py--115--INFO:*************结束回写数据***************
+[2020-06-20 00:20:58,992]--test_audit.py--39--INFO:******************正在执行audit模块用例******************
+[2020-06-20 00:20:58,993]--test_audit.py--40--INFO:正在执行第7条用例:项目loan_id输入为空
+[2020-06-20 00:20:58,993]--test_audit.py--41--INFO:请求的数据是{'case_id': 7, 'interface': 'audit', 'title': '项目loan_id输入为空', 'method': 'PATCH', 'url': '/loan/audit', 'data': '{"loan_id":"","approved_or_not":"true"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"#adtoken#"}', 'yes_or_no': 'NO', 'expected': '{"code": 2,"msg": "数值格式异常"}', 'actucal': "{'code': 2, 'msg': '数值格式异常', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:20:59,010]--test_audit.py--104--INFO:第7条用例执行结果为PASS
+[2020-06-20 00:20:59,010]--test_audit.py--110--INFO:*************开始回写数据***************
+[2020-06-20 00:20:59,504]--test_audit.py--112--INFO:正在回写实际结果actual：{'code': 2, 'msg': '数值格式异常', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:20:59,966]--test_audit.py--114--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:20:59,966]--test_audit.py--115--INFO:*************结束回写数据***************
+[2020-06-20 00:21:00,103]--test_audit.py--39--INFO:******************正在执行audit模块用例******************
+[2020-06-20 00:21:00,103]--test_audit.py--40--INFO:正在执行第8条用例:审核状态输入true，审核通过
+[2020-06-20 00:21:00,103]--test_audit.py--41--INFO:请求的数据是{'case_id': 8, 'interface': 'audit', 'title': '审核状态输入true，审核通过', 'method': 'PATCH', 'url': '/loan/audit', 'data': '{"loan_id":#id#,"approved_or_not":"true"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"#adtoken#"}', 'yes_or_no': 'YES', 'expected': '{"code": 0,"msg": "OK","status":2}', 'actucal': "{'code': 0, 'msg': 'OK', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:21:00,119]--test_audit.py--47--INFO:项目id为1242576审批前的状态为1
+[2020-06-20 00:21:00,145]--test_audit.py--90--INFO:======================正在查询项目状态=======================
+[2020-06-20 00:21:00,163]--test_audit.py--94--INFO:项目id为1242576审批后的状态为2
+[2020-06-20 00:21:00,163]--test_audit.py--95--INFO:======================正在状态比对=======================
+[2020-06-20 00:21:00,164]--test_audit.py--104--INFO:第8条用例执行结果为PASS
+[2020-06-20 00:21:00,164]--test_audit.py--110--INFO:*************开始回写数据***************
+[2020-06-20 00:21:00,599]--test_audit.py--112--INFO:正在回写实际结果actual：{'code': 0, 'msg': 'OK', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:21:01,019]--test_audit.py--114--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:21:01,020]--test_audit.py--115--INFO:*************结束回写数据***************
+[2020-06-20 00:21:01,122]--test_audit.py--39--INFO:******************正在执行audit模块用例******************
+[2020-06-20 00:21:01,122]--test_audit.py--40--INFO:正在执行第9条用例:审核状态输入false，审核不通过
+[2020-06-20 00:21:01,122]--test_audit.py--41--INFO:请求的数据是{'case_id': 9, 'interface': 'audit', 'title': '审核状态输入false，审核不通过', 'method': 'PATCH', 'url': '/loan/audit', 'data': '{"loan_id":#id#,"approved_or_not":"false"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"#adtoken#"}', 'yes_or_no': 'YES', 'expected': '{"code": 0,"msg": "OK","status":5}', 'actucal': "{'code': 0, 'msg': 'OK', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:21:01,136]--test_audit.py--47--INFO:项目id为1242577审批前的状态为1
+[2020-06-20 00:21:01,160]--test_audit.py--90--INFO:======================正在查询项目状态=======================
+[2020-06-20 00:21:01,175]--test_audit.py--94--INFO:项目id为1242577审批后的状态为5
+[2020-06-20 00:21:01,176]--test_audit.py--95--INFO:======================正在状态比对=======================
+[2020-06-20 00:21:01,176]--test_audit.py--104--INFO:第9条用例执行结果为PASS
+[2020-06-20 00:21:01,176]--test_audit.py--110--INFO:*************开始回写数据***************
+[2020-06-20 00:21:01,682]--test_audit.py--112--INFO:正在回写实际结果actual：{'code': 0, 'msg': 'OK', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:21:02,108]--test_audit.py--114--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:21:02,108]--test_audit.py--115--INFO:*************结束回写数据***************
+[2020-06-20 00:21:02,556]--test_audit.py--39--INFO:******************正在执行audit模块用例******************
+[2020-06-20 00:21:02,557]--test_audit.py--40--INFO:正在执行第10条用例:审核状态输入其他
+[2020-06-20 00:21:02,557]--test_audit.py--41--INFO:请求的数据是{'case_id': 10, 'interface': 'audit', 'title': '审核状态输入其他', 'method': 'PATCH', 'url': '/loan/audit', 'data': '{"loan_id":#id#,"approved_or_not":"sss"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"#adtoken#"}', 'yes_or_no': 'YES', 'expected': '{"code": 1,"msg": "approved_or_not只能为true或者false","status":1}', 'actucal': "{'code': 1, 'msg': 'approved_or_not只能为true或者false', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:21:02,567]--test_audit.py--47--INFO:项目id为1242578审批前的状态为1
+[2020-06-20 00:21:02,587]--test_audit.py--90--INFO:======================正在查询项目状态=======================
+[2020-06-20 00:21:02,598]--test_audit.py--94--INFO:项目id为1242578审批后的状态为1
+[2020-06-20 00:21:02,598]--test_audit.py--95--INFO:======================正在状态比对=======================
+[2020-06-20 00:21:02,599]--test_audit.py--104--INFO:第10条用例执行结果为PASS
+[2020-06-20 00:21:02,599]--test_audit.py--110--INFO:*************开始回写数据***************
+[2020-06-20 00:21:03,025]--test_audit.py--112--INFO:正在回写实际结果actual：{'code': 1, 'msg': 'approved_or_not只能为true或者false', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:21:03,448]--test_audit.py--114--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:21:03,449]--test_audit.py--115--INFO:*************结束回写数据***************
+[2020-06-20 00:21:03,555]--test_audit.py--39--INFO:******************正在执行audit模块用例******************
+[2020-06-20 00:21:03,556]--test_audit.py--40--INFO:正在执行第11条用例:审核状态输入为空
+[2020-06-20 00:21:03,556]--test_audit.py--41--INFO:请求的数据是{'case_id': 11, 'interface': 'audit', 'title': '审核状态输入为空', 'method': 'PATCH', 'url': '/loan/audit', 'data': '{"loan_id":#id#,"approved_or_not":""}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"#adtoken#"}', 'yes_or_no': 'YES', 'expected': '{"code": 1,"msg": "approved_or_not只能为true或者false","status":1}', 'actucal': "{'code': 1, 'msg': 'approved_or_not只能为true或者false', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:21:03,573]--test_audit.py--47--INFO:项目id为1242579审批前的状态为1
+[2020-06-20 00:21:03,594]--test_audit.py--90--INFO:======================正在查询项目状态=======================
+[2020-06-20 00:21:03,609]--test_audit.py--94--INFO:项目id为1242579审批后的状态为1
+[2020-06-20 00:21:03,609]--test_audit.py--95--INFO:======================正在状态比对=======================
+[2020-06-20 00:21:03,609]--test_audit.py--104--INFO:第11条用例执行结果为PASS
+[2020-06-20 00:21:03,610]--test_audit.py--110--INFO:*************开始回写数据***************
+[2020-06-20 00:21:04,058]--test_audit.py--112--INFO:正在回写实际结果actual：{'code': 1, 'msg': 'approved_or_not只能为true或者false', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:21:04,463]--test_audit.py--114--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:21:04,463]--test_audit.py--115--INFO:*************结束回写数据***************
+[2020-06-20 00:21:04,488]--test_loans.py--38--INFO:******************正在执行loans模块用例******************
+[2020-06-20 00:21:04,488]--test_loans.py--39--INFO:正在执行第1条用例:获取项目列表信息
+[2020-06-20 00:21:04,489]--test_loans.py--40--INFO:请求的数据是{'case_id': 1, 'interface': 'loans', 'title': '获取项目列表信息', 'method': 'GET', 'url': '/loans', 'data': None, 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5NjR9.JM5cX6j_xcXliO__CZcspnlz0PaUo9yD4iExSkaKUBWnHchN2klKOYGf9-TGHK44SOanbBVj-17_TVytH8zgAg"}', 'expected': '{"code": 0,"msg": "OK"}', 'actucal': "{'code': 0, 'msg': 'OK', 'data': [{'id': 1, 'member_id': 15, 'title': '520大抽奖', 'amount': 6300.0, 'loan_rate': 12.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-06-03 16:54:55.0', 'bidding_start_time': '2020-06-03 23:55:00.0', 'full_time': '2020-06-05 23:52:47.0', 'status': 3}, {'id': 2, 'member_id': 102, 'title': '借款36月', 'amount': 10000.0, 'loan_rate': 18.0, 'loan_term': 36, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-06-03 20:14:22.0', 'bidding_start_time': None, 'full_time': None, 'status': 5}, {'id': 3, 'member_id': 102, 'title': '借款1个月', 'amount': 10000.0, 'loan_rate': 18.0, 'loan_term': 1, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-06-03 20:14:23.0', 'bidding_start_time': '2020-06-03 23:55:04.0', 'full_time': '2020-06-15 09:27:36.0', 'status': 3}, {'id': 4, 'member_id': 102, 'title': '借款45天', 'amount': 20000.0, 'loan_rate': 20.0, 'loan_term': 45, 'loan_date_type': 2, 'bidding_days': 5, 'create_time': '2020-06-03 20:14:24.0', 'bidding_start_time': '2020-06-03 23:56:59.0', 'full_time': '2020-06-15 09:46:51.0', 'status': 3}, {'id': 5, 'member_id': 102, 'title': '借款10天', 'amount': 20000.0, 'loan_rate': 13.0, 'loan_term': 10, 'loan_date_type': 2, 'bidding_days': 5, 'create_time': '2020-06-03 20:14:24.0', 'bidding_start_time': None, 'full_time': None, 'status': 5}, {'id': 6, 'member_id': 102, 'title': '借款竞标1天', 'amount': 30000.0, 'loan_rate': 22.0, 'loan_term': 30, 'loan_date_type': 2, 'bidding_days': 5, 'create_time': '2020-06-03 20:14:25.0', 'bidding_start_time': '2020-06-03 23:57:03.0', 'full_time': '2020-06-15 10:21:05.0', 'status': 3}, {'id': 7, 'member_id': 102, 'title': '借款竞标10天', 'amount': 40000.0, 'loan_rate': 1.0, 'loan_term': 6, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-06-03 20:14:26.0', 'bidding_start_time': '2020-06-04 00:03:31.0', 'full_time': '2020-06-15 13:43:06.0', 'status': 3}, {'id': 8, 'member_id': 102, 'title': '借款4万', 'amount': 40000.0, 'loan_rate': 14.0, 'loan_term': 6, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-06-03 20:14:26.0', 'bidding_start_time': None, 'full_time': None, 'status': 5}, {'id': 9, 'member_id': 102, 'title': '借款4万', 'amount': 40000.0, 'loan_rate': 1.0, 'loan_term': 6, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-06-03 20:14:28.0', 'bidding_start_time': '2020-06-04 00:03:36.0', 'full_time': None, 'status': 2}, {'id': 10, 'member_id': 102, 'title': '借款5万', 'amount': 50000.0, 'loan_rate': 20.0, 'loan_term': 1, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-06-03 20:14:36.0', 'bidding_start_time': '2020-06-05 21:50:07.0', 'full_time': None, 'status': 2}], 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:21:04,527]--test_loans.py--50--INFO:第1条用例执行结果为PASS
+[2020-06-20 00:21:04,527]--test_loans.py--56--INFO:*************开始回写数据***************
+[2020-06-20 00:21:04,988]--test_loans.py--58--INFO:正在回写实际结果actual：{'code': 0, 'msg': 'OK', 'data': [{'id': 1, 'member_id': 15, 'title': '520大抽奖', 'amount': 6300.0, 'loan_rate': 12.0, 'loan_term': 12, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-06-03 16:54:55.0', 'bidding_start_time': '2020-06-03 23:55:00.0', 'full_time': '2020-06-05 23:52:47.0', 'status': 3}, {'id': 2, 'member_id': 102, 'title': '借款36月', 'amount': 10000.0, 'loan_rate': 18.0, 'loan_term': 36, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-06-03 20:14:22.0', 'bidding_start_time': None, 'full_time': None, 'status': 5}, {'id': 3, 'member_id': 102, 'title': '借款1个月', 'amount': 10000.0, 'loan_rate': 18.0, 'loan_term': 1, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-06-03 20:14:23.0', 'bidding_start_time': '2020-06-03 23:55:04.0', 'full_time': '2020-06-15 09:27:36.0', 'status': 3}, {'id': 4, 'member_id': 102, 'title': '借款45天', 'amount': 20000.0, 'loan_rate': 20.0, 'loan_term': 45, 'loan_date_type': 2, 'bidding_days': 5, 'create_time': '2020-06-03 20:14:24.0', 'bidding_start_time': '2020-06-03 23:56:59.0', 'full_time': '2020-06-15 09:46:51.0', 'status': 3}, {'id': 5, 'member_id': 102, 'title': '借款10天', 'amount': 20000.0, 'loan_rate': 13.0, 'loan_term': 10, 'loan_date_type': 2, 'bidding_days': 5, 'create_time': '2020-06-03 20:14:24.0', 'bidding_start_time': None, 'full_time': None, 'status': 5}, {'id': 6, 'member_id': 102, 'title': '借款竞标1天', 'amount': 30000.0, 'loan_rate': 22.0, 'loan_term': 30, 'loan_date_type': 2, 'bidding_days': 5, 'create_time': '2020-06-03 20:14:25.0', 'bidding_start_time': '2020-06-03 23:57:03.0', 'full_time': '2020-06-15 10:21:05.0', 'status': 3}, {'id': 7, 'member_id': 102, 'title': '借款竞标10天', 'amount': 40000.0, 'loan_rate': 1.0, 'loan_term': 6, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-06-03 20:14:26.0', 'bidding_start_time': '2020-06-04 00:03:31.0', 'full_time': '2020-06-15 13:43:06.0', 'status': 3}, {'id': 8, 'member_id': 102, 'title': '借款4万', 'amount': 40000.0, 'loan_rate': 14.0, 'loan_term': 6, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-06-03 20:14:26.0', 'bidding_start_time': None, 'full_time': None, 'status': 5}, {'id': 9, 'member_id': 102, 'title': '借款4万', 'amount': 40000.0, 'loan_rate': 1.0, 'loan_term': 6, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-06-03 20:14:28.0', 'bidding_start_time': '2020-06-04 00:03:36.0', 'full_time': None, 'status': 2}, {'id': 10, 'member_id': 102, 'title': '借款5万', 'amount': 50000.0, 'loan_rate': 20.0, 'loan_term': 1, 'loan_date_type': 1, 'bidding_days': 5, 'create_time': '2020-06-03 20:14:36.0', 'bidding_start_time': '2020-06-05 21:50:07.0', 'full_time': None, 'status': 2}], 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:21:05,449]--test_loans.py--60--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:21:05,451]--test_loans.py--61--INFO:*************结束回写数据***************
+[2020-06-20 00:21:05,452]--test_login.py--29--INFO:******************正在执行login模块用例******************
+[2020-06-20 00:21:05,452]--test_login.py--30--INFO:正在执行第1条用例:手机号密码输入正确的已注册账号密码
+[2020-06-20 00:21:05,452]--test_login.py--31--INFO:请求的数据是{'case_id': 1, 'interface': 'login', 'title': '手机号密码输入正确的已注册账号密码', 'method': 'POST', 'url': '/member/login', 'data': '{"mobile_phone":"15841177856","pwd":"12345678"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2"}', 'expected': '{"code": 0,"msg": "OK"}', 'actucal': "{'code': 0, 'msg': 'OK', 'data': {'id': 13217, 'leave_amount': 100000.0, 'mobile_phone': '15841177856', 'reg_name': '柠檬5d!e2', 'reg_time': '2020-06-11 22:58:56.0', 'type': 1, 'token_info': {'token_type': 'Bearer', 'expires_in': '2020-06-20 00:10:03', 'token': 'eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODMwMDN9.FXLoQY7jnF9249y2UDlgI2cmj_Kysb81xIexqy-UZRn8LdXISfBaIBpsVaFpXzlkft4dXzpN2Zx3WdghcD8brQ'}}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:21:05,475]--test_login.py--44--INFO:第1条用例执行结果为PASS
+[2020-06-20 00:21:05,475]--test_login.py--51--INFO:*************开始回写数据***************
+[2020-06-20 00:21:05,931]--test_login.py--54--INFO:正在回写实际结果actual：{'code': 0, 'msg': 'OK', 'data': {'id': 13217, 'leave_amount': 2100002.65, 'mobile_phone': '15841177856', 'reg_name': '柠檬5d!e2', 'reg_time': '2020-06-11 22:58:56.0', 'type': 1, 'token_info': {'token_type': 'Bearer', 'expires_in': '2020-06-20 00:26:05', 'token': 'eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5NjV9.cQkmaJV2d-5JwyW--c-F5sx3oF5hr_oneMtJDrjpAHoPMsktc06-aNI359_plnKBbHEU01dl77nSGOf3y81qyQ'}}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:21:06,388]--test_login.py--57--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:21:06,388]--test_login.py--58--INFO:*************结束回写数据***************
+[2020-06-20 00:21:06,389]--test_login.py--29--INFO:******************正在执行login模块用例******************
+[2020-06-20 00:21:06,389]--test_login.py--30--INFO:正在执行第2条用例:手机号输入未注册账号
+[2020-06-20 00:21:06,389]--test_login.py--31--INFO:请求的数据是{'case_id': 2, 'interface': 'login', 'title': '手机号输入未注册账号', 'method': 'POST', 'url': '/member/login', 'data': '{"mobile_phone":"15585997460","pwd":"assff12558！"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2"}', 'expected': '{"code": 1001,"msg": "账号信息错误"}', 'actucal': "{'code': 1001, 'msg': '账号信息错误', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:21:06,435]--test_login.py--44--INFO:第2条用例执行结果为PASS
+[2020-06-20 00:21:06,435]--test_login.py--51--INFO:*************开始回写数据***************
+[2020-06-20 00:21:06,859]--test_login.py--54--INFO:正在回写实际结果actual：{'code': 1001, 'msg': '账号信息错误', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:21:07,527]--test_login.py--57--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:21:07,527]--test_login.py--58--INFO:*************结束回写数据***************
+[2020-06-20 00:21:07,529]--test_login.py--29--INFO:******************正在执行login模块用例******************
+[2020-06-20 00:21:07,529]--test_login.py--30--INFO:正在执行第3条用例:手机号输入正确的已注册号码，但密码输入错误
+[2020-06-20 00:21:07,529]--test_login.py--31--INFO:请求的数据是{'case_id': 3, 'interface': 'login', 'title': '手机号输入正确的已注册号码，但密码输入错误', 'method': 'POST', 'url': '/member/login', 'data': '{"mobile_phone":"15841177856","pwd":"123456789"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2"}', 'expected': '{"code": 1001,"msg": "账号信息错误"}', 'actucal': "{'code': 1001, 'msg': '账号信息错误', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:21:07,768]--test_login.py--44--INFO:第3条用例执行结果为PASS
+[2020-06-20 00:21:07,769]--test_login.py--51--INFO:*************开始回写数据***************
+[2020-06-20 00:21:08,358]--test_login.py--54--INFO:正在回写实际结果actual：{'code': 1001, 'msg': '账号信息错误', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:21:09,148]--test_login.py--57--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:21:09,151]--test_login.py--58--INFO:*************结束回写数据***************
+[2020-06-20 00:21:09,152]--test_login.py--29--INFO:******************正在执行login模块用例******************
+[2020-06-20 00:21:09,152]--test_login.py--30--INFO:正在执行第4条用例:手机号输入为空
+[2020-06-20 00:21:09,153]--test_login.py--31--INFO:请求的数据是{'case_id': 4, 'interface': 'login', 'title': '手机号输入为空', 'method': 'POST', 'url': '/member/login', 'data': '{"mobile_phone":"","pwd":"123456789"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2"}', 'expected': '{"code": 1,"msg": "手机号码为空"}', 'actucal': "{'code': 1, 'msg': '手机号码为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:21:09,177]--test_login.py--44--INFO:第4条用例执行结果为PASS
+[2020-06-20 00:21:09,178]--test_login.py--51--INFO:*************开始回写数据***************
+[2020-06-20 00:21:09,779]--test_login.py--54--INFO:正在回写实际结果actual：{'code': 1, 'msg': '手机号码为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:21:10,318]--test_login.py--57--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:21:10,320]--test_login.py--58--INFO:*************结束回写数据***************
+[2020-06-20 00:21:10,321]--test_login.py--29--INFO:******************正在执行login模块用例******************
+[2020-06-20 00:21:10,322]--test_login.py--30--INFO:正在执行第5条用例:手机号输入正确，密码输入为空
+[2020-06-20 00:21:10,322]--test_login.py--31--INFO:请求的数据是{'case_id': 5, 'interface': 'login', 'title': '手机号输入正确，密码输入为空', 'method': 'POST', 'url': '/member/login', 'data': '{"mobile_phone":"15841177856","pwd":""}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2"}', 'expected': '{"code": 1,"msg": "密码为空"}', 'actucal': "{'code': 1, 'msg': '密码为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:21:10,343]--test_login.py--44--INFO:第5条用例执行结果为PASS
+[2020-06-20 00:21:10,344]--test_login.py--51--INFO:*************开始回写数据***************
+[2020-06-20 00:21:11,005]--test_login.py--54--INFO:正在回写实际结果actual：{'code': 1, 'msg': '密码为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:21:11,508]--test_login.py--57--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:21:11,509]--test_login.py--58--INFO:*************结束回写数据***************
+[2020-06-20 00:21:11,509]--test_login.py--29--INFO:******************正在执行login模块用例******************
+[2020-06-20 00:21:11,510]--test_login.py--30--INFO:正在执行第6条用例:手机号输入10位
+[2020-06-20 00:21:11,510]--test_login.py--31--INFO:请求的数据是{'case_id': 6, 'interface': 'login', 'title': '手机号输入10位', 'method': 'POST', 'url': '/member/login', 'data': '{"mobile_phone":"1584117785","pwd":"12345678"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2"}', 'expected': '{"code": 2,"msg": "无效的手机格式"}', 'actucal': "{'code': 2, 'msg': '无效的手机格式', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:21:11,533]--test_login.py--44--INFO:第6条用例执行结果为PASS
+[2020-06-20 00:21:11,533]--test_login.py--51--INFO:*************开始回写数据***************
+[2020-06-20 00:21:12,000]--test_login.py--54--INFO:正在回写实际结果actual：{'code': 2, 'msg': '无效的手机格式', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:21:12,506]--test_login.py--57--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:21:12,507]--test_login.py--58--INFO:*************结束回写数据***************
+[2020-06-20 00:21:12,507]--test_login.py--29--INFO:******************正在执行login模块用例******************
+[2020-06-20 00:21:12,508]--test_login.py--30--INFO:正在执行第7条用例:手机号输入12位
+[2020-06-20 00:21:12,508]--test_login.py--31--INFO:请求的数据是{'case_id': 7, 'interface': 'login', 'title': '手机号输入12位', 'method': 'POST', 'url': '/member/login', 'data': '{"mobile_phone":"158411778555","pwd":"12345678"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2"}', 'expected': '{"code": 2,"msg": "无效的手机格式"}', 'actucal': "{'code': 2, 'msg': '无效的手机格式', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:21:12,528]--test_login.py--44--INFO:第7条用例执行结果为PASS
+[2020-06-20 00:21:12,528]--test_login.py--51--INFO:*************开始回写数据***************
+[2020-06-20 00:21:13,013]--test_login.py--54--INFO:正在回写实际结果actual：{'code': 2, 'msg': '无效的手机格式', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:21:13,493]--test_login.py--57--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:21:13,494]--test_login.py--58--INFO:*************结束回写数据***************
+[2020-06-20 00:21:13,568]--test_recharge.py--48--INFO:******************正在执行recharge模块用例******************
+[2020-06-20 00:21:13,569]--test_recharge.py--49--INFO:正在执行第1条用例:输入存在的账户id，金额输入1
+[2020-06-20 00:21:13,569]--test_recharge.py--50--INFO:请求的数据是{'case_id': 1, 'interface': 'recharge', 'title': '输入存在的账户id，金额输入1', 'method': 'POST', 'url': '/member/recharge', 'data': '{"member_id":"13217","amount":"1"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5NzN9.DOXcNj4LdKjQQWaAbabPczRt8GBuPcmVOk8BF4EwUZk2Gy0RESTNcSBbsoFm1ezhA7A1Eebuk9YIYj2c_2p9WA"}', 'yes_or_no': 'YES', 'expected': '{"code": 0,"msg": "OK"}', 'actucal': "{'code': 0, 'msg': 'OK', 'data': {'id': 13217, 'leave_amount': 1600002.1, 'mobile_phone': '15841177856', 'reg_name': '柠檬5d!e2', 'reg_time': '2020-06-11 22:58:56.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:21:13,569]--test_recharge.py--54--INFO:======================正在查询原始金额=======================
+[2020-06-20 00:21:13,586]--test_recharge.py--57--INFO:账户id为13217的账户原始金额是{'leave_amount': Decimal('2100002.65')}
+[2020-06-20 00:21:13,587]--test_recharge.py--62--INFO:======================正在查询原始充值流水记录条数=======================
+[2020-06-20 00:21:13,609]--test_recharge.py--65--INFO:账户id为13217的原始充值流水条数为{'record_num': 68}
+[2020-06-20 00:21:13,640]--test_recharge.py--81--INFO:======================正在查询充值后金额=======================
+[2020-06-20 00:21:13,658]--test_recharge.py--84--INFO:账户id为13217的账户充值后的金额是{'leave_amount': Decimal('2100003.65')}
+[2020-06-20 00:21:13,658]--test_recharge.py--86--INFO:账户id为13217的账户原始金额与充值金额求和的金额是2100003.65
+[2020-06-20 00:21:13,658]--test_recharge.py--87--INFO:======================正在金额比对=======================
+[2020-06-20 00:21:13,659]--test_recharge.py--90--INFO:======================正在查询充值后流水记录=======================
+[2020-06-20 00:21:13,682]--test_recharge.py--94--INFO:账户id为13217的充值后流水条数为{'record_num': 69}
+[2020-06-20 00:21:13,683]--test_recharge.py--95--INFO:======================正在充值流水比对=======================
+[2020-06-20 00:21:13,683]--test_recharge.py--99--INFO:第1条用例执行结果为PASS
+[2020-06-20 00:21:13,683]--test_recharge.py--106--INFO:*************开始回写数据***************
+[2020-06-20 00:21:14,203]--test_recharge.py--109--INFO:正在回写实际结果actual：{'code': 0, 'msg': 'OK', 'data': {'id': 13217, 'leave_amount': 2100003.65, 'mobile_phone': '15841177856', 'reg_name': '柠檬5d!e2', 'reg_time': '2020-06-11 22:58:56.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:21:14,709]--test_recharge.py--112--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:21:14,711]--test_recharge.py--113--INFO:*************结束回写数据***************
+[2020-06-20 00:21:14,734]--test_recharge.py--48--INFO:******************正在执行recharge模块用例******************
+[2020-06-20 00:21:14,734]--test_recharge.py--49--INFO:正在执行第2条用例:输入存在的账户id，金额输入500000
+[2020-06-20 00:21:14,734]--test_recharge.py--50--INFO:请求的数据是{'case_id': 2, 'interface': 'recharge', 'title': '输入存在的账户id，金额输入500000', 'method': 'POST', 'url': '/member/recharge', 'data': '{"member_id":"13217","amount":"500000"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5NzN9.DOXcNj4LdKjQQWaAbabPczRt8GBuPcmVOk8BF4EwUZk2Gy0RESTNcSBbsoFm1ezhA7A1Eebuk9YIYj2c_2p9WA"}', 'yes_or_no': 'YES', 'expected': '{"code": 0,"msg": "OK"}', 'actucal': "{'code': 0, 'msg': 'OK', 'data': {'id': 13217, 'leave_amount': 2100002.1, 'mobile_phone': '15841177856', 'reg_name': '柠檬5d!e2', 'reg_time': '2020-06-11 22:58:56.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:21:14,735]--test_recharge.py--54--INFO:======================正在查询原始金额=======================
+[2020-06-20 00:21:14,744]--test_recharge.py--57--INFO:账户id为13217的账户原始金额是{'leave_amount': Decimal('2100003.65')}
+[2020-06-20 00:21:14,744]--test_recharge.py--62--INFO:======================正在查询原始充值流水记录条数=======================
+[2020-06-20 00:21:14,759]--test_recharge.py--65--INFO:账户id为13217的原始充值流水条数为{'record_num': 69}
+[2020-06-20 00:21:14,789]--test_recharge.py--81--INFO:======================正在查询充值后金额=======================
+[2020-06-20 00:21:14,800]--test_recharge.py--84--INFO:账户id为13217的账户充值后的金额是{'leave_amount': Decimal('2600003.65')}
+[2020-06-20 00:21:14,800]--test_recharge.py--86--INFO:账户id为13217的账户原始金额与充值金额求和的金额是2600003.65
+[2020-06-20 00:21:14,801]--test_recharge.py--87--INFO:======================正在金额比对=======================
+[2020-06-20 00:21:14,801]--test_recharge.py--90--INFO:======================正在查询充值后流水记录=======================
+[2020-06-20 00:21:14,816]--test_recharge.py--94--INFO:账户id为13217的充值后流水条数为{'record_num': 70}
+[2020-06-20 00:21:14,817]--test_recharge.py--95--INFO:======================正在充值流水比对=======================
+[2020-06-20 00:21:14,817]--test_recharge.py--99--INFO:第2条用例执行结果为PASS
+[2020-06-20 00:21:14,817]--test_recharge.py--106--INFO:*************开始回写数据***************
+[2020-06-20 00:21:15,353]--test_recharge.py--109--INFO:正在回写实际结果actual：{'code': 0, 'msg': 'OK', 'data': {'id': 13217, 'leave_amount': 2600003.65, 'mobile_phone': '15841177856', 'reg_name': '柠檬5d!e2', 'reg_time': '2020-06-11 22:58:56.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:21:15,917]--test_recharge.py--112--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:21:15,918]--test_recharge.py--113--INFO:*************结束回写数据***************
+[2020-06-20 00:21:15,950]--test_recharge.py--48--INFO:******************正在执行recharge模块用例******************
+[2020-06-20 00:21:15,951]--test_recharge.py--49--INFO:正在执行第3条用例:输入存在的账户id，金额输入500001
+[2020-06-20 00:21:15,951]--test_recharge.py--50--INFO:请求的数据是{'case_id': 3, 'interface': 'recharge', 'title': '输入存在的账户id，金额输入500001', 'method': 'POST', 'url': '/member/recharge', 'data': '{"member_id":"13217","amount":"500001"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5NzN9.DOXcNj4LdKjQQWaAbabPczRt8GBuPcmVOk8BF4EwUZk2Gy0RESTNcSBbsoFm1ezhA7A1Eebuk9YIYj2c_2p9WA"}', 'yes_or_no': 'NO', 'expected': '{"code": 2,"msg": "余额必须大于0并且小于或者等于500000"}', 'actucal': "{'code': 2, 'msg': '余额必须大于0并且小于或者等于500000', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:21:15,975]--test_recharge.py--99--INFO:第3条用例执行结果为PASS
+[2020-06-20 00:21:15,976]--test_recharge.py--106--INFO:*************开始回写数据***************
+[2020-06-20 00:21:16,521]--test_recharge.py--109--INFO:正在回写实际结果actual：{'code': 2, 'msg': '余额必须大于0并且小于或者等于500000', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:21:17,006]--test_recharge.py--112--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:21:17,007]--test_recharge.py--113--INFO:*************结束回写数据***************
+[2020-06-20 00:21:17,038]--test_recharge.py--48--INFO:******************正在执行recharge模块用例******************
+[2020-06-20 00:21:17,038]--test_recharge.py--49--INFO:正在执行第4条用例:输入存在的账户id，金额输入负数
+[2020-06-20 00:21:17,038]--test_recharge.py--50--INFO:请求的数据是{'case_id': 4, 'interface': 'recharge', 'title': '输入存在的账户id，金额输入负数', 'method': 'POST', 'url': '/member/recharge', 'data': '{"member_id":"13217","amount":"-50"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5NzN9.DOXcNj4LdKjQQWaAbabPczRt8GBuPcmVOk8BF4EwUZk2Gy0RESTNcSBbsoFm1ezhA7A1Eebuk9YIYj2c_2p9WA"}', 'yes_or_no': 'NO', 'expected': '{"code": 2,"msg": "余额必须大于0并且小于或者等于500000"}', 'actucal': "{'code': 2, 'msg': '余额必须大于0并且小于或者等于500000', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:21:17,057]--test_recharge.py--99--INFO:第4条用例执行结果为PASS
+[2020-06-20 00:21:17,058]--test_recharge.py--106--INFO:*************开始回写数据***************
+[2020-06-20 00:21:17,531]--test_recharge.py--109--INFO:正在回写实际结果actual：{'code': 2, 'msg': '余额必须大于0并且小于或者等于500000', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:21:17,925]--test_recharge.py--112--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:21:17,925]--test_recharge.py--113--INFO:*************结束回写数据***************
+[2020-06-20 00:21:17,946]--test_recharge.py--48--INFO:******************正在执行recharge模块用例******************
+[2020-06-20 00:21:17,947]--test_recharge.py--49--INFO:正在执行第5条用例:输入存在的账户id，金额输入0
+[2020-06-20 00:21:17,947]--test_recharge.py--50--INFO:请求的数据是{'case_id': 5, 'interface': 'recharge', 'title': '输入存在的账户id，金额输入0', 'method': 'POST', 'url': '/member/recharge', 'data': '{"member_id":"13217","amount":"0"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5NzN9.DOXcNj4LdKjQQWaAbabPczRt8GBuPcmVOk8BF4EwUZk2Gy0RESTNcSBbsoFm1ezhA7A1Eebuk9YIYj2c_2p9WA"}', 'yes_or_no': 'YES', 'expected': '{"code": 0,"msg": "OK"}', 'actucal': "{'code': 0, 'msg': 'OK', 'data': {'id': 13217, 'leave_amount': 2100002.1, 'mobile_phone': '15841177856', 'reg_name': '柠檬5d!e2', 'reg_time': '2020-06-11 22:58:56.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:21:17,947]--test_recharge.py--54--INFO:======================正在查询原始金额=======================
+[2020-06-20 00:21:17,960]--test_recharge.py--57--INFO:账户id为13217的账户原始金额是{'leave_amount': Decimal('2600003.65')}
+[2020-06-20 00:21:17,961]--test_recharge.py--62--INFO:======================正在查询原始充值流水记录条数=======================
+[2020-06-20 00:21:17,975]--test_recharge.py--65--INFO:账户id为13217的原始充值流水条数为{'record_num': 70}
+[2020-06-20 00:21:18,000]--test_recharge.py--81--INFO:======================正在查询充值后金额=======================
+[2020-06-20 00:21:18,009]--test_recharge.py--84--INFO:账户id为13217的账户充值后的金额是{'leave_amount': Decimal('2600003.65')}
+[2020-06-20 00:21:18,010]--test_recharge.py--86--INFO:账户id为13217的账户原始金额与充值金额求和的金额是2600003.65
+[2020-06-20 00:21:18,010]--test_recharge.py--87--INFO:======================正在金额比对=======================
+[2020-06-20 00:21:18,010]--test_recharge.py--90--INFO:======================正在查询充值后流水记录=======================
+[2020-06-20 00:21:18,025]--test_recharge.py--94--INFO:账户id为13217的充值后流水条数为{'record_num': 71}
+[2020-06-20 00:21:18,025]--test_recharge.py--95--INFO:======================正在充值流水比对=======================
+[2020-06-20 00:21:18,025]--test_recharge.py--99--INFO:第5条用例执行结果为PASS
+[2020-06-20 00:21:18,025]--test_recharge.py--106--INFO:*************开始回写数据***************
+[2020-06-20 00:21:18,657]--test_recharge.py--109--INFO:正在回写实际结果actual：{'code': 0, 'msg': 'OK', 'data': {'id': 13217, 'leave_amount': 2600003.65, 'mobile_phone': '15841177856', 'reg_name': '柠檬5d!e2', 'reg_time': '2020-06-11 22:58:56.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:21:19,107]--test_recharge.py--112--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:21:19,107]--test_recharge.py--113--INFO:*************结束回写数据***************
+[2020-06-20 00:21:19,136]--test_recharge.py--48--INFO:******************正在执行recharge模块用例******************
+[2020-06-20 00:21:19,136]--test_recharge.py--49--INFO:正在执行第6条用例:输入存在的账户id，金额输入小数位为两位
+[2020-06-20 00:21:19,136]--test_recharge.py--50--INFO:请求的数据是{'case_id': 6, 'interface': 'recharge', 'title': '输入存在的账户id，金额输入小数位为两位', 'method': 'POST', 'url': '/member/recharge', 'data': '{"member_id":"13217","amount":"0.55"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5NzN9.DOXcNj4LdKjQQWaAbabPczRt8GBuPcmVOk8BF4EwUZk2Gy0RESTNcSBbsoFm1ezhA7A1Eebuk9YIYj2c_2p9WA"}', 'yes_or_no': 'YES', 'expected': '{"code": 0,"msg": "OK"}', 'actucal': "{'code': 0, 'msg': 'OK', 'data': {'id': 13217, 'leave_amount': 2100002.65, 'mobile_phone': '15841177856', 'reg_name': '柠檬5d!e2', 'reg_time': '2020-06-11 22:58:56.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:21:19,137]--test_recharge.py--54--INFO:======================正在查询原始金额=======================
+[2020-06-20 00:21:19,147]--test_recharge.py--57--INFO:账户id为13217的账户原始金额是{'leave_amount': Decimal('2600003.65')}
+[2020-06-20 00:21:19,148]--test_recharge.py--62--INFO:======================正在查询原始充值流水记录条数=======================
+[2020-06-20 00:21:19,165]--test_recharge.py--65--INFO:账户id为13217的原始充值流水条数为{'record_num': 71}
+[2020-06-20 00:21:19,196]--test_recharge.py--81--INFO:======================正在查询充值后金额=======================
+[2020-06-20 00:21:19,205]--test_recharge.py--84--INFO:账户id为13217的账户充值后的金额是{'leave_amount': Decimal('2600004.20')}
+[2020-06-20 00:21:19,205]--test_recharge.py--86--INFO:账户id为13217的账户原始金额与充值金额求和的金额是2600004.20
+[2020-06-20 00:21:19,205]--test_recharge.py--87--INFO:======================正在金额比对=======================
+[2020-06-20 00:21:19,205]--test_recharge.py--90--INFO:======================正在查询充值后流水记录=======================
+[2020-06-20 00:21:19,222]--test_recharge.py--94--INFO:账户id为13217的充值后流水条数为{'record_num': 72}
+[2020-06-20 00:21:19,222]--test_recharge.py--95--INFO:======================正在充值流水比对=======================
+[2020-06-20 00:21:19,222]--test_recharge.py--99--INFO:第6条用例执行结果为PASS
+[2020-06-20 00:21:19,222]--test_recharge.py--106--INFO:*************开始回写数据***************
+[2020-06-20 00:21:19,652]--test_recharge.py--109--INFO:正在回写实际结果actual：{'code': 0, 'msg': 'OK', 'data': {'id': 13217, 'leave_amount': 2600004.2, 'mobile_phone': '15841177856', 'reg_name': '柠檬5d!e2', 'reg_time': '2020-06-11 22:58:56.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:21:20,163]--test_recharge.py--112--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:21:20,164]--test_recharge.py--113--INFO:*************结束回写数据***************
+[2020-06-20 00:21:20,188]--test_recharge.py--48--INFO:******************正在执行recharge模块用例******************
+[2020-06-20 00:21:20,189]--test_recharge.py--49--INFO:正在执行第7条用例:输入存在的账户id，金额输入小数位为三位
+[2020-06-20 00:21:20,189]--test_recharge.py--50--INFO:请求的数据是{'case_id': 7, 'interface': 'recharge', 'title': '输入存在的账户id，金额输入小数位为三位', 'method': 'POST', 'url': '/member/recharge', 'data': '{"member_id":"13217","amount":"5.689"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5NzN9.DOXcNj4LdKjQQWaAbabPczRt8GBuPcmVOk8BF4EwUZk2Gy0RESTNcSBbsoFm1ezhA7A1Eebuk9YIYj2c_2p9WA"}', 'yes_or_no': 'NO', 'expected': '{"code": 2,"msg": "余额小数超过两位"}', 'actucal': "{'code': 2, 'msg': '余额小数超过两位', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:21:20,208]--test_recharge.py--99--INFO:第7条用例执行结果为PASS
+[2020-06-20 00:21:20,208]--test_recharge.py--106--INFO:*************开始回写数据***************
+[2020-06-20 00:21:20,696]--test_recharge.py--109--INFO:正在回写实际结果actual：{'code': 2, 'msg': '余额小数超过两位', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:21:21,221]--test_recharge.py--112--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:21:21,222]--test_recharge.py--113--INFO:*************结束回写数据***************
+[2020-06-20 00:21:21,242]--test_recharge.py--48--INFO:******************正在执行recharge模块用例******************
+[2020-06-20 00:21:21,242]--test_recharge.py--49--INFO:正在执行第8条用例:输入存在的账户id，金额输入非数字
+[2020-06-20 00:21:21,242]--test_recharge.py--50--INFO:请求的数据是{'case_id': 8, 'interface': 'recharge', 'title': '输入存在的账户id，金额输入非数字', 'method': 'POST', 'url': '/member/recharge', 'data': '{"member_id":"13217","amount":"fdfsd"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5NzN9.DOXcNj4LdKjQQWaAbabPczRt8GBuPcmVOk8BF4EwUZk2Gy0RESTNcSBbsoFm1ezhA7A1Eebuk9YIYj2c_2p9WA"}', 'yes_or_no': 'NO', 'expected': '{"code": 2,"msg": "余额必须为数值型"}', 'actucal': "{'code': 2, 'msg': '余额必须为数值型', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:21:21,261]--test_recharge.py--99--INFO:第8条用例执行结果为PASS
+[2020-06-20 00:21:21,262]--test_recharge.py--106--INFO:*************开始回写数据***************
+[2020-06-20 00:21:21,748]--test_recharge.py--109--INFO:正在回写实际结果actual：{'code': 2, 'msg': '余额必须为数值型', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:21:22,250]--test_recharge.py--112--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:21:22,251]--test_recharge.py--113--INFO:*************结束回写数据***************
+[2020-06-20 00:21:22,284]--test_recharge.py--48--INFO:******************正在执行recharge模块用例******************
+[2020-06-20 00:21:22,285]--test_recharge.py--49--INFO:正在执行第9条用例:输入存在的账户id，金额输入为空
+[2020-06-20 00:21:22,285]--test_recharge.py--50--INFO:请求的数据是{'case_id': 9, 'interface': 'recharge', 'title': '输入存在的账户id，金额输入为空', 'method': 'POST', 'url': '/member/recharge', 'data': '{"member_id":"13217","amount":""}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5NzN9.DOXcNj4LdKjQQWaAbabPczRt8GBuPcmVOk8BF4EwUZk2Gy0RESTNcSBbsoFm1ezhA7A1Eebuk9YIYj2c_2p9WA"}', 'yes_or_no': 'NO', 'expected': '{"code": 1,"msg": "余额为空"}', 'actucal': "{'code': 1, 'msg': '余额为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:21:22,305]--test_recharge.py--99--INFO:第9条用例执行结果为PASS
+[2020-06-20 00:21:22,305]--test_recharge.py--106--INFO:*************开始回写数据***************
+[2020-06-20 00:21:22,810]--test_recharge.py--109--INFO:正在回写实际结果actual：{'code': 1, 'msg': '余额为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:21:23,310]--test_recharge.py--112--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:21:23,310]--test_recharge.py--113--INFO:*************结束回写数据***************
+[2020-06-20 00:21:23,341]--test_recharge.py--48--INFO:******************正在执行recharge模块用例******************
+[2020-06-20 00:21:23,342]--test_recharge.py--49--INFO:正在执行第10条用例:输入不存在的账户id
+[2020-06-20 00:21:23,342]--test_recharge.py--50--INFO:请求的数据是{'case_id': 10, 'interface': 'recharge', 'title': '输入不存在的账户id', 'method': 'POST', 'url': '/member/recharge', 'data': '{"member_id":"8d88","amount":"58"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5NzN9.DOXcNj4LdKjQQWaAbabPczRt8GBuPcmVOk8BF4EwUZk2Gy0RESTNcSBbsoFm1ezhA7A1Eebuk9YIYj2c_2p9WA"}', 'yes_or_no': 'NO', 'expected': '{"code": 2,"msg": "会员不存在"}', 'actucal': "{'code': 2, 'msg': '数字格式化异常', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'FAILED'}
+[2020-06-20 00:21:23,362]--test_recharge.py--101--ERROR:执行接口测试出现错误，错误是False is not true
+[2020-06-20 00:21:23,362]--test_recharge.py--104--ERROR:第10条用例执行结果为FAILED
+[2020-06-20 00:21:23,362]--test_recharge.py--106--INFO:*************开始回写数据***************
+[2020-06-20 00:21:23,844]--test_recharge.py--109--INFO:正在回写实际结果actual：{'code': 2, 'msg': '数字格式化异常', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:21:24,310]--test_recharge.py--112--INFO:正在回写测试结果test_result：FAILED
+[2020-06-20 00:21:24,310]--test_recharge.py--113--INFO:*************结束回写数据***************
+[2020-06-20 00:21:24,352]--test_recharge.py--48--INFO:******************正在执行recharge模块用例******************
+[2020-06-20 00:21:24,352]--test_recharge.py--49--INFO:正在执行第11条用例:账户id输入为空
+[2020-06-20 00:21:24,353]--test_recharge.py--50--INFO:请求的数据是{'case_id': 11, 'interface': 'recharge', 'title': '账户id输入为空', 'method': 'POST', 'url': '/member/recharge', 'data': '{"member_id":"","amount":"155"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5NzN9.DOXcNj4LdKjQQWaAbabPczRt8GBuPcmVOk8BF4EwUZk2Gy0RESTNcSBbsoFm1ezhA7A1Eebuk9YIYj2c_2p9WA"}', 'yes_or_no': 'NO', 'expected': '{"code": 1,"msg": "用户id为空"}', 'actucal': "{'code': 1, 'msg': '用户id为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:21:24,373]--test_recharge.py--99--INFO:第11条用例执行结果为PASS
+[2020-06-20 00:21:24,374]--test_recharge.py--106--INFO:*************开始回写数据***************
+[2020-06-20 00:21:25,010]--test_recharge.py--109--INFO:正在回写实际结果actual：{'code': 1, 'msg': '用户id为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:21:25,519]--test_recharge.py--112--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:21:25,520]--test_recharge.py--113--INFO:*************结束回写数据***************
+[2020-06-20 00:21:25,575]--test_register.py--36--INFO:******************正在执行register模块用例******************
+[2020-06-20 00:21:25,576]--test_register.py--37--INFO:正在执行第1条用例:手机号输入未注册
+[2020-06-20 00:21:25,576]--test_register.py--38--INFO:请求的数据是{'case_id': 1, 'interface': 'register', 'title': '手机号输入未注册', 'method': 'POST', 'url': '/member/register', 'data': "{'mobile_phone': '15198202257', 'pwd': 'assf2558！', 'type': 1, 'reg_name': '烧烤'}", 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2"}', 'expected': '{"code": 0,"msg": "OK"}', 'actucal': "{'code': 2, 'msg': '无效的手机格式', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'FAILED'}
+[2020-06-20 00:21:25,621]--test_register.py--51--INFO:********************正在查询数据库********************
+[2020-06-20 00:21:25,656]--test_register.py--58--INFO:第1条用例执行结果为PASS
+[2020-06-20 00:21:25,657]--test_register.py--65--INFO:*************开始回写数据***************
+[2020-06-20 00:21:27,502]--test_register.py--68--INFO:正在回写实际结果actual：{'code': 0, 'msg': 'OK', 'data': {'id': 162847, 'reg_name': '烧烤', 'mobile_phone': '15198202257'}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:21:28,111]--test_register.py--71--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:21:28,111]--test_register.py--72--INFO:*************结束回写数据***************
+[2020-06-20 00:21:28,174]--test_register.py--36--INFO:******************正在执行register模块用例******************
+[2020-06-20 00:21:28,175]--test_register.py--37--INFO:正在执行第2条用例:手机号输入为空
+[2020-06-20 00:21:28,176]--test_register.py--38--INFO:请求的数据是{'case_id': 2, 'interface': 'register', 'title': '手机号输入为空', 'method': 'POST', 'url': '/member/register', 'data': '{"mobile_phone":"","pwd":"assff12558！","type":1,"reg_name":"烧烤"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2"}', 'expected': '{"code": 1,"msg": "手机号为空"}', 'actucal': "{'code': 1, 'msg': '手机号为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:21:28,198]--test_register.py--51--INFO:********************正在查询数据库********************
+[2020-06-20 00:21:28,230]--test_register.py--58--INFO:第2条用例执行结果为PASS
+[2020-06-20 00:21:28,230]--test_register.py--65--INFO:*************开始回写数据***************
+[2020-06-20 00:21:28,848]--test_register.py--68--INFO:正在回写实际结果actual：{'code': 1, 'msg': '手机号为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:21:29,318]--test_register.py--71--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:21:29,319]--test_register.py--72--INFO:*************结束回写数据***************
+[2020-06-20 00:21:29,535]--test_register.py--36--INFO:******************正在执行register模块用例******************
+[2020-06-20 00:21:29,536]--test_register.py--37--INFO:正在执行第3条用例:手机号输入为10位
+[2020-06-20 00:21:29,536]--test_register.py--38--INFO:请求的数据是{'case_id': 3, 'interface': 'register', 'title': '手机号输入为10位', 'method': 'POST', 'url': '/member/register', 'data': '{"mobile_phone":"1352258987","pwd":"assff12558！","type":1,"reg_name":"烧烤"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2"}', 'expected': '{"code": 2,"msg": "无效的手机格式"}', 'actucal': "{'code': 2, 'msg': '无效的手机格式', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:21:29,649]--test_register.py--51--INFO:********************正在查询数据库********************
+[2020-06-20 00:21:29,684]--test_register.py--58--INFO:第3条用例执行结果为PASS
+[2020-06-20 00:21:29,684]--test_register.py--65--INFO:*************开始回写数据***************
+[2020-06-20 00:21:30,169]--test_register.py--68--INFO:正在回写实际结果actual：{'code': 2, 'msg': '无效的手机格式', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:21:30,571]--test_register.py--71--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:21:30,571]--test_register.py--72--INFO:*************结束回写数据***************
+[2020-06-20 00:21:30,643]--test_register.py--36--INFO:******************正在执行register模块用例******************
+[2020-06-20 00:21:30,644]--test_register.py--37--INFO:正在执行第4条用例:手机号输入为12位
+[2020-06-20 00:21:30,644]--test_register.py--38--INFO:请求的数据是{'case_id': 4, 'interface': 'register', 'title': '手机号输入为12位', 'method': 'POST', 'url': '/member/register', 'data': '{"mobile_phone":"135225898798","pwd":"assff12558！","type":1,"reg_name":"烧烤"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2"}', 'expected': '{"code": 2,"msg": "无效的手机格式"}', 'actucal': "{'code': 2, 'msg': '无效的手机格式', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:21:30,664]--test_register.py--51--INFO:********************正在查询数据库********************
+[2020-06-20 00:21:30,707]--test_register.py--58--INFO:第4条用例执行结果为PASS
+[2020-06-20 00:21:30,708]--test_register.py--65--INFO:*************开始回写数据***************
+[2020-06-20 00:21:31,137]--test_register.py--68--INFO:正在回写实际结果actual：{'code': 2, 'msg': '无效的手机格式', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:21:31,534]--test_register.py--71--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:21:31,534]--test_register.py--72--INFO:*************结束回写数据***************
+[2020-06-20 00:21:31,605]--test_register.py--36--INFO:******************正在执行register模块用例******************
+[2020-06-20 00:21:31,606]--test_register.py--37--INFO:正在执行第5条用例:手机号输入为11位，但包含非法字符
+[2020-06-20 00:21:31,606]--test_register.py--38--INFO:请求的数据是{'case_id': 5, 'interface': 'register', 'title': '手机号输入为11位，但包含非法字符', 'method': 'POST', 'url': '/member/register', 'data': '{"mobile_phone":"1352258987.","pwd":"assff12558！","type":1,"reg_name":"烧烤"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2"}', 'expected': '{"code": 2,"msg": "无效的手机格式"}', 'actucal': "{'code': 2, 'msg': '无效的手机格式', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:21:31,625]--test_register.py--51--INFO:********************正在查询数据库********************
+[2020-06-20 00:21:31,663]--test_register.py--58--INFO:第5条用例执行结果为PASS
+[2020-06-20 00:21:31,664]--test_register.py--65--INFO:*************开始回写数据***************
+[2020-06-20 00:21:32,073]--test_register.py--68--INFO:正在回写实际结果actual：{'code': 2, 'msg': '无效的手机格式', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:21:32,507]--test_register.py--71--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:21:32,507]--test_register.py--72--INFO:*************结束回写数据***************
+[2020-06-20 00:21:32,574]--test_register.py--36--INFO:******************正在执行register模块用例******************
+[2020-06-20 00:21:32,574]--test_register.py--37--INFO:正在执行第6条用例:手机号输入为11位，但不是正常手机号码
+[2020-06-20 00:21:32,575]--test_register.py--38--INFO:请求的数据是{'case_id': 6, 'interface': 'register', 'title': '手机号输入为11位，但不是正常手机号码', 'method': 'POST', 'url': '/member/register', 'data': '{"mobile_phone":"11152698877","pwd":"assff12558！","type":1,"reg_name":"烧烤"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2"}', 'expected': '{"code": 2,"msg": "无效的手机格式"}', 'actucal': "{'code': 2, 'msg': '无效的手机格式', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:21:32,596]--test_register.py--51--INFO:********************正在查询数据库********************
+[2020-06-20 00:21:32,632]--test_register.py--58--INFO:第6条用例执行结果为PASS
+[2020-06-20 00:21:32,633]--test_register.py--65--INFO:*************开始回写数据***************
+[2020-06-20 00:21:33,065]--test_register.py--68--INFO:正在回写实际结果actual：{'code': 2, 'msg': '无效的手机格式', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:21:33,573]--test_register.py--71--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:21:33,573]--test_register.py--72--INFO:*************结束回写数据***************
+[2020-06-20 00:21:33,642]--test_register.py--36--INFO:******************正在执行register模块用例******************
+[2020-06-20 00:21:33,643]--test_register.py--37--INFO:正在执行第7条用例:手机号输入为已注册手机号
+[2020-06-20 00:21:33,643]--test_register.py--38--INFO:请求的数据是{'case_id': 7, 'interface': 'register', 'title': '手机号输入为已注册手机号', 'method': 'POST', 'url': '/member/register', 'data': '{"mobile_phone":"15520154479","pwd":"assff12558！","type":1,"reg_name":"烧烤"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2"}', 'expected': '{"code": 2,"msg": "账号已存在"}', 'actucal': "{'code': 2, 'msg': '账号已存在', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:21:33,688]--test_register.py--51--INFO:********************正在查询数据库********************
+[2020-06-20 00:21:33,722]--test_register.py--58--INFO:第7条用例执行结果为PASS
+[2020-06-20 00:21:33,723]--test_register.py--65--INFO:*************开始回写数据***************
+[2020-06-20 00:21:34,194]--test_register.py--68--INFO:正在回写实际结果actual：{'code': 2, 'msg': '账号已存在', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:21:34,622]--test_register.py--71--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:21:34,623]--test_register.py--72--INFO:*************结束回写数据***************
+[2020-06-20 00:21:34,683]--test_register.py--36--INFO:******************正在执行register模块用例******************
+[2020-06-20 00:21:34,683]--test_register.py--37--INFO:正在执行第8条用例:手机号未注册，密码输入为空
+[2020-06-20 00:21:34,683]--test_register.py--38--INFO:请求的数据是{'case_id': 8, 'interface': 'register', 'title': '手机号未注册，密码输入为空', 'method': 'POST', 'url': '/member/register', 'data': '{"mobile_phone":"15841259987","pwd":"","type":1,"reg_name":"烧烤"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2"}', 'expected': '{"code": 1,"msg": "密码为空"}', 'actucal': "{'code': 1, 'msg': '密码为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:21:34,827]--test_register.py--51--INFO:********************正在查询数据库********************
+[2020-06-20 00:21:34,860]--test_register.py--58--INFO:第8条用例执行结果为PASS
+[2020-06-20 00:21:34,861]--test_register.py--65--INFO:*************开始回写数据***************
+[2020-06-20 00:21:35,304]--test_register.py--68--INFO:正在回写实际结果actual：{'code': 1, 'msg': '密码为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:21:35,706]--test_register.py--71--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:21:35,707]--test_register.py--72--INFO:*************结束回写数据***************
+[2020-06-20 00:21:35,775]--test_register.py--36--INFO:******************正在执行register模块用例******************
+[2020-06-20 00:21:35,776]--test_register.py--37--INFO:正在执行第9条用例:手机号未注册，密码输入为7位
+[2020-06-20 00:21:35,776]--test_register.py--38--INFO:请求的数据是{'case_id': 9, 'interface': 'register', 'title': '手机号未注册，密码输入为7位', 'method': 'POST', 'url': '/member/register', 'data': '{"mobile_phone":"15841259987","pwd":"1234567","type":1,"reg_name":"烧烤"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2"}', 'expected': '{"code": 2,"msg": "密码格式为8到16位"}', 'actucal': "{'code': 2, 'msg': '密码格式为8到16位', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:21:35,797]--test_register.py--51--INFO:********************正在查询数据库********************
+[2020-06-20 00:21:35,830]--test_register.py--58--INFO:第9条用例执行结果为PASS
+[2020-06-20 00:21:35,831]--test_register.py--65--INFO:*************开始回写数据***************
+[2020-06-20 00:21:36,294]--test_register.py--68--INFO:正在回写实际结果actual：{'code': 2, 'msg': '密码格式为8到16位', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:21:36,733]--test_register.py--71--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:21:36,734]--test_register.py--72--INFO:*************结束回写数据***************
+[2020-06-20 00:21:36,811]--test_register.py--36--INFO:******************正在执行register模块用例******************
+[2020-06-20 00:21:36,812]--test_register.py--37--INFO:正在执行第10条用例:手机号未注册，密码输入为17位
+[2020-06-20 00:21:36,812]--test_register.py--38--INFO:请求的数据是{'case_id': 10, 'interface': 'register', 'title': '手机号未注册，密码输入为17位', 'method': 'POST', 'url': '/member/register', 'data': '{"mobile_phone":"15841259987","pwd":"1234567assff12558","type":1,"reg_name":"烧烤"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2"}', 'expected': '{"code": 2,"msg": "密码格式为8到16位"}', 'actucal': "{'code': 2, 'msg': '密码格式为8到16位', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:21:36,833]--test_register.py--51--INFO:********************正在查询数据库********************
+[2020-06-20 00:21:36,873]--test_register.py--58--INFO:第10条用例执行结果为PASS
+[2020-06-20 00:21:36,873]--test_register.py--65--INFO:*************开始回写数据***************
+[2020-06-20 00:21:37,344]--test_register.py--68--INFO:正在回写实际结果actual：{'code': 2, 'msg': '密码格式为8到16位', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:21:37,726]--test_register.py--71--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:21:37,726]--test_register.py--72--INFO:*************结束回写数据***************
+[2020-06-20 00:21:37,826]--test_update_name.py--46--INFO:******************正在执行update模块用例******************
+[2020-06-20 00:21:37,826]--test_update_name.py--47--INFO:正在执行第1条用例:会员id存在，昵称输入原账户昵称
+[2020-06-20 00:21:37,826]--test_update_name.py--48--INFO:请求的数据是{'case_id': 1, 'interface': 'update', 'title': '会员id存在，昵称输入原账户昵称', 'method': 'PATCH', 'url': '/member/update', 'data': '{"member_id":"13217","reg_name":"烧烤"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5OTd9.zI8qWcCUIvInX_Juz-qoxA9Vxlk_uV6XuOKo2wYLWFKwiL9Wia7Rozj8L53FbnjY8xia31q9_bgXLXSjDFaq7A"}', 'expected': '{"code": 0,"msg": "OK"}', 'actucal': "{'code': 0, 'msg': 'OK', 'data': {'id': 13217, 'leave_amount': 600001.55, 'mobile_phone': '15841177856', 'reg_name': '烧烤', 'reg_time': '2020-06-11 22:58:56.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:21:37,859]--test_update_name.py--59--INFO:======================正在查询修改后的用户昵称=======================
+[2020-06-20 00:21:37,873]--test_update_name.py--63--INFO:账户id为13217的昵称修改后为烧烤
+[2020-06-20 00:21:37,874]--test_update_name.py--65--INFO:======================正在昵称信息比对比对=======================
+[2020-06-20 00:21:37,874]--test_update_name.py--68--INFO:第1条用例执行结果为PASS
+[2020-06-20 00:21:37,874]--test_update_name.py--74--INFO:*************开始回写数据***************
+[2020-06-20 00:21:38,292]--test_update_name.py--76--INFO:正在回写实际结果actual：{'code': 0, 'msg': 'OK', 'data': {'id': 13217, 'leave_amount': 2600004.2, 'mobile_phone': '15841177856', 'reg_name': '烧烤', 'reg_time': '2020-06-11 22:58:56.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:21:38,707]--test_update_name.py--78--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:21:38,707]--test_update_name.py--79--INFO:*************结束回写数据***************
+[2020-06-20 00:21:38,727]--test_update_name.py--46--INFO:******************正在执行update模块用例******************
+[2020-06-20 00:21:38,728]--test_update_name.py--47--INFO:正在执行第2条用例:会员id存在，昵称输入昵称长度为1
+[2020-06-20 00:21:38,728]--test_update_name.py--48--INFO:请求的数据是{'case_id': 2, 'interface': 'update', 'title': '会员id存在，昵称输入昵称长度为1', 'method': 'PATCH', 'url': '/member/update', 'data': '{"member_id":"13217","reg_name":"a"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5OTd9.zI8qWcCUIvInX_Juz-qoxA9Vxlk_uV6XuOKo2wYLWFKwiL9Wia7Rozj8L53FbnjY8xia31q9_bgXLXSjDFaq7A"}', 'expected': '{"code": 0,"msg": "OK"}', 'actucal': "{'code': 0, 'msg': 'OK', 'data': {'id': 13217, 'leave_amount': 600001.55, 'mobile_phone': '15841177856', 'reg_name': 'a', 'reg_time': '2020-06-11 22:58:56.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:21:38,757]--test_update_name.py--59--INFO:======================正在查询修改后的用户昵称=======================
+[2020-06-20 00:21:38,774]--test_update_name.py--63--INFO:账户id为13217的昵称修改后为a
+[2020-06-20 00:21:38,774]--test_update_name.py--65--INFO:======================正在昵称信息比对比对=======================
+[2020-06-20 00:21:38,774]--test_update_name.py--68--INFO:第2条用例执行结果为PASS
+[2020-06-20 00:21:38,774]--test_update_name.py--74--INFO:*************开始回写数据***************
+[2020-06-20 00:21:39,283]--test_update_name.py--76--INFO:正在回写实际结果actual：{'code': 0, 'msg': 'OK', 'data': {'id': 13217, 'leave_amount': 2600004.2, 'mobile_phone': '15841177856', 'reg_name': 'a', 'reg_time': '2020-06-11 22:58:56.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:21:39,706]--test_update_name.py--78--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:21:39,707]--test_update_name.py--79--INFO:*************结束回写数据***************
+[2020-06-20 00:21:39,726]--test_update_name.py--46--INFO:******************正在执行update模块用例******************
+[2020-06-20 00:21:39,727]--test_update_name.py--47--INFO:正在执行第3条用例:会员id存在，昵称输入昵称长度为10
+[2020-06-20 00:21:39,727]--test_update_name.py--48--INFO:请求的数据是{'case_id': 3, 'interface': 'update', 'title': '会员id存在，昵称输入昵称长度为10', 'method': 'PATCH', 'url': '/member/update', 'data': '{"member_id":"13217","reg_name":"asdasdadd"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5OTd9.zI8qWcCUIvInX_Juz-qoxA9Vxlk_uV6XuOKo2wYLWFKwiL9Wia7Rozj8L53FbnjY8xia31q9_bgXLXSjDFaq7A"}', 'expected': '{"code": 0,"msg": "OK"}', 'actucal': "{'code': 0, 'msg': 'OK', 'data': {'id': 13217, 'leave_amount': 600001.55, 'mobile_phone': '15841177856', 'reg_name': 'asdasdadd', 'reg_time': '2020-06-11 22:58:56.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:21:39,751]--test_update_name.py--59--INFO:======================正在查询修改后的用户昵称=======================
+[2020-06-20 00:21:39,760]--test_update_name.py--63--INFO:账户id为13217的昵称修改后为asdasdadd
+[2020-06-20 00:21:39,760]--test_update_name.py--65--INFO:======================正在昵称信息比对比对=======================
+[2020-06-20 00:21:39,761]--test_update_name.py--68--INFO:第3条用例执行结果为PASS
+[2020-06-20 00:21:39,761]--test_update_name.py--74--INFO:*************开始回写数据***************
+[2020-06-20 00:21:40,192]--test_update_name.py--76--INFO:正在回写实际结果actual：{'code': 0, 'msg': 'OK', 'data': {'id': 13217, 'leave_amount': 2600004.2, 'mobile_phone': '15841177856', 'reg_name': 'asdasdadd', 'reg_time': '2020-06-11 22:58:56.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:21:40,610]--test_update_name.py--78--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:21:40,611]--test_update_name.py--79--INFO:*************结束回写数据***************
+[2020-06-20 00:21:40,641]--test_update_name.py--46--INFO:******************正在执行update模块用例******************
+[2020-06-20 00:21:40,642]--test_update_name.py--47--INFO:正在执行第4条用例:会员id存在，昵称输入昵称长度为11
+[2020-06-20 00:21:40,642]--test_update_name.py--48--INFO:请求的数据是{'case_id': 4, 'interface': 'update', 'title': '会员id存在，昵称输入昵称长度为11', 'method': 'PATCH', 'url': '/member/update', 'data': '{"member_id":"13217","reg_name":"asdasdaddth"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5OTd9.zI8qWcCUIvInX_Juz-qoxA9Vxlk_uV6XuOKo2wYLWFKwiL9Wia7Rozj8L53FbnjY8xia31q9_bgXLXSjDFaq7A"}', 'expected': '{"code": 2,"msg": "用户昵称长度超过10位"}', 'actucal': "{'code': 2, 'msg': '用户昵称长度超过10位', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:21:40,661]--test_update_name.py--68--INFO:第4条用例执行结果为PASS
+[2020-06-20 00:21:40,662]--test_update_name.py--74--INFO:*************开始回写数据***************
+[2020-06-20 00:21:41,099]--test_update_name.py--76--INFO:正在回写实际结果actual：{'code': 2, 'msg': '用户昵称长度超过10位', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:21:41,490]--test_update_name.py--78--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:21:41,490]--test_update_name.py--79--INFO:*************结束回写数据***************
+[2020-06-20 00:21:41,516]--test_update_name.py--46--INFO:******************正在执行update模块用例******************
+[2020-06-20 00:21:41,516]--test_update_name.py--47--INFO:正在执行第5条用例:会员id存在，昵称输入昵称为空
+[2020-06-20 00:21:41,517]--test_update_name.py--48--INFO:请求的数据是{'case_id': 5, 'interface': 'update', 'title': '会员id存在，昵称输入昵称为空', 'method': 'PATCH', 'url': '/member/update', 'data': '{"member_id":"13217","reg_name":""}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5OTd9.zI8qWcCUIvInX_Juz-qoxA9Vxlk_uV6XuOKo2wYLWFKwiL9Wia7Rozj8L53FbnjY8xia31q9_bgXLXSjDFaq7A"}', 'expected': '{"code": 1,"msg": "用户名不能为空字符串，也不能全部是空格"}', 'actucal': "{'code': 1, 'msg': '用户名不能为空字符串，也不能全部是空格', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:21:41,535]--test_update_name.py--68--INFO:第5条用例执行结果为PASS
+[2020-06-20 00:21:41,536]--test_update_name.py--74--INFO:*************开始回写数据***************
+[2020-06-20 00:21:41,972]--test_update_name.py--76--INFO:正在回写实际结果actual：{'code': 1, 'msg': '用户名不能为空字符串，也不能全部是空格', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:21:42,421]--test_update_name.py--78--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:21:42,421]--test_update_name.py--79--INFO:*************结束回写数据***************
+[2020-06-20 00:21:42,456]--test_update_name.py--46--INFO:******************正在执行update模块用例******************
+[2020-06-20 00:21:42,457]--test_update_name.py--47--INFO:正在执行第6条用例:会员id存在，昵称输入昵称为数字
+[2020-06-20 00:21:42,457]--test_update_name.py--48--INFO:请求的数据是{'case_id': 6, 'interface': 'update', 'title': '会员id存在，昵称输入昵称为数字', 'method': 'PATCH', 'url': '/member/update', 'data': '{"member_id":"13217","reg_name":"2585"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5OTd9.zI8qWcCUIvInX_Juz-qoxA9Vxlk_uV6XuOKo2wYLWFKwiL9Wia7Rozj8L53FbnjY8xia31q9_bgXLXSjDFaq7A"}', 'expected': '{"code": 0,"msg": "OK"}', 'actucal': "{'code': 0, 'msg': 'OK', 'data': {'id': 13217, 'leave_amount': 600001.55, 'mobile_phone': '15841177856', 'reg_name': '2585', 'reg_time': '2020-06-11 22:58:56.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:21:42,482]--test_update_name.py--59--INFO:======================正在查询修改后的用户昵称=======================
+[2020-06-20 00:21:42,499]--test_update_name.py--63--INFO:账户id为13217的昵称修改后为2585
+[2020-06-20 00:21:42,499]--test_update_name.py--65--INFO:======================正在昵称信息比对比对=======================
+[2020-06-20 00:21:42,500]--test_update_name.py--68--INFO:第6条用例执行结果为PASS
+[2020-06-20 00:21:42,500]--test_update_name.py--74--INFO:*************开始回写数据***************
+[2020-06-20 00:21:42,932]--test_update_name.py--76--INFO:正在回写实际结果actual：{'code': 0, 'msg': 'OK', 'data': {'id': 13217, 'leave_amount': 2600004.2, 'mobile_phone': '15841177856', 'reg_name': '2585', 'reg_time': '2020-06-11 22:58:56.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:21:43,322]--test_update_name.py--78--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:21:43,323]--test_update_name.py--79--INFO:*************结束回写数据***************
+[2020-06-20 00:21:43,354]--test_update_name.py--46--INFO:******************正在执行update模块用例******************
+[2020-06-20 00:21:43,355]--test_update_name.py--47--INFO:正在执行第7条用例:会员id存在，昵称输入昵称为字符
+[2020-06-20 00:21:43,355]--test_update_name.py--48--INFO:请求的数据是{'case_id': 7, 'interface': 'update', 'title': '会员id存在，昵称输入昵称为字符', 'method': 'PATCH', 'url': '/member/update', 'data': '{"member_id":"13217","reg_name":"das#da"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5OTd9.zI8qWcCUIvInX_Juz-qoxA9Vxlk_uV6XuOKo2wYLWFKwiL9Wia7Rozj8L53FbnjY8xia31q9_bgXLXSjDFaq7A"}', 'expected': '{"code": 0,"msg": "OK"}', 'actucal': "{'code': 0, 'msg': 'OK', 'data': {'id': 13217, 'leave_amount': 600001.55, 'mobile_phone': '15841177856', 'reg_name': 'das#da', 'reg_time': '2020-06-11 22:58:56.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:21:43,381]--test_update_name.py--59--INFO:======================正在查询修改后的用户昵称=======================
+[2020-06-20 00:21:43,398]--test_update_name.py--63--INFO:账户id为13217的昵称修改后为das#da
+[2020-06-20 00:21:43,398]--test_update_name.py--65--INFO:======================正在昵称信息比对比对=======================
+[2020-06-20 00:21:43,399]--test_update_name.py--68--INFO:第7条用例执行结果为PASS
+[2020-06-20 00:21:43,399]--test_update_name.py--74--INFO:*************开始回写数据***************
+[2020-06-20 00:21:43,864]--test_update_name.py--76--INFO:正在回写实际结果actual：{'code': 0, 'msg': 'OK', 'data': {'id': 13217, 'leave_amount': 2600004.2, 'mobile_phone': '15841177856', 'reg_name': 'das#da', 'reg_time': '2020-06-11 22:58:56.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:21:44,344]--test_update_name.py--78--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:21:44,344]--test_update_name.py--79--INFO:*************结束回写数据***************
+[2020-06-20 00:21:44,364]--test_update_name.py--46--INFO:******************正在执行update模块用例******************
+[2020-06-20 00:21:44,364]--test_update_name.py--47--INFO:正在执行第8条用例:会员id存在，昵称输入昵称为汉字
+[2020-06-20 00:21:44,364]--test_update_name.py--48--INFO:请求的数据是{'case_id': 8, 'interface': 'update', 'title': '会员id存在，昵称输入昵称为汉字', 'method': 'PATCH', 'url': '/member/update', 'data': '{"member_id":"13217","reg_name":"小柠檬"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5OTd9.zI8qWcCUIvInX_Juz-qoxA9Vxlk_uV6XuOKo2wYLWFKwiL9Wia7Rozj8L53FbnjY8xia31q9_bgXLXSjDFaq7A"}', 'expected': '{"code": 0,"msg": "OK"}', 'actucal': "{'code': 0, 'msg': 'OK', 'data': {'id': 13217, 'leave_amount': 600001.55, 'mobile_phone': '15841177856', 'reg_name': '小柠檬', 'reg_time': '2020-06-11 22:58:56.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:21:44,388]--test_update_name.py--59--INFO:======================正在查询修改后的用户昵称=======================
+[2020-06-20 00:21:44,396]--test_update_name.py--63--INFO:账户id为13217的昵称修改后为小柠檬
+[2020-06-20 00:21:44,397]--test_update_name.py--65--INFO:======================正在昵称信息比对比对=======================
+[2020-06-20 00:21:44,397]--test_update_name.py--68--INFO:第8条用例执行结果为PASS
+[2020-06-20 00:21:44,398]--test_update_name.py--74--INFO:*************开始回写数据***************
+[2020-06-20 00:21:44,811]--test_update_name.py--76--INFO:正在回写实际结果actual：{'code': 0, 'msg': 'OK', 'data': {'id': 13217, 'leave_amount': 2600004.2, 'mobile_phone': '15841177856', 'reg_name': '小柠檬', 'reg_time': '2020-06-11 22:58:56.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:21:45,237]--test_update_name.py--78--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:21:45,237]--test_update_name.py--79--INFO:*************结束回写数据***************
+[2020-06-20 00:21:45,282]--test_update_name.py--46--INFO:******************正在执行update模块用例******************
+[2020-06-20 00:21:45,282]--test_update_name.py--47--INFO:正在执行第9条用例:会员id存在，昵称输入昵称为汉字、字符及数字组合
+[2020-06-20 00:21:45,283]--test_update_name.py--48--INFO:请求的数据是{'case_id': 9, 'interface': 'update', 'title': '会员id存在，昵称输入昵称为汉字、字符及数字组合', 'method': 'PATCH', 'url': '/member/update', 'data': '{"member_id":"13217","reg_name":"柠檬5d!e2"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5OTd9.zI8qWcCUIvInX_Juz-qoxA9Vxlk_uV6XuOKo2wYLWFKwiL9Wia7Rozj8L53FbnjY8xia31q9_bgXLXSjDFaq7A"}', 'expected': '{"code": 0,"msg": "OK"}', 'actucal': "{'code': 0, 'msg': 'OK', 'data': {'id': 13217, 'leave_amount': 600001.55, 'mobile_phone': '15841177856', 'reg_name': '柠檬5d!e2', 'reg_time': '2020-06-11 22:58:56.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:21:45,318]--test_update_name.py--59--INFO:======================正在查询修改后的用户昵称=======================
+[2020-06-20 00:21:45,345]--test_update_name.py--63--INFO:账户id为13217的昵称修改后为柠檬5d!e2
+[2020-06-20 00:21:45,346]--test_update_name.py--65--INFO:======================正在昵称信息比对比对=======================
+[2020-06-20 00:21:45,346]--test_update_name.py--68--INFO:第9条用例执行结果为PASS
+[2020-06-20 00:21:45,346]--test_update_name.py--74--INFO:*************开始回写数据***************
+[2020-06-20 00:21:45,823]--test_update_name.py--76--INFO:正在回写实际结果actual：{'code': 0, 'msg': 'OK', 'data': {'id': 13217, 'leave_amount': 2600004.2, 'mobile_phone': '15841177856', 'reg_name': '柠檬5d!e2', 'reg_time': '2020-06-11 22:58:56.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:21:46,354]--test_update_name.py--78--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:21:46,355]--test_update_name.py--79--INFO:*************结束回写数据***************
+[2020-06-20 00:21:46,375]--test_update_name.py--46--INFO:******************正在执行update模块用例******************
+[2020-06-20 00:21:46,376]--test_update_name.py--47--INFO:正在执行第10条用例:会员id输入不存在的id
+[2020-06-20 00:21:46,376]--test_update_name.py--48--INFO:请求的数据是{'case_id': 10, 'interface': 'update', 'title': '会员id输入不存在的id', 'method': 'PATCH', 'url': '/member/update', 'data': '{"member_id":"888888","reg_name":"12568"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5OTd9.zI8qWcCUIvInX_Juz-qoxA9Vxlk_uV6XuOKo2wYLWFKwiL9Wia7Rozj8L53FbnjY8xia31q9_bgXLXSjDFaq7A"}', 'expected': '{"code": 2,"msg": "会员不存在"}', 'actucal': "{'code': 2, 'msg': '会员不存在', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:21:46,409]--test_update_name.py--68--INFO:第10条用例执行结果为PASS
+[2020-06-20 00:21:46,410]--test_update_name.py--74--INFO:*************开始回写数据***************
+[2020-06-20 00:21:46,956]--test_update_name.py--76--INFO:正在回写实际结果actual：{'code': 2, 'msg': '会员不存在', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:21:47,456]--test_update_name.py--78--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:21:47,456]--test_update_name.py--79--INFO:*************结束回写数据***************
+[2020-06-20 00:21:47,479]--test_update_name.py--46--INFO:******************正在执行update模块用例******************
+[2020-06-20 00:21:47,479]--test_update_name.py--47--INFO:正在执行第11条用例:会员id输入为空
+[2020-06-20 00:21:47,480]--test_update_name.py--48--INFO:请求的数据是{'case_id': 11, 'interface': 'update', 'title': '会员id输入为空', 'method': 'PATCH', 'url': '/member/update', 'data': '{"member_id":"","reg_name":"15136"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODM5OTd9.zI8qWcCUIvInX_Juz-qoxA9Vxlk_uV6XuOKo2wYLWFKwiL9Wia7Rozj8L53FbnjY8xia31q9_bgXLXSjDFaq7A"}', 'expected': '{"code": 2,"msg": "数值参数格式错误"}', 'actucal': "{'code': 2, 'msg': '数值参数格式错误', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:21:47,500]--test_update_name.py--68--INFO:第11条用例执行结果为PASS
+[2020-06-20 00:21:47,500]--test_update_name.py--74--INFO:*************开始回写数据***************
+[2020-06-20 00:21:47,995]--test_update_name.py--76--INFO:正在回写实际结果actual：{'code': 2, 'msg': '数值参数格式错误', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:21:48,406]--test_update_name.py--78--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:21:48,406]--test_update_name.py--79--INFO:*************结束回写数据***************
+[2020-06-20 00:21:48,407]--test_user_info.py--30--INFO:******************正在执行user_info模块用例******************
+[2020-06-20 00:21:48,407]--test_user_info.py--31--INFO:正在执行第1条用例:查询已存在的用户信息
+[2020-06-20 00:21:48,407]--test_user_info.py--32--INFO:请求的数据是{'case_id': 1, 'interface': 'getuserinfo', 'title': '查询已存在的用户信息', 'method': 'GET', 'url': '/13361/info', 'data': None, 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2"}', 'expected': '{"code": 0,"msg": "OK"}', 'actucal': "{'code': 1004, 'msg': 'No handler found for GET /futureloan/13361/info', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'FAILED'}
+[2020-06-20 00:21:48,429]--test_user_info.py--44--ERROR:执行接口测试出现错误，错误是False is not true
+[2020-06-20 00:21:48,429]--test_user_info.py--46--ERROR:第1条用例执行结果为FAILED
+[2020-06-20 00:21:48,429]--test_user_info.py--48--INFO:*************开始回写数据***************
+[2020-06-20 00:21:48,845]--test_user_info.py--50--INFO:正在回写实际结果actual：{'code': 1004, 'msg': 'No handler found for GET /futureloan/13361/info', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:21:49,370]--test_user_info.py--52--INFO:正在回写测试结果test_result：FAILED
+[2020-06-20 00:21:49,371]--test_user_info.py--53--INFO:*************结束回写数据***************
+[2020-06-20 00:21:49,371]--test_user_info.py--30--INFO:******************正在执行user_info模块用例******************
+[2020-06-20 00:21:49,372]--test_user_info.py--31--INFO:正在执行第2条用例:查询不存在的用户信息
+[2020-06-20 00:21:49,372]--test_user_info.py--32--INFO:请求的数据是{'case_id': 2, 'interface': 'getuserinfo', 'title': '查询不存在的用户信息', 'method': 'GET', 'url': '/888888/info', 'data': None, 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2"}', 'expected': '{"code": 2,"msg": "用户不存在"}', 'actucal': "{'code': 1004, 'msg': 'No handler found for GET /futureloan/888888/info', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'FAILED'}
+[2020-06-20 00:21:49,393]--test_user_info.py--44--ERROR:执行接口测试出现错误，错误是False is not true
+[2020-06-20 00:21:49,393]--test_user_info.py--46--ERROR:第2条用例执行结果为FAILED
+[2020-06-20 00:21:49,394]--test_user_info.py--48--INFO:*************开始回写数据***************
+[2020-06-20 00:21:50,057]--test_user_info.py--50--INFO:正在回写实际结果actual：{'code': 1004, 'msg': 'No handler found for GET /futureloan/888888/info', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:21:50,509]--test_user_info.py--52--INFO:正在回写测试结果test_result：FAILED
+[2020-06-20 00:21:50,509]--test_user_info.py--53--INFO:*************结束回写数据***************
+[2020-06-20 00:21:50,591]--test_withdraw.py--49--INFO:******************正在执行withdraw模块用例******************
+[2020-06-20 00:21:50,591]--test_withdraw.py--50--INFO:正在执行第1条用例:输入存在的账户id，提现金额小于账户余额，输入1
+[2020-06-20 00:21:50,591]--test_withdraw.py--51--INFO:请求的数据是{'case_id': 1, 'interface': 'withdraw', 'title': '输入存在的账户id，提现金额小于账户余额，输入1', 'method': 'POST', 'url': '/member/withdraw', 'data': '{"member_id":"13217","amount":"1"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODQwMTB9.4oEBLeyNSi0HQ-LXoqEERXk-wbit4OBxcH9i1aRmCYvnLPa4hxsfdyZ2H5T48r1PGsGq3XwERpbPN2SHcSrH-w"}', 'yes_or_no': 'YES', 'expected': '{"code": 0,"msg": "OK"}', 'actucal': "{'code': 0, 'msg': 'OK', 'data': {'id': 13217, 'leave_amount': 600000.55, 'mobile_phone': '15841177856', 'reg_name': '柠檬5d!e2', 'reg_time': '2020-06-11 22:58:56.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:21:50,592]--test_withdraw.py--63--INFO:======================正在查询原始金额=======================
+[2020-06-20 00:21:50,602]--test_withdraw.py--74--INFO:账户id为13217的账户原始金额是2600004.20
+[2020-06-20 00:21:50,602]--test_withdraw.py--77--INFO:======================正在查询原始提现流水记录条数=======================
+[2020-06-20 00:21:50,620]--test_withdraw.py--81--INFO:账户id为13217的原始提现流水条数为71
+[2020-06-20 00:21:50,650]--test_withdraw.py--93--INFO:======================正在查询提现后金额=======================
+[2020-06-20 00:21:50,660]--test_withdraw.py--97--INFO:账户id为13217的账户提现后的金额是2600003.20
+[2020-06-20 00:21:50,660]--test_withdraw.py--98--INFO:账户id为13217的账户原始金额-提现金额后的余额是2600003.20
+[2020-06-20 00:21:50,660]--test_withdraw.py--99--INFO:======================正在金额比对=======================
+[2020-06-20 00:21:50,661]--test_withdraw.py--101--INFO:======================金额比对通过=======================
+[2020-06-20 00:21:50,661]--test_withdraw.py--102--INFO:======================正在查询提现后流水记录=======================
+[2020-06-20 00:21:50,680]--test_withdraw.py--106--INFO:账户id为13217的提现后流水条数为72
+[2020-06-20 00:21:50,681]--test_withdraw.py--107--INFO:======================正在提现流水比对=======================
+[2020-06-20 00:21:50,681]--test_withdraw.py--110--INFO:第1条用例执行结果为PASS
+[2020-06-20 00:21:50,681]--test_withdraw.py--116--INFO:*************开始回写数据***************
+[2020-06-20 00:21:51,187]--test_withdraw.py--118--INFO:正在回写实际结果actual：{'code': 0, 'msg': 'OK', 'data': {'id': 13217, 'leave_amount': 2600003.2, 'mobile_phone': '15841177856', 'reg_name': '柠檬5d!e2', 'reg_time': '2020-06-11 22:58:56.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:21:51,623]--test_withdraw.py--120--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:21:51,623]--test_withdraw.py--121--INFO:*************结束回写数据***************
+[2020-06-20 00:21:51,657]--test_withdraw.py--49--INFO:******************正在执行withdraw模块用例******************
+[2020-06-20 00:21:51,657]--test_withdraw.py--50--INFO:正在执行第2条用例:输入存在的账户id，提现金额小于账户余额，输入500000
+[2020-06-20 00:21:51,657]--test_withdraw.py--51--INFO:请求的数据是{'case_id': 2, 'interface': 'withdraw', 'title': '输入存在的账户id，提现金额小于账户余额，输入500000', 'method': 'POST', 'url': '/member/withdraw', 'data': '{"member_id":"13217","amount":"500000"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODQwMTB9.4oEBLeyNSi0HQ-LXoqEERXk-wbit4OBxcH9i1aRmCYvnLPa4hxsfdyZ2H5T48r1PGsGq3XwERpbPN2SHcSrH-w"}', 'yes_or_no': 'YES', 'expected': '{"code": 0,"msg": "OK"}', 'actucal': "{'code': 0, 'msg': 'OK', 'data': {'id': 13217, 'leave_amount': 100000.55, 'mobile_phone': '15841177856', 'reg_name': '柠檬5d!e2', 'reg_time': '2020-06-11 22:58:56.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:21:51,657]--test_withdraw.py--63--INFO:======================正在查询原始金额=======================
+[2020-06-20 00:21:51,674]--test_withdraw.py--74--INFO:账户id为13217的账户原始金额是2600003.20
+[2020-06-20 00:21:51,674]--test_withdraw.py--77--INFO:======================正在查询原始提现流水记录条数=======================
+[2020-06-20 00:21:51,697]--test_withdraw.py--81--INFO:账户id为13217的原始提现流水条数为72
+[2020-06-20 00:21:51,731]--test_withdraw.py--93--INFO:======================正在查询提现后金额=======================
+[2020-06-20 00:21:51,749]--test_withdraw.py--97--INFO:账户id为13217的账户提现后的金额是2100003.20
+[2020-06-20 00:21:51,750]--test_withdraw.py--98--INFO:账户id为13217的账户原始金额-提现金额后的余额是2100003.20
+[2020-06-20 00:21:51,750]--test_withdraw.py--99--INFO:======================正在金额比对=======================
+[2020-06-20 00:21:51,750]--test_withdraw.py--101--INFO:======================金额比对通过=======================
+[2020-06-20 00:21:51,750]--test_withdraw.py--102--INFO:======================正在查询提现后流水记录=======================
+[2020-06-20 00:21:51,778]--test_withdraw.py--106--INFO:账户id为13217的提现后流水条数为73
+[2020-06-20 00:21:51,779]--test_withdraw.py--107--INFO:======================正在提现流水比对=======================
+[2020-06-20 00:21:51,779]--test_withdraw.py--110--INFO:第2条用例执行结果为PASS
+[2020-06-20 00:21:51,780]--test_withdraw.py--116--INFO:*************开始回写数据***************
+[2020-06-20 00:21:52,244]--test_withdraw.py--118--INFO:正在回写实际结果actual：{'code': 0, 'msg': 'OK', 'data': {'id': 13217, 'leave_amount': 2100003.2, 'mobile_phone': '15841177856', 'reg_name': '柠檬5d!e2', 'reg_time': '2020-06-11 22:58:56.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:21:52,704]--test_withdraw.py--120--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:21:52,704]--test_withdraw.py--121--INFO:*************结束回写数据***************
+[2020-06-20 00:21:52,722]--test_withdraw.py--49--INFO:******************正在执行withdraw模块用例******************
+[2020-06-20 00:21:52,723]--test_withdraw.py--50--INFO:正在执行第3条用例:输入存在的账户id，提现金额小于账户余额，输入500001
+[2020-06-20 00:21:52,723]--test_withdraw.py--51--INFO:请求的数据是{'case_id': 3, 'interface': 'withdraw', 'title': '输入存在的账户id，提现金额小于账户余额，输入500001', 'method': 'POST', 'url': '/member/withdraw', 'data': '{"member_id":"13217","amount":"500001"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODQwMTB9.4oEBLeyNSi0HQ-LXoqEERXk-wbit4OBxcH9i1aRmCYvnLPa4hxsfdyZ2H5T48r1PGsGq3XwERpbPN2SHcSrH-w"}', 'yes_or_no': 'NO', 'expected': '{"code": 2,"msg": "余额必须大于0并且小于或者等于5000000"}', 'actucal': "{'code': 2, 'msg': '余额必须大于0并且小于或者等于5000000', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:21:52,743]--test_withdraw.py--110--INFO:第3条用例执行结果为PASS
+[2020-06-20 00:21:52,744]--test_withdraw.py--116--INFO:*************开始回写数据***************
+[2020-06-20 00:21:53,218]--test_withdraw.py--118--INFO:正在回写实际结果actual：{'code': 2, 'msg': '余额必须大于0并且小于或者等于5000000', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:21:53,664]--test_withdraw.py--120--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:21:53,666]--test_withdraw.py--121--INFO:*************结束回写数据***************
+[2020-06-20 00:21:53,702]--test_withdraw.py--49--INFO:******************正在执行withdraw模块用例******************
+[2020-06-20 00:21:53,703]--test_withdraw.py--50--INFO:正在执行第4条用例:输入存在的账户id，提现金额小于账户余额，输入-50
+[2020-06-20 00:21:53,703]--test_withdraw.py--51--INFO:请求的数据是{'case_id': 4, 'interface': 'withdraw', 'title': '输入存在的账户id，提现金额小于账户余额，输入-50', 'method': 'POST', 'url': '/member/withdraw', 'data': '{"member_id":"13217","amount":"-50"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODQwMTB9.4oEBLeyNSi0HQ-LXoqEERXk-wbit4OBxcH9i1aRmCYvnLPa4hxsfdyZ2H5T48r1PGsGq3XwERpbPN2SHcSrH-w"}', 'yes_or_no': 'NO', 'expected': '{"code": 2,"msg": "余额必须大于0并且小于或者等于5000000"}', 'actucal': "{'code': 2, 'msg': '余额必须大于0并且小于或者等于5000000', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:21:53,724]--test_withdraw.py--110--INFO:第4条用例执行结果为PASS
+[2020-06-20 00:21:53,724]--test_withdraw.py--116--INFO:*************开始回写数据***************
+[2020-06-20 00:21:54,200]--test_withdraw.py--118--INFO:正在回写实际结果actual：{'code': 2, 'msg': '余额必须大于0并且小于或者等于5000000', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:21:54,656]--test_withdraw.py--120--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:21:54,657]--test_withdraw.py--121--INFO:*************结束回写数据***************
+[2020-06-20 00:21:54,698]--test_withdraw.py--49--INFO:******************正在执行withdraw模块用例******************
+[2020-06-20 00:21:54,699]--test_withdraw.py--50--INFO:正在执行第5条用例:输入存在的账户id，提现金额小于账户余额，输入0
+[2020-06-20 00:21:54,699]--test_withdraw.py--51--INFO:请求的数据是{'case_id': 5, 'interface': 'withdraw', 'title': '输入存在的账户id，提现金额小于账户余额，输入0', 'method': 'POST', 'url': '/member/withdraw', 'data': '{"member_id":"13217","amount":"0"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODQwMTB9.4oEBLeyNSi0HQ-LXoqEERXk-wbit4OBxcH9i1aRmCYvnLPa4hxsfdyZ2H5T48r1PGsGq3XwERpbPN2SHcSrH-w"}', 'yes_or_no': 'YES', 'expected': '{"code": 0,"msg": "OK"}', 'actucal': "{'code': 0, 'msg': 'OK', 'data': {'id': 13217, 'leave_amount': 600000.55, 'mobile_phone': '15841177856', 'reg_name': '柠檬5d!e2', 'reg_time': '2020-06-11 22:58:56.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:21:54,700]--test_withdraw.py--63--INFO:======================正在查询原始金额=======================
+[2020-06-20 00:21:54,716]--test_withdraw.py--74--INFO:账户id为13217的账户原始金额是2100003.20
+[2020-06-20 00:21:54,716]--test_withdraw.py--77--INFO:======================正在查询原始提现流水记录条数=======================
+[2020-06-20 00:21:54,737]--test_withdraw.py--81--INFO:账户id为13217的原始提现流水条数为73
+[2020-06-20 00:21:54,764]--test_withdraw.py--93--INFO:======================正在查询提现后金额=======================
+[2020-06-20 00:21:54,779]--test_withdraw.py--97--INFO:账户id为13217的账户提现后的金额是2100003.20
+[2020-06-20 00:21:54,780]--test_withdraw.py--98--INFO:账户id为13217的账户原始金额-提现金额后的余额是2100003.20
+[2020-06-20 00:21:54,780]--test_withdraw.py--99--INFO:======================正在金额比对=======================
+[2020-06-20 00:21:54,780]--test_withdraw.py--101--INFO:======================金额比对通过=======================
+[2020-06-20 00:21:54,781]--test_withdraw.py--102--INFO:======================正在查询提现后流水记录=======================
+[2020-06-20 00:21:54,802]--test_withdraw.py--106--INFO:账户id为13217的提现后流水条数为74
+[2020-06-20 00:21:54,803]--test_withdraw.py--107--INFO:======================正在提现流水比对=======================
+[2020-06-20 00:21:54,803]--test_withdraw.py--110--INFO:第5条用例执行结果为PASS
+[2020-06-20 00:21:54,804]--test_withdraw.py--116--INFO:*************开始回写数据***************
+[2020-06-20 00:21:55,340]--test_withdraw.py--118--INFO:正在回写实际结果actual：{'code': 0, 'msg': 'OK', 'data': {'id': 13217, 'leave_amount': 2100003.2, 'mobile_phone': '15841177856', 'reg_name': '柠檬5d!e2', 'reg_time': '2020-06-11 22:58:56.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:21:55,876]--test_withdraw.py--120--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:21:55,876]--test_withdraw.py--121--INFO:*************结束回写数据***************
+[2020-06-20 00:21:55,917]--test_withdraw.py--49--INFO:******************正在执行withdraw模块用例******************
+[2020-06-20 00:21:55,917]--test_withdraw.py--50--INFO:正在执行第6条用例:输入存在的账户id，提现金额小于账户余额，输入2.55
+[2020-06-20 00:21:55,918]--test_withdraw.py--51--INFO:请求的数据是{'case_id': 6, 'interface': 'withdraw', 'title': '输入存在的账户id，提现金额小于账户余额，输入2.55', 'method': 'POST', 'url': '/member/withdraw', 'data': '{"member_id":"13217","amount":"2.55"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODQwMTB9.4oEBLeyNSi0HQ-LXoqEERXk-wbit4OBxcH9i1aRmCYvnLPa4hxsfdyZ2H5T48r1PGsGq3XwERpbPN2SHcSrH-w"}', 'yes_or_no': 'YES', 'expected': '{"code": 0,"msg": "OK"}', 'actucal': "{'code': 0, 'msg': 'OK', 'data': {'id': 13217, 'leave_amount': 599998.0, 'mobile_phone': '15841177856', 'reg_name': '柠檬5d!e2', 'reg_time': '2020-06-11 22:58:56.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:21:55,918]--test_withdraw.py--63--INFO:======================正在查询原始金额=======================
+[2020-06-20 00:21:55,933]--test_withdraw.py--74--INFO:账户id为13217的账户原始金额是2100003.20
+[2020-06-20 00:21:55,934]--test_withdraw.py--77--INFO:======================正在查询原始提现流水记录条数=======================
+[2020-06-20 00:21:55,957]--test_withdraw.py--81--INFO:账户id为13217的原始提现流水条数为74
+[2020-06-20 00:21:55,995]--test_withdraw.py--93--INFO:======================正在查询提现后金额=======================
+[2020-06-20 00:21:56,014]--test_withdraw.py--97--INFO:账户id为13217的账户提现后的金额是2100000.65
+[2020-06-20 00:21:56,014]--test_withdraw.py--98--INFO:账户id为13217的账户原始金额-提现金额后的余额是2100000.65
+[2020-06-20 00:21:56,014]--test_withdraw.py--99--INFO:======================正在金额比对=======================
+[2020-06-20 00:21:56,014]--test_withdraw.py--101--INFO:======================金额比对通过=======================
+[2020-06-20 00:21:56,015]--test_withdraw.py--102--INFO:======================正在查询提现后流水记录=======================
+[2020-06-20 00:21:56,038]--test_withdraw.py--106--INFO:账户id为13217的提现后流水条数为75
+[2020-06-20 00:21:56,038]--test_withdraw.py--107--INFO:======================正在提现流水比对=======================
+[2020-06-20 00:21:56,039]--test_withdraw.py--110--INFO:第6条用例执行结果为PASS
+[2020-06-20 00:21:56,039]--test_withdraw.py--116--INFO:*************开始回写数据***************
+[2020-06-20 00:21:56,574]--test_withdraw.py--118--INFO:正在回写实际结果actual：{'code': 0, 'msg': 'OK', 'data': {'id': 13217, 'leave_amount': 2100000.65, 'mobile_phone': '15841177856', 'reg_name': '柠檬5d!e2', 'reg_time': '2020-06-11 22:58:56.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:21:57,042]--test_withdraw.py--120--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:21:57,042]--test_withdraw.py--121--INFO:*************结束回写数据***************
+[2020-06-20 00:21:57,070]--test_withdraw.py--49--INFO:******************正在执行withdraw模块用例******************
+[2020-06-20 00:21:57,071]--test_withdraw.py--50--INFO:正在执行第7条用例:输入存在的账户id，提现金额小于账户余额，输入80.234
+[2020-06-20 00:21:57,071]--test_withdraw.py--51--INFO:请求的数据是{'case_id': 7, 'interface': 'withdraw', 'title': '输入存在的账户id，提现金额小于账户余额，输入80.234', 'method': 'POST', 'url': '/member/withdraw', 'data': '{"member_id":"13217","amount":"80.234"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODQwMTB9.4oEBLeyNSi0HQ-LXoqEERXk-wbit4OBxcH9i1aRmCYvnLPa4hxsfdyZ2H5T48r1PGsGq3XwERpbPN2SHcSrH-w"}', 'yes_or_no': 'NO', 'expected': '{"code": 2,"msg": "余额小数超过两位"}', 'actucal': "{'code': 2, 'msg': '余额小数超过两位', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:21:57,091]--test_withdraw.py--110--INFO:第7条用例执行结果为PASS
+[2020-06-20 00:21:57,092]--test_withdraw.py--116--INFO:*************开始回写数据***************
+[2020-06-20 00:21:57,591]--test_withdraw.py--118--INFO:正在回写实际结果actual：{'code': 2, 'msg': '余额小数超过两位', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:21:58,039]--test_withdraw.py--120--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:21:58,040]--test_withdraw.py--121--INFO:*************结束回写数据***************
+[2020-06-20 00:21:58,066]--test_withdraw.py--49--INFO:******************正在执行withdraw模块用例******************
+[2020-06-20 00:21:58,066]--test_withdraw.py--50--INFO:正在执行第8条用例:输入存在的账户id，金额输入非数字
+[2020-06-20 00:21:58,066]--test_withdraw.py--51--INFO:请求的数据是{'case_id': 8, 'interface': 'withdraw', 'title': '输入存在的账户id，金额输入非数字', 'method': 'POST', 'url': '/member/withdraw', 'data': '{"member_id":"13217","amount":"fdfsd"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODQwMTB9.4oEBLeyNSi0HQ-LXoqEERXk-wbit4OBxcH9i1aRmCYvnLPa4hxsfdyZ2H5T48r1PGsGq3XwERpbPN2SHcSrH-w"}', 'yes_or_no': 'NO', 'expected': '{"code": 2,"msg": "数值参数格式不正确"}', 'actucal': "{'code': 2, 'msg': '数值参数格式不正确', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:21:58,088]--test_withdraw.py--110--INFO:第8条用例执行结果为PASS
+[2020-06-20 00:21:58,088]--test_withdraw.py--116--INFO:*************开始回写数据***************
+[2020-06-20 00:21:58,588]--test_withdraw.py--118--INFO:正在回写实际结果actual：{'code': 2, 'msg': '数值参数格式不正确', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:21:59,024]--test_withdraw.py--120--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:21:59,024]--test_withdraw.py--121--INFO:*************结束回写数据***************
+[2020-06-20 00:21:59,046]--test_withdraw.py--49--INFO:******************正在执行withdraw模块用例******************
+[2020-06-20 00:21:59,046]--test_withdraw.py--50--INFO:正在执行第9条用例:输入存在的账户id，金额输入为空
+[2020-06-20 00:21:59,047]--test_withdraw.py--51--INFO:请求的数据是{'case_id': 9, 'interface': 'withdraw', 'title': '输入存在的账户id，金额输入为空', 'method': 'POST', 'url': '/member/withdraw', 'data': '{"member_id":"13217","amount":""}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODQwMTB9.4oEBLeyNSi0HQ-LXoqEERXk-wbit4OBxcH9i1aRmCYvnLPa4hxsfdyZ2H5T48r1PGsGq3XwERpbPN2SHcSrH-w"}', 'yes_or_no': 'NO', 'expected': '{"code": 1,"msg": "余额为空"}', 'actucal': "{'code': 1, 'msg': '余额为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:21:59,068]--test_withdraw.py--110--INFO:第9条用例执行结果为PASS
+[2020-06-20 00:21:59,068]--test_withdraw.py--116--INFO:*************开始回写数据***************
+[2020-06-20 00:21:59,494]--test_withdraw.py--118--INFO:正在回写实际结果actual：{'code': 1, 'msg': '余额为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:21:59,892]--test_withdraw.py--120--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:21:59,893]--test_withdraw.py--121--INFO:*************结束回写数据***************
+[2020-06-20 00:21:59,924]--test_withdraw.py--49--INFO:******************正在执行withdraw模块用例******************
+[2020-06-20 00:21:59,924]--test_withdraw.py--50--INFO:正在执行第10条用例:输入存在的账户id，金额输入大于账户余额
+[2020-06-20 00:21:59,924]--test_withdraw.py--51--INFO:请求的数据是{'case_id': 10, 'interface': 'withdraw', 'title': '输入存在的账户id，金额输入大于账户余额', 'method': 'POST', 'url': '/member/withdraw', 'data': '{"member_id":"#max_id#","amount":"#amt#"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODQwMTB9.4oEBLeyNSi0HQ-LXoqEERXk-wbit4OBxcH9i1aRmCYvnLPa4hxsfdyZ2H5T48r1PGsGq3XwERpbPN2SHcSrH-w"}', 'yes_or_no': 'NO', 'expected': '{"code": 1002,"msg": "余额不足"}', 'actucal': "{'code': 1002, 'msg': '余额不足', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:21:59,969]--test_withdraw.py--110--INFO:第10条用例执行结果为PASS
+[2020-06-20 00:21:59,970]--test_withdraw.py--116--INFO:*************开始回写数据***************
+[2020-06-20 00:22:00,491]--test_withdraw.py--118--INFO:正在回写实际结果actual：{'code': 1002, 'msg': '余额不足', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:22:00,876]--test_withdraw.py--120--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:22:00,877]--test_withdraw.py--121--INFO:*************结束回写数据***************
+[2020-06-20 00:22:00,898]--test_withdraw.py--49--INFO:******************正在执行withdraw模块用例******************
+[2020-06-20 00:22:00,899]--test_withdraw.py--50--INFO:正在执行第11条用例:输入不存在的账户id
+[2020-06-20 00:22:00,899]--test_withdraw.py--51--INFO:请求的数据是{'case_id': 11, 'interface': 'withdraw', 'title': '输入不存在的账户id', 'method': 'POST', 'url': '/member/withdraw', 'data': '{"member_id":"88888","amount":"58"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODQwMTB9.4oEBLeyNSi0HQ-LXoqEERXk-wbit4OBxcH9i1aRmCYvnLPa4hxsfdyZ2H5T48r1PGsGq3XwERpbPN2SHcSrH-w"}', 'yes_or_no': 'NO', 'expected': '{"code": 2,"msg": "会员不存在"}', 'actucal': "{'code': 2, 'msg': '会员不存在', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:22:00,920]--test_withdraw.py--110--INFO:第11条用例执行结果为PASS
+[2020-06-20 00:22:00,921]--test_withdraw.py--116--INFO:*************开始回写数据***************
+[2020-06-20 00:22:01,451]--test_withdraw.py--118--INFO:正在回写实际结果actual：{'code': 2, 'msg': '会员不存在', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:22:01,841]--test_withdraw.py--120--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:22:01,841]--test_withdraw.py--121--INFO:*************结束回写数据***************
+[2020-06-20 00:22:02,077]--test_withdraw.py--49--INFO:******************正在执行withdraw模块用例******************
+[2020-06-20 00:22:02,077]--test_withdraw.py--50--INFO:正在执行第12条用例:账户id输入为空
+[2020-06-20 00:22:02,078]--test_withdraw.py--51--INFO:请求的数据是{'case_id': 12, 'interface': 'withdraw', 'title': '账户id输入为空', 'method': 'POST', 'url': '/member/withdraw', 'data': '{"member_id":"","amount":"155"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEzMjE3LCJleHAiOjE1OTI1ODQwMTB9.4oEBLeyNSi0HQ-LXoqEERXk-wbit4OBxcH9i1aRmCYvnLPa4hxsfdyZ2H5T48r1PGsGq3XwERpbPN2SHcSrH-w"}', 'yes_or_no': 'NO', 'expected': '{"code": 1,"msg": "会员id为空"}', 'actucal': "{'code': 1, 'msg': '会员id为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-20 00:22:02,097]--test_withdraw.py--110--INFO:第12条用例执行结果为PASS
+[2020-06-20 00:22:02,098]--test_withdraw.py--116--INFO:*************开始回写数据***************
+[2020-06-20 00:22:02,540]--test_withdraw.py--118--INFO:正在回写实际结果actual：{'code': 1, 'msg': '会员id为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-20 00:22:02,942]--test_withdraw.py--120--INFO:正在回写测试结果test_result：PASS
+[2020-06-20 00:22:02,942]--test_withdraw.py--121--INFO:*************结束回写数据***************

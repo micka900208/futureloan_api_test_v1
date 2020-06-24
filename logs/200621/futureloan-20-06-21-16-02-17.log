@@ -1,0 +1,321 @@
+[2020-06-21 16:02:17,711]--test_invest.py--41--INFO:******************正在执行invest模块用例******************
+[2020-06-21 16:02:17,711]--test_invest.py--42--INFO:正在执行第1条用例:用户id校验--输入已注册用户id
+[2020-06-21 16:02:17,712]--test_invest.py--43--INFO:请求的数据是{'case_id': 1, 'interface': 'invest', 'title': '用户id校验--输入已注册用户id', 'method': 'POST', 'url': '/member/invest', 'data': '{"member_id":"#member_id#","loan_id":"#loanid#","amount":"1000"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"#token#"}', 'yes_or_no': 'YES', 'expected': '{"code": 0,"msg": "OK"}', 'actucal': "{'code': 0, 'msg': 'OK', 'data': {'id': 2092, 'member_id': 173720, 'loan_id': 1246912, 'amount': 1000.0, 'create_time': '2020-06-21 15:59:52', 'is_valid': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-21 16:02:17,717]--test_invest.py--93--INFO:======================正在查询原始金额=======================
+[2020-06-21 16:02:17,781]--test_invest.py--101--INFO:账户id为173720的账户原始金额是37400.00
+[2020-06-21 16:02:17,781]--test_invest.py--133--INFO:======================正在查询原始投资记录条数=======================
+[2020-06-21 16:02:17,797]--test_invest.py--137--INFO:账户id为173720的原始投资记录条数为74
+[2020-06-21 16:02:17,797]--test_invest.py--140--INFO:======================正在查询原始投资流水记录条数=======================
+[2020-06-21 16:02:17,820]--test_invest.py--144--INFO:账户id为173720的原始投资流水条数为74
+[2020-06-21 16:02:17,855]--test_invest.py--164--INFO:======================正在查询投资后金额=======================
+[2020-06-21 16:02:17,870]--test_invest.py--168--INFO:账户id为173720的账户投资后的余额是36400.00
+[2020-06-21 16:02:17,871]--test_invest.py--169--INFO:账户id为173720的账户原始金额-投资金额后的余额是36400.00
+[2020-06-21 16:02:17,871]--test_invest.py--170--INFO:======================正在金额比对=======================
+[2020-06-21 16:02:17,871]--test_invest.py--172--INFO:======================金额比对通过=======================
+[2020-06-21 16:02:17,871]--test_invest.py--173--INFO:======================正在查询投资后流水记录=======================
+[2020-06-21 16:02:17,893]--test_invest.py--177--INFO:账户id为173720的投资后流水条数为75
+[2020-06-21 16:02:17,893]--test_invest.py--178--INFO:======================正在投资流水记录比对=======================
+[2020-06-21 16:02:17,893]--test_invest.py--180--INFO:======================正在查询投资记录=======================
+[2020-06-21 16:02:17,931]--test_invest.py--193--INFO:第1条用例执行结果为PASS
+[2020-06-21 16:02:17,932]--test_invest.py--199--INFO:*************开始回写数据***************
+[2020-06-21 16:02:18,287]--test_invest.py--201--INFO:正在回写实际结果actual：{'code': 0, 'msg': 'OK', 'data': {'id': 2100, 'member_id': 173720, 'loan_id': 1246971, 'amount': 1000.0, 'create_time': '2020-06-21 16:02:19', 'is_valid': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-21 16:02:18,615]--test_invest.py--203--INFO:正在回写测试结果test_result：PASS
+[2020-06-21 16:02:18,616]--test_invest.py--204--INFO:*************结束回写数据***************
+[2020-06-21 16:02:18,823]--test_invest.py--41--INFO:******************正在执行invest模块用例******************
+[2020-06-21 16:02:18,823]--test_invest.py--42--INFO:正在执行第2条用例:用户id校验--输入不存在的用户id
+[2020-06-21 16:02:18,823]--test_invest.py--43--INFO:请求的数据是{'case_id': 2, 'interface': 'invest', 'title': '用户id校验--输入不存在的用户id', 'method': 'POST', 'url': '/member/invest', 'data': '{"member_id":"s13361","loan_id":"#loanid#","amount":"20000"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"#token#"}', 'yes_or_no': 'NO', 'expected': '{"code": 2,"msg": "数值参数格式错误"}', 'actucal': "{'code': 2, 'msg': '数值参数格式错误', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-21 16:02:18,824]--test_invest.py--133--INFO:======================正在查询原始投资记录条数=======================
+[2020-06-21 16:02:18,838]--test_invest.py--137--INFO:账户id为173720的原始投资记录条数为75
+[2020-06-21 16:02:18,839]--test_invest.py--140--INFO:======================正在查询原始投资流水记录条数=======================
+[2020-06-21 16:02:18,860]--test_invest.py--144--INFO:账户id为173720的原始投资流水条数为75
+[2020-06-21 16:02:18,879]--test_invest.py--193--INFO:第2条用例执行结果为PASS
+[2020-06-21 16:02:18,879]--test_invest.py--199--INFO:*************开始回写数据***************
+[2020-06-21 16:02:19,233]--test_invest.py--201--INFO:正在回写实际结果actual：{'code': 2, 'msg': '数值参数格式错误', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-21 16:02:19,559]--test_invest.py--203--INFO:正在回写测试结果test_result：PASS
+[2020-06-21 16:02:19,560]--test_invest.py--204--INFO:*************结束回写数据***************
+[2020-06-21 16:02:19,728]--test_invest.py--41--INFO:******************正在执行invest模块用例******************
+[2020-06-21 16:02:19,729]--test_invest.py--42--INFO:正在执行第3条用例:用户id校验--id输入为空
+[2020-06-21 16:02:19,729]--test_invest.py--43--INFO:请求的数据是{'case_id': 3, 'interface': 'invest', 'title': '用户id校验--id输入为空', 'method': 'POST', 'url': '/member/invest', 'data': '{"member_id":"","loan_id":"#loanid#","amount":"100"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"#token#"}', 'yes_or_no': 'NO', 'expected': '{"code": 2,"msg": "数值参数格式错误"}', 'actucal': "{'code': 2, 'msg': '数值参数格式错误', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-21 16:02:19,729]--test_invest.py--133--INFO:======================正在查询原始投资记录条数=======================
+[2020-06-21 16:02:19,763]--test_invest.py--137--INFO:账户id为173720的原始投资记录条数为75
+[2020-06-21 16:02:19,764]--test_invest.py--140--INFO:======================正在查询原始投资流水记录条数=======================
+[2020-06-21 16:02:19,797]--test_invest.py--144--INFO:账户id为173720的原始投资流水条数为75
+[2020-06-21 16:02:19,815]--test_invest.py--193--INFO:第3条用例执行结果为PASS
+[2020-06-21 16:02:19,815]--test_invest.py--199--INFO:*************开始回写数据***************
+[2020-06-21 16:02:20,157]--test_invest.py--201--INFO:正在回写实际结果actual：{'code': 2, 'msg': '数值参数格式错误', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-21 16:02:20,483]--test_invest.py--203--INFO:正在回写测试结果test_result：PASS
+[2020-06-21 16:02:20,484]--test_invest.py--204--INFO:*************结束回写数据***************
+[2020-06-21 16:02:21,045]--test_invest.py--41--INFO:******************正在执行invest模块用例******************
+[2020-06-21 16:02:21,045]--test_invest.py--42--INFO:正在执行第4条用例:投资项目id校验--输入投标中状态2(竞标中)的项目id
+[2020-06-21 16:02:21,046]--test_invest.py--43--INFO:请求的数据是{'case_id': 4, 'interface': 'invest', 'title': '投资项目id校验--输入投标中状态2(竞标中)的项目id', 'method': 'POST', 'url': '/member/invest', 'data': '{"member_id":"#member_id#","loan_id":"#loanid#","amount":"100"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"#token#"}', 'yes_or_no': 'YES', 'expected': '{"code": 0,"msg": "OK"}', 'actucal': "{'code': 0, 'msg': 'OK', 'data': {'id': 2093, 'member_id': 173720, 'loan_id': 1246915, 'amount': 100.0, 'create_time': '2020-06-21 15:59:55', 'is_valid': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-21 16:02:21,046]--test_invest.py--93--INFO:======================正在查询原始金额=======================
+[2020-06-21 16:02:21,113]--test_invest.py--101--INFO:账户id为173720的账户原始金额是56400.00
+[2020-06-21 16:02:21,114]--test_invest.py--133--INFO:======================正在查询原始投资记录条数=======================
+[2020-06-21 16:02:21,130]--test_invest.py--137--INFO:账户id为173720的原始投资记录条数为75
+[2020-06-21 16:02:21,130]--test_invest.py--140--INFO:======================正在查询原始投资流水记录条数=======================
+[2020-06-21 16:02:21,157]--test_invest.py--144--INFO:账户id为173720的原始投资流水条数为75
+[2020-06-21 16:02:21,200]--test_invest.py--164--INFO:======================正在查询投资后金额=======================
+[2020-06-21 16:02:21,215]--test_invest.py--168--INFO:账户id为173720的账户投资后的余额是56300.00
+[2020-06-21 16:02:21,216]--test_invest.py--169--INFO:账户id为173720的账户原始金额-投资金额后的余额是56300.00
+[2020-06-21 16:02:21,217]--test_invest.py--170--INFO:======================正在金额比对=======================
+[2020-06-21 16:02:21,217]--test_invest.py--172--INFO:======================金额比对通过=======================
+[2020-06-21 16:02:21,218]--test_invest.py--173--INFO:======================正在查询投资后流水记录=======================
+[2020-06-21 16:02:21,246]--test_invest.py--177--INFO:账户id为173720的投资后流水条数为76
+[2020-06-21 16:02:21,246]--test_invest.py--178--INFO:======================正在投资流水记录比对=======================
+[2020-06-21 16:02:21,247]--test_invest.py--180--INFO:======================正在查询投资记录=======================
+[2020-06-21 16:02:21,280]--test_invest.py--193--INFO:第4条用例执行结果为PASS
+[2020-06-21 16:02:21,280]--test_invest.py--199--INFO:*************开始回写数据***************
+[2020-06-21 16:02:21,613]--test_invest.py--201--INFO:正在回写实际结果actual：{'code': 0, 'msg': 'OK', 'data': {'id': 2101, 'member_id': 173720, 'loan_id': 1246974, 'amount': 100.0, 'create_time': '2020-06-21 16:02:22', 'is_valid': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-21 16:02:21,952]--test_invest.py--203--INFO:正在回写测试结果test_result：PASS
+[2020-06-21 16:02:21,953]--test_invest.py--204--INFO:*************结束回写数据***************
+[2020-06-21 16:02:22,195]--test_invest.py--41--INFO:******************正在执行invest模块用例******************
+[2020-06-21 16:02:22,196]--test_invest.py--42--INFO:正在执行第5条用例:投资项目id校验--输入非投标中状态为1(审核中)的项目id
+[2020-06-21 16:02:22,196]--test_invest.py--43--INFO:请求的数据是{'case_id': 5, 'interface': 'invest', 'title': '投资项目id校验--输入非投标中状态为1(审核中)的项目id', 'method': 'POST', 'url': '/member/invest', 'data': '{"member_id":"#member_id#","loan_id":"#shz#","amount":"100"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"#token#"}', 'yes_or_no': 'NO', 'expected': '{"code": 2,"msg": "该项目不在竞标中状态"}', 'actucal': "{'code': 2, 'msg': '该项目不在竞标中状态', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-21 16:02:22,212]--test_invest.py--133--INFO:======================正在查询原始投资记录条数=======================
+[2020-06-21 16:02:22,227]--test_invest.py--137--INFO:账户id为173720的原始投资记录条数为76
+[2020-06-21 16:02:22,228]--test_invest.py--140--INFO:======================正在查询原始投资流水记录条数=======================
+[2020-06-21 16:02:22,255]--test_invest.py--144--INFO:账户id为173720的原始投资流水条数为76
+[2020-06-21 16:02:22,279]--test_invest.py--193--INFO:第5条用例执行结果为PASS
+[2020-06-21 16:02:22,279]--test_invest.py--199--INFO:*************开始回写数据***************
+[2020-06-21 16:02:22,653]--test_invest.py--201--INFO:正在回写实际结果actual：{'code': 2, 'msg': '该项目不在竞标中状态', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-21 16:02:22,971]--test_invest.py--203--INFO:正在回写测试结果test_result：PASS
+[2020-06-21 16:02:22,972]--test_invest.py--204--INFO:*************结束回写数据***************
+[2020-06-21 16:02:23,115]--test_invest.py--41--INFO:******************正在执行invest模块用例******************
+[2020-06-21 16:02:23,116]--test_invest.py--42--INFO:正在执行第6条用例:投资项目id校验--输入非投标中状态3(还款中)的项目id
+[2020-06-21 16:02:23,116]--test_invest.py--43--INFO:请求的数据是{'case_id': 6, 'interface': 'invest', 'title': '投资项目id校验--输入非投标中状态3(还款中)的项目id', 'method': 'POST', 'url': '/member/invest', 'data': '{"member_id":"#member_id#","loan_id":"#hkz#","amount":"100"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"#token#"}', 'yes_or_no': 'NO', 'expected': '{"code": 2,"msg": "该项目不在竞标中状态"}', 'actucal': "{'code': 2, 'msg': '该项目不在竞标中状态', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-21 16:02:23,131]--test_invest.py--133--INFO:======================正在查询原始投资记录条数=======================
+[2020-06-21 16:02:23,146]--test_invest.py--137--INFO:账户id为173720的原始投资记录条数为76
+[2020-06-21 16:02:23,147]--test_invest.py--140--INFO:======================正在查询原始投资流水记录条数=======================
+[2020-06-21 16:02:23,169]--test_invest.py--144--INFO:账户id为173720的原始投资流水条数为76
+[2020-06-21 16:02:23,190]--test_invest.py--193--INFO:第6条用例执行结果为PASS
+[2020-06-21 16:02:23,191]--test_invest.py--199--INFO:*************开始回写数据***************
+[2020-06-21 16:02:23,528]--test_invest.py--201--INFO:正在回写实际结果actual：{'code': 2, 'msg': '该项目不在竞标中状态', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-21 16:02:23,855]--test_invest.py--203--INFO:正在回写测试结果test_result：PASS
+[2020-06-21 16:02:23,855]--test_invest.py--204--INFO:*************结束回写数据***************
+[2020-06-21 16:02:24,231]--test_invest.py--41--INFO:******************正在执行invest模块用例******************
+[2020-06-21 16:02:24,232]--test_invest.py--42--INFO:正在执行第7条用例:投资项目id校验--输入非投标中状态4(还款完成)的项目id
+[2020-06-21 16:02:24,232]--test_invest.py--43--INFO:请求的数据是{'case_id': 7, 'interface': 'invest', 'title': '投资项目id校验--输入非投标中状态4(还款完成)的项目id', 'method': 'POST', 'url': '/member/invest', 'data': '{"member_id":"#member_id#","loan_id":"#hwc#","amount":"100"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"#token#"}', 'yes_or_no': 'NO', 'expected': '{"code": 2,"msg": "该项目不在竞标中状态"}', 'actucal': "{'code': 2, 'msg': '该项目不在竞标中状态', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-21 16:02:24,242]--test_invest.py--133--INFO:======================正在查询原始投资记录条数=======================
+[2020-06-21 16:02:24,250]--test_invest.py--137--INFO:账户id为173720的原始投资记录条数为76
+[2020-06-21 16:02:24,251]--test_invest.py--140--INFO:======================正在查询原始投资流水记录条数=======================
+[2020-06-21 16:02:24,266]--test_invest.py--144--INFO:账户id为173720的原始投资流水条数为76
+[2020-06-21 16:02:24,294]--test_invest.py--193--INFO:第7条用例执行结果为PASS
+[2020-06-21 16:02:24,295]--test_invest.py--199--INFO:*************开始回写数据***************
+[2020-06-21 16:02:24,674]--test_invest.py--201--INFO:正在回写实际结果actual：{'code': 2, 'msg': '该项目不在竞标中状态', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-21 16:02:24,987]--test_invest.py--203--INFO:正在回写测试结果test_result：PASS
+[2020-06-21 16:02:24,988]--test_invest.py--204--INFO:*************结束回写数据***************
+[2020-06-21 16:02:25,154]--test_invest.py--41--INFO:******************正在执行invest模块用例******************
+[2020-06-21 16:02:25,155]--test_invest.py--42--INFO:正在执行第8条用例:投资项目id校验--输入非投标中状态5(审核不通过)的项目id
+[2020-06-21 16:02:25,155]--test_invest.py--43--INFO:请求的数据是{'case_id': 8, 'interface': 'invest', 'title': '投资项目id校验--输入非投标中状态5(审核不通过)的项目id', 'method': 'POST', 'url': '/member/invest', 'data': '{"member_id":"#member_id#","loan_id":"#btg#","amount":"100"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"#token#"}', 'yes_or_no': 'NO', 'expected': '{"code": 2,"msg": "该项目不在竞标中状态"}', 'actucal': "{'code': 2, 'msg': '该项目不在竞标中状态', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-21 16:02:25,170]--test_invest.py--133--INFO:======================正在查询原始投资记录条数=======================
+[2020-06-21 16:02:25,184]--test_invest.py--137--INFO:账户id为173720的原始投资记录条数为76
+[2020-06-21 16:02:25,185]--test_invest.py--140--INFO:======================正在查询原始投资流水记录条数=======================
+[2020-06-21 16:02:25,208]--test_invest.py--144--INFO:账户id为173720的原始投资流水条数为76
+[2020-06-21 16:02:25,230]--test_invest.py--193--INFO:第8条用例执行结果为PASS
+[2020-06-21 16:02:25,231]--test_invest.py--199--INFO:*************开始回写数据***************
+[2020-06-21 16:02:25,572]--test_invest.py--201--INFO:正在回写实际结果actual：{'code': 2, 'msg': '该项目不在竞标中状态', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-21 16:02:25,902]--test_invest.py--203--INFO:正在回写测试结果test_result：PASS
+[2020-06-21 16:02:25,902]--test_invest.py--204--INFO:*************结束回写数据***************
+[2020-06-21 16:02:26,033]--test_invest.py--41--INFO:******************正在执行invest模块用例******************
+[2020-06-21 16:02:26,033]--test_invest.py--42--INFO:正在执行第9条用例:投资项目id校验--输入用户自己创建的项目id
+[2020-06-21 16:02:26,033]--test_invest.py--43--INFO:请求的数据是{'case_id': 9, 'interface': 'invest', 'title': '投资项目id校验--输入用户自己创建的项目id', 'method': 'POST', 'url': '/member/invest', 'data': '{"member_id":"#member_id#","loan_id":"#loanid#","amount":"100"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"#token#"}', 'yes_or_no': 'YES', 'expected': '{"code": 0,"msg": "OK"}', 'actucal': "{'code': 0, 'msg': 'OK', 'data': {'id': 2094, 'member_id': 173720, 'loan_id': 1246920, 'amount': 100.0, 'create_time': '2020-06-21 15:59:59', 'is_valid': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-21 16:02:26,033]--test_invest.py--93--INFO:======================正在查询原始金额=======================
+[2020-06-21 16:02:26,140]--test_invest.py--101--INFO:账户id为173720的账户原始金额是76300.00
+[2020-06-21 16:02:26,140]--test_invest.py--133--INFO:======================正在查询原始投资记录条数=======================
+[2020-06-21 16:02:26,156]--test_invest.py--137--INFO:账户id为173720的原始投资记录条数为76
+[2020-06-21 16:02:26,156]--test_invest.py--140--INFO:======================正在查询原始投资流水记录条数=======================
+[2020-06-21 16:02:26,177]--test_invest.py--144--INFO:账户id为173720的原始投资流水条数为76
+[2020-06-21 16:02:26,245]--test_invest.py--164--INFO:======================正在查询投资后金额=======================
+[2020-06-21 16:02:26,260]--test_invest.py--168--INFO:账户id为173720的账户投资后的余额是76200.00
+[2020-06-21 16:02:26,261]--test_invest.py--169--INFO:账户id为173720的账户原始金额-投资金额后的余额是76200.00
+[2020-06-21 16:02:26,261]--test_invest.py--170--INFO:======================正在金额比对=======================
+[2020-06-21 16:02:26,262]--test_invest.py--172--INFO:======================金额比对通过=======================
+[2020-06-21 16:02:26,262]--test_invest.py--173--INFO:======================正在查询投资后流水记录=======================
+[2020-06-21 16:02:26,284]--test_invest.py--177--INFO:账户id为173720的投资后流水条数为77
+[2020-06-21 16:02:26,285]--test_invest.py--178--INFO:======================正在投资流水记录比对=======================
+[2020-06-21 16:02:26,285]--test_invest.py--180--INFO:======================正在查询投资记录=======================
+[2020-06-21 16:02:26,314]--test_invest.py--193--INFO:第9条用例执行结果为PASS
+[2020-06-21 16:02:26,315]--test_invest.py--199--INFO:*************开始回写数据***************
+[2020-06-21 16:02:26,667]--test_invest.py--201--INFO:正在回写实际结果actual：{'code': 0, 'msg': 'OK', 'data': {'id': 2102, 'member_id': 173720, 'loan_id': 1246981, 'amount': 100.0, 'create_time': '2020-06-21 16:02:27', 'is_valid': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-21 16:02:26,991]--test_invest.py--203--INFO:正在回写测试结果test_result：PASS
+[2020-06-21 16:02:26,991]--test_invest.py--204--INFO:*************结束回写数据***************
+[2020-06-21 16:02:27,184]--test_invest.py--41--INFO:******************正在执行invest模块用例******************
+[2020-06-21 16:02:27,184]--test_invest.py--42--INFO:正在执行第10条用例:投资项目id校验--输入其他用户创建的项目id
+[2020-06-21 16:02:27,184]--test_invest.py--43--INFO:请求的数据是{'case_id': 10, 'interface': 'invest', 'title': '投资项目id校验--输入其他用户创建的项目id', 'method': 'POST', 'url': '/member/invest', 'data': '{"member_id":"#member_id#","loan_id":"#other_id#","amount":"600"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"#token#"}', 'yes_or_no': 'YES', 'expected': '{"code": 0,"msg": "OK"}', 'actucal': "{'code': 0, 'msg': 'OK', 'data': {'id': 2095, 'member_id': 173720, 'loan_id': 17, 'amount': 600.0, 'create_time': '2020-06-21 16:00:01', 'is_valid': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'FAILED'}
+[2020-06-21 16:02:27,184]--test_invest.py--93--INFO:======================正在查询原始金额=======================
+[2020-06-21 16:02:27,237]--test_invest.py--101--INFO:账户id为173720的账户原始金额是96200.00
+[2020-06-21 16:02:27,245]--test_invest.py--133--INFO:======================正在查询原始投资记录条数=======================
+[2020-06-21 16:02:27,255]--test_invest.py--137--INFO:账户id为173720的原始投资记录条数为77
+[2020-06-21 16:02:27,255]--test_invest.py--140--INFO:======================正在查询原始投资流水记录条数=======================
+[2020-06-21 16:02:27,270]--test_invest.py--144--INFO:账户id为173720的原始投资流水条数为77
+[2020-06-21 16:02:27,310]--test_invest.py--164--INFO:======================正在查询投资后金额=======================
+[2020-06-21 16:02:27,318]--test_invest.py--168--INFO:账户id为173720的账户投资后的余额是95600.00
+[2020-06-21 16:02:27,318]--test_invest.py--169--INFO:账户id为173720的账户原始金额-投资金额后的余额是95600.00
+[2020-06-21 16:02:27,319]--test_invest.py--170--INFO:======================正在金额比对=======================
+[2020-06-21 16:02:27,319]--test_invest.py--172--INFO:======================金额比对通过=======================
+[2020-06-21 16:02:27,319]--test_invest.py--173--INFO:======================正在查询投资后流水记录=======================
+[2020-06-21 16:02:27,337]--test_invest.py--177--INFO:账户id为173720的投资后流水条数为78
+[2020-06-21 16:02:27,337]--test_invest.py--178--INFO:======================正在投资流水记录比对=======================
+[2020-06-21 16:02:27,337]--test_invest.py--180--INFO:======================正在查询投资记录=======================
+[2020-06-21 16:02:27,349]--test_invest.py--195--ERROR:执行接口测试出现错误，错误是None is not true
+[2020-06-21 16:02:27,350]--test_invest.py--197--ERROR:第10条用例执行结果为FAILED
+[2020-06-21 16:02:27,350]--test_invest.py--199--INFO:*************开始回写数据***************
+[2020-06-21 16:02:27,716]--test_invest.py--201--INFO:正在回写实际结果actual：{'code': 0, 'msg': 'OK', 'data': {'id': 2103, 'member_id': 173720, 'loan_id': 17, 'amount': 600.0, 'create_time': '2020-06-21 16:02:28', 'is_valid': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-21 16:02:28,047]--test_invest.py--203--INFO:正在回写测试结果test_result：FAILED
+[2020-06-21 16:02:28,047]--test_invest.py--204--INFO:*************结束回写数据***************
+[2020-06-21 16:02:28,254]--test_invest.py--41--INFO:******************正在执行invest模块用例******************
+[2020-06-21 16:02:28,254]--test_invest.py--42--INFO:正在执行第11条用例:投资项目id校验--输入不存在的项目id
+[2020-06-21 16:02:28,254]--test_invest.py--43--INFO:请求的数据是{'case_id': 11, 'interface': 'invest', 'title': '投资项目id校验--输入不存在的项目id', 'method': 'POST', 'url': '/member/invest', 'data': '{"member_id":"#member_id#","loan_id":"888888888","amount":"100"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"#token#"}', 'yes_or_no': 'NO', 'expected': '{"code": 2,"msg": "项目不存在"}', 'actucal': "{'code': 2, 'msg': '项目不存在', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-21 16:02:28,255]--test_invest.py--133--INFO:======================正在查询原始投资记录条数=======================
+[2020-06-21 16:02:28,268]--test_invest.py--137--INFO:账户id为173720的原始投资记录条数为78
+[2020-06-21 16:02:28,268]--test_invest.py--140--INFO:======================正在查询原始投资流水记录条数=======================
+[2020-06-21 16:02:28,285]--test_invest.py--144--INFO:账户id为173720的原始投资流水条数为78
+[2020-06-21 16:02:28,508]--test_invest.py--193--INFO:第11条用例执行结果为PASS
+[2020-06-21 16:02:28,509]--test_invest.py--199--INFO:*************开始回写数据***************
+[2020-06-21 16:02:28,862]--test_invest.py--201--INFO:正在回写实际结果actual：{'code': 2, 'msg': '项目不存在', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-21 16:02:29,252]--test_invest.py--203--INFO:正在回写测试结果test_result：PASS
+[2020-06-21 16:02:29,253]--test_invest.py--204--INFO:*************结束回写数据***************
+[2020-06-21 16:02:29,649]--test_invest.py--41--INFO:******************正在执行invest模块用例******************
+[2020-06-21 16:02:29,650]--test_invest.py--42--INFO:正在执行第12条用例:投资项目id校验--项目id输入为空
+[2020-06-21 16:02:29,650]--test_invest.py--43--INFO:请求的数据是{'case_id': 12, 'interface': 'invest', 'title': '投资项目id校验--项目id输入为空', 'method': 'POST', 'url': '/member/invest', 'data': '{"member_id":"#member_id#","loan_id":"","amount":"100"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"#token#"}', 'yes_or_no': 'NO', 'expected': '{"code": 2,"msg": "数值参数格式错误"}', 'actucal': "{'code': 2, 'msg': '数值参数格式错误', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-21 16:02:29,651]--test_invest.py--133--INFO:======================正在查询原始投资记录条数=======================
+[2020-06-21 16:02:29,662]--test_invest.py--137--INFO:账户id为173720的原始投资记录条数为78
+[2020-06-21 16:02:29,663]--test_invest.py--140--INFO:======================正在查询原始投资流水记录条数=======================
+[2020-06-21 16:02:29,682]--test_invest.py--144--INFO:账户id为173720的原始投资流水条数为78
+[2020-06-21 16:02:29,708]--test_invest.py--193--INFO:第12条用例执行结果为PASS
+[2020-06-21 16:02:29,709]--test_invest.py--199--INFO:*************开始回写数据***************
+[2020-06-21 16:02:30,086]--test_invest.py--201--INFO:正在回写实际结果actual：{'code': 2, 'msg': '数值参数格式错误', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-21 16:02:30,404]--test_invest.py--203--INFO:正在回写测试结果test_result：PASS
+[2020-06-21 16:02:30,404]--test_invest.py--204--INFO:*************结束回写数据***************
+[2020-06-21 16:02:30,597]--test_invest.py--41--INFO:******************正在执行invest模块用例******************
+[2020-06-21 16:02:30,597]--test_invest.py--42--INFO:正在执行第13条用例:投资金额校验--投资金额输入为空
+[2020-06-21 16:02:30,597]--test_invest.py--43--INFO:请求的数据是{'case_id': 13, 'interface': 'invest', 'title': '投资金额校验--投资金额输入为空', 'method': 'POST', 'url': '/member/invest', 'data': '{"member_id":"#member_id#","loan_id":"#loanid#","amount":""}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"#token#"}', 'yes_or_no': 'NO', 'expected': '{"code": 2,"msg": "数值参数格式错误"}', 'actucal': "{'code': 2, 'msg': '数值参数格式错误', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-21 16:02:30,598]--test_invest.py--133--INFO:======================正在查询原始投资记录条数=======================
+[2020-06-21 16:02:30,607]--test_invest.py--137--INFO:账户id为173720的原始投资记录条数为78
+[2020-06-21 16:02:30,607]--test_invest.py--140--INFO:======================正在查询原始投资流水记录条数=======================
+[2020-06-21 16:02:30,625]--test_invest.py--144--INFO:账户id为173720的原始投资流水条数为78
+[2020-06-21 16:02:30,644]--test_invest.py--193--INFO:第13条用例执行结果为PASS
+[2020-06-21 16:02:30,644]--test_invest.py--199--INFO:*************开始回写数据***************
+[2020-06-21 16:02:30,994]--test_invest.py--201--INFO:正在回写实际结果actual：{'code': 2, 'msg': '数值参数格式错误', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-21 16:02:31,331]--test_invest.py--203--INFO:正在回写测试结果test_result：PASS
+[2020-06-21 16:02:31,332]--test_invest.py--204--INFO:*************结束回写数据***************
+[2020-06-21 16:02:31,622]--test_invest.py--41--INFO:******************正在执行invest模块用例******************
+[2020-06-21 16:02:31,622]--test_invest.py--42--INFO:正在执行第14条用例:投资金额校验--投资金额输入为能被100整除的正整数
+[2020-06-21 16:02:31,623]--test_invest.py--43--INFO:请求的数据是{'case_id': 14, 'interface': 'invest', 'title': '投资金额校验--投资金额输入为能被100整除的正整数', 'method': 'POST', 'url': '/member/invest', 'data': '{"member_id":"#member_id#","loan_id":"#loanid#","amount":"200"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"#token#"}', 'yes_or_no': 'YES', 'expected': '{"code": 0,"msg": "OK"}', 'actucal': "{'code': 0, 'msg': 'OK', 'data': {'id': 2096, 'member_id': 173720, 'loan_id': 1246925, 'amount': 200.0, 'create_time': '2020-06-21 16:00:04', 'is_valid': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-21 16:02:31,623]--test_invest.py--93--INFO:======================正在查询原始金额=======================
+[2020-06-21 16:02:31,631]--test_invest.py--104--INFO:账户id为173720的账户原始金额是95600.00
+[2020-06-21 16:02:31,632]--test_invest.py--133--INFO:======================正在查询原始投资记录条数=======================
+[2020-06-21 16:02:31,639]--test_invest.py--137--INFO:账户id为173720的原始投资记录条数为78
+[2020-06-21 16:02:31,640]--test_invest.py--140--INFO:======================正在查询原始投资流水记录条数=======================
+[2020-06-21 16:02:31,656]--test_invest.py--144--INFO:账户id为173720的原始投资流水条数为78
+[2020-06-21 16:02:31,690]--test_invest.py--164--INFO:======================正在查询投资后金额=======================
+[2020-06-21 16:02:31,700]--test_invest.py--168--INFO:账户id为173720的账户投资后的余额是95400.00
+[2020-06-21 16:02:31,700]--test_invest.py--169--INFO:账户id为173720的账户原始金额-投资金额后的余额是95400.00
+[2020-06-21 16:02:31,700]--test_invest.py--170--INFO:======================正在金额比对=======================
+[2020-06-21 16:02:31,701]--test_invest.py--172--INFO:======================金额比对通过=======================
+[2020-06-21 16:02:31,701]--test_invest.py--173--INFO:======================正在查询投资后流水记录=======================
+[2020-06-21 16:02:31,717]--test_invest.py--177--INFO:账户id为173720的投资后流水条数为79
+[2020-06-21 16:02:31,718]--test_invest.py--178--INFO:======================正在投资流水记录比对=======================
+[2020-06-21 16:02:31,718]--test_invest.py--180--INFO:======================正在查询投资记录=======================
+[2020-06-21 16:02:31,737]--test_invest.py--193--INFO:第14条用例执行结果为PASS
+[2020-06-21 16:02:31,738]--test_invest.py--199--INFO:*************开始回写数据***************
+[2020-06-21 16:02:32,127]--test_invest.py--201--INFO:正在回写实际结果actual：{'code': 0, 'msg': 'OK', 'data': {'id': 2104, 'member_id': 173720, 'loan_id': 1246986, 'amount': 200.0, 'create_time': '2020-06-21 16:02:33', 'is_valid': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-21 16:02:32,488]--test_invest.py--203--INFO:正在回写测试结果test_result：PASS
+[2020-06-21 16:02:32,489]--test_invest.py--204--INFO:*************结束回写数据***************
+[2020-06-21 16:02:32,894]--test_invest.py--41--INFO:******************正在执行invest模块用例******************
+[2020-06-21 16:02:32,894]--test_invest.py--42--INFO:正在执行第15条用例:投资金额校验--投资金额输入为不能被100整除的正整数
+[2020-06-21 16:02:32,894]--test_invest.py--43--INFO:请求的数据是{'case_id': 15, 'interface': 'invest', 'title': '投资金额校验--投资金额输入为不能被100整除的正整数', 'method': 'POST', 'url': '/member/invest', 'data': '{"member_id":"#member_id#","loan_id":"#loanid#","amount":"101"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"#token#"}', 'yes_or_no': 'NO', 'expected': '{"code": 2,"msg": "充值金额必须大于100，并且可以被100整除"}', 'actucal': "{'code': 2, 'msg': '充值金额必须大于100，并且可以被100整除', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-21 16:02:32,894]--test_invest.py--133--INFO:======================正在查询原始投资记录条数=======================
+[2020-06-21 16:02:32,919]--test_invest.py--137--INFO:账户id为173720的原始投资记录条数为79
+[2020-06-21 16:02:32,919]--test_invest.py--140--INFO:======================正在查询原始投资流水记录条数=======================
+[2020-06-21 16:02:32,934]--test_invest.py--144--INFO:账户id为173720的原始投资流水条数为79
+[2020-06-21 16:02:32,953]--test_invest.py--193--INFO:第15条用例执行结果为PASS
+[2020-06-21 16:02:32,954]--test_invest.py--199--INFO:*************开始回写数据***************
+[2020-06-21 16:02:33,307]--test_invest.py--201--INFO:正在回写实际结果actual：{'code': 2, 'msg': '充值金额必须大于100，并且可以被100整除', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-21 16:02:33,633]--test_invest.py--203--INFO:正在回写测试结果test_result：PASS
+[2020-06-21 16:02:33,633]--test_invest.py--204--INFO:*************结束回写数据***************
+[2020-06-21 16:02:33,976]--test_invest.py--41--INFO:******************正在执行invest模块用例******************
+[2020-06-21 16:02:33,976]--test_invest.py--42--INFO:正在执行第16条用例:投资金额校验--投资金额输入负数
+[2020-06-21 16:02:33,976]--test_invest.py--43--INFO:请求的数据是{'case_id': 16, 'interface': 'invest', 'title': '投资金额校验--投资金额输入负数', 'method': 'POST', 'url': '/member/invest', 'data': '{"member_id":"#member_id#","loan_id":"#loanid#","amount":"-100"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"#token#"}', 'yes_or_no': 'NO', 'expected': '{"code": 2,"msg": "充值金额必须大于100，并且可以被100整除"}', 'actucal': "{'code': 2, 'msg': '充值金额必须大于100，并且可以被100整除', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-21 16:02:33,976]--test_invest.py--133--INFO:======================正在查询原始投资记录条数=======================
+[2020-06-21 16:02:33,985]--test_invest.py--137--INFO:账户id为173720的原始投资记录条数为79
+[2020-06-21 16:02:33,986]--test_invest.py--140--INFO:======================正在查询原始投资流水记录条数=======================
+[2020-06-21 16:02:34,002]--test_invest.py--144--INFO:账户id为173720的原始投资流水条数为79
+[2020-06-21 16:02:34,021]--test_invest.py--193--INFO:第16条用例执行结果为PASS
+[2020-06-21 16:02:34,021]--test_invest.py--199--INFO:*************开始回写数据***************
+[2020-06-21 16:02:34,352]--test_invest.py--201--INFO:正在回写实际结果actual：{'code': 2, 'msg': '充值金额必须大于100，并且可以被100整除', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-21 16:02:34,739]--test_invest.py--203--INFO:正在回写测试结果test_result：PASS
+[2020-06-21 16:02:34,739]--test_invest.py--204--INFO:*************结束回写数据***************
+[2020-06-21 16:02:34,863]--test_invest.py--41--INFO:******************正在执行invest模块用例******************
+[2020-06-21 16:02:34,863]--test_invest.py--42--INFO:正在执行第17条用例:投资金额校验--投资金额输入小数
+[2020-06-21 16:02:34,864]--test_invest.py--43--INFO:请求的数据是{'case_id': 17, 'interface': 'invest', 'title': '投资金额校验--投资金额输入小数', 'method': 'POST', 'url': '/member/invest', 'data': '{"member_id":"#member_id#","loan_id":"#loanid#","amount":"100.88"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"#token#"}', 'yes_or_no': 'NO', 'expected': '{"code": 2,"msg": "充值金额必须大于100，并且可以被100整除"}', 'actucal': "{'code': 2, 'msg': '充值金额必须大于100，并且可以被100整除', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-21 16:02:34,864]--test_invest.py--133--INFO:======================正在查询原始投资记录条数=======================
+[2020-06-21 16:02:34,874]--test_invest.py--137--INFO:账户id为173720的原始投资记录条数为79
+[2020-06-21 16:02:34,876]--test_invest.py--140--INFO:======================正在查询原始投资流水记录条数=======================
+[2020-06-21 16:02:34,893]--test_invest.py--144--INFO:账户id为173720的原始投资流水条数为79
+[2020-06-21 16:02:34,912]--test_invest.py--193--INFO:第17条用例执行结果为PASS
+[2020-06-21 16:02:34,912]--test_invest.py--199--INFO:*************开始回写数据***************
+[2020-06-21 16:02:35,274]--test_invest.py--201--INFO:正在回写实际结果actual：{'code': 2, 'msg': '充值金额必须大于100，并且可以被100整除', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-21 16:02:35,587]--test_invest.py--203--INFO:正在回写测试结果test_result：PASS
+[2020-06-21 16:02:35,587]--test_invest.py--204--INFO:*************结束回写数据***************
+[2020-06-21 16:02:35,787]--test_invest.py--41--INFO:******************正在执行invest模块用例******************
+[2020-06-21 16:02:35,787]--test_invest.py--42--INFO:正在执行第18条用例:投资金额校验--投资金额输入非法字符
+[2020-06-21 16:02:35,787]--test_invest.py--43--INFO:请求的数据是{'case_id': 18, 'interface': 'invest', 'title': '投资金额校验--投资金额输入非法字符', 'method': 'POST', 'url': '/member/invest', 'data': '{"member_id":"#member_id#","loan_id":"#loanid#","amount":"ddd"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"#token#"}', 'yes_or_no': 'NO', 'expected': '{"code": 2,"msg": "数值参数格式错误"}', 'actucal': "{'code': 2, 'msg': '数值参数格式错误', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-21 16:02:35,788]--test_invest.py--133--INFO:======================正在查询原始投资记录条数=======================
+[2020-06-21 16:02:35,796]--test_invest.py--137--INFO:账户id为173720的原始投资记录条数为79
+[2020-06-21 16:02:35,796]--test_invest.py--140--INFO:======================正在查询原始投资流水记录条数=======================
+[2020-06-21 16:02:35,812]--test_invest.py--144--INFO:账户id为173720的原始投资流水条数为79
+[2020-06-21 16:02:35,830]--test_invest.py--193--INFO:第18条用例执行结果为PASS
+[2020-06-21 16:02:35,831]--test_invest.py--199--INFO:*************开始回写数据***************
+[2020-06-21 16:02:36,172]--test_invest.py--201--INFO:正在回写实际结果actual：{'code': 2, 'msg': '数值参数格式错误', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-21 16:02:36,498]--test_invest.py--203--INFO:正在回写测试结果test_result：PASS
+[2020-06-21 16:02:36,498]--test_invest.py--204--INFO:*************结束回写数据***************
+[2020-06-21 16:02:36,853]--test_invest.py--41--INFO:******************正在执行invest模块用例******************
+[2020-06-21 16:02:36,854]--test_invest.py--42--INFO:正在执行第19条用例:投资金额校验--投资金额输入大于可投标金额
+[2020-06-21 16:02:36,854]--test_invest.py--43--INFO:请求的数据是{'case_id': 19, 'interface': 'invest', 'title': '投资金额校验--投资金额输入大于可投标金额', 'method': 'POST', 'url': '/member/invest', 'data': '{"member_id":"#member_id#","loan_id":"#max_id#","amount":"30000"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"#token#"}', 'yes_or_no': 'NO', 'expected': '{"code": 2,"msg": "该标可投金额不足,可投金额：5100.0"}', 'actucal': "{'code': 2, 'msg': '该标可投金额不足,可投金额：5100.0', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-21 16:02:36,869]--test_invest.py--133--INFO:======================正在查询原始投资记录条数=======================
+[2020-06-21 16:02:36,883]--test_invest.py--137--INFO:账户id为173720的原始投资记录条数为79
+[2020-06-21 16:02:36,883]--test_invest.py--140--INFO:======================正在查询原始投资流水记录条数=======================
+[2020-06-21 16:02:36,905]--test_invest.py--144--INFO:账户id为173720的原始投资流水条数为79
+[2020-06-21 16:02:36,935]--test_invest.py--195--ERROR:执行接口测试出现错误，错误是False is not true
+[2020-06-21 16:02:36,936]--test_invest.py--197--ERROR:第19条用例执行结果为FAILED
+[2020-06-21 16:02:36,936]--test_invest.py--199--INFO:*************开始回写数据***************
+[2020-06-21 16:02:37,310]--test_invest.py--201--INFO:正在回写实际结果actual：{'code': 2, 'msg': '该标可投金额不足,可投金额：19800.0', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-21 16:02:37,638]--test_invest.py--203--INFO:正在回写测试结果test_result：FAILED
+[2020-06-21 16:02:37,639]--test_invest.py--204--INFO:*************结束回写数据***************
+[2020-06-21 16:02:37,771]--test_invest.py--41--INFO:******************正在执行invest模块用例******************
+[2020-06-21 16:02:37,771]--test_invest.py--42--INFO:正在执行第20条用例:投资金额校验--投资金额输入等于可投标金额,投标完成
+[2020-06-21 16:02:37,771]--test_invest.py--43--INFO:请求的数据是{'case_id': 20, 'interface': 'invest', 'title': '投资金额校验--投资金额输入等于可投标金额,投标完成', 'method': 'POST', 'url': '/member/invest', 'data': '{"member_id":"#member_id#","loan_id":"#loanid#","amount":"#amount#"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"#token#"}', 'yes_or_no': 'YES', 'expected': '{"code": 0,"msg": "OK"}', 'actucal': "{'code': 0, 'msg': 'OK', 'data': {'id': 2097, 'member_id': 173720, 'loan_id': 1246937, 'amount': 80000.0, 'create_time': '2020-06-21 16:00:10', 'is_valid': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-21 16:02:37,786]--test_invest.py--93--INFO:======================正在查询原始金额=======================
+[2020-06-21 16:02:37,800]--test_invest.py--104--INFO:账户id为173720的账户原始金额是95400.00
+[2020-06-21 16:02:37,800]--test_invest.py--133--INFO:======================正在查询原始投资记录条数=======================
+[2020-06-21 16:02:37,815]--test_invest.py--137--INFO:账户id为173720的原始投资记录条数为79
+[2020-06-21 16:02:37,816]--test_invest.py--140--INFO:======================正在查询原始投资流水记录条数=======================
+[2020-06-21 16:02:37,838]--test_invest.py--144--INFO:账户id为173720的原始投资流水条数为79
+[2020-06-21 16:02:38,093]--test_invest.py--164--INFO:======================正在查询投资后金额=======================
+[2020-06-21 16:02:38,108]--test_invest.py--168--INFO:账户id为173720的账户投资后的余额是15400.00
+[2020-06-21 16:02:38,108]--test_invest.py--169--INFO:账户id为173720的账户原始金额-投资金额后的余额是15400.00
+[2020-06-21 16:02:38,108]--test_invest.py--170--INFO:======================正在金额比对=======================
+[2020-06-21 16:02:38,108]--test_invest.py--172--INFO:======================金额比对通过=======================
+[2020-06-21 16:02:38,109]--test_invest.py--173--INFO:======================正在查询投资后流水记录=======================
+[2020-06-21 16:02:38,131]--test_invest.py--177--INFO:账户id为173720的投资后流水条数为80
+[2020-06-21 16:02:38,132]--test_invest.py--178--INFO:======================正在投资流水记录比对=======================
+[2020-06-21 16:02:38,132]--test_invest.py--180--INFO:======================正在查询投资记录=======================
+[2020-06-21 16:02:38,158]--test_invest.py--193--INFO:第20条用例执行结果为PASS
+[2020-06-21 16:02:38,159]--test_invest.py--199--INFO:*************开始回写数据***************
+[2020-06-21 16:02:38,509]--test_invest.py--201--INFO:正在回写实际结果actual：{'code': 0, 'msg': 'OK', 'data': {'id': 2106, 'member_id': 173720, 'loan_id': 1246992, 'amount': 80000.0, 'create_time': '2020-06-21 16:02:39', 'is_valid': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-21 16:02:38,846]--test_invest.py--203--INFO:正在回写测试结果test_result：PASS
+[2020-06-21 16:02:38,846]--test_invest.py--204--INFO:*************结束回写数据***************
+[2020-06-21 16:02:39,054]--test_invest.py--41--INFO:******************正在执行invest模块用例******************
+[2020-06-21 16:02:39,054]--test_invest.py--42--INFO:正在执行第21条用例:投资金额校验--投资金额输入大于用户余额,余额不足
+[2020-06-21 16:02:39,054]--test_invest.py--43--INFO:请求的数据是{'case_id': 21, 'interface': 'invest', 'title': '投资金额校验--投资金额输入大于用户余额,余额不足', 'method': 'POST', 'url': '/member/invest', 'data': '{"member_id":"#member_id#","loan_id":"#loanid#","amount":"#min_amt#"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2","Authorization":"#token#"}', 'yes_or_no': 'NO', 'expected': '{"code": 0,"msg": "OK"}', 'actucal': "{'code': 2, 'msg': '该标可投金额不足,可投金额：80000.0', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'FAILED'}
+[2020-06-21 16:02:39,055]--test_invest.py--133--INFO:======================正在查询原始投资记录条数=======================
+[2020-06-21 16:02:39,065]--test_invest.py--137--INFO:账户id为173720的原始投资记录条数为80
+[2020-06-21 16:02:39,067]--test_invest.py--140--INFO:======================正在查询原始投资流水记录条数=======================
+[2020-06-21 16:02:39,084]--test_invest.py--144--INFO:账户id为173720的原始投资流水条数为80
+[2020-06-21 16:02:39,103]--test_invest.py--195--ERROR:执行接口测试出现错误，错误是False is not true
+[2020-06-21 16:02:39,104]--test_invest.py--197--ERROR:第21条用例执行结果为FAILED
+[2020-06-21 16:02:39,104]--test_invest.py--199--INFO:*************开始回写数据***************
+[2020-06-21 16:02:39,444]--test_invest.py--201--INFO:正在回写实际结果actual：{'code': 2, 'msg': '该标可投金额不足,可投金额：80000.0', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-21 16:02:39,836]--test_invest.py--203--INFO:正在回写测试结果test_result：FAILED
+[2020-06-21 16:02:39,836]--test_invest.py--204--INFO:*************结束回写数据***************
