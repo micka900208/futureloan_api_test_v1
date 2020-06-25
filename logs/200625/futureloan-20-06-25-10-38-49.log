@@ -1,0 +1,90 @@
+[2020-06-25 10:38:49,645]--test_register.py--36--INFO:******************正在执行register模块用例******************
+[2020-06-25 10:38:49,780]--test_register.py--37--INFO:正在执行第1条用例:手机号输入未注册
+[2020-06-25 10:38:49,787]--test_register.py--38--INFO:请求的数据是{'case_id': 1, 'interface': 'register', 'title': '手机号输入未注册', 'method': 'POST', 'url': '/member/register', 'data': "{'mobile_phone': '15650130157', 'pwd': 'assf2558！', 'type': 1, 'reg_name': '烧烤'}", 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2"}', 'expected': '{"code": 0,"msg": "OK"}', 'actucal': "{'code': 0, 'msg': 'OK', 'data': {'id': 181182, 'reg_name': '烧烤', 'mobile_phone': '18510512163'}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-25 10:38:50,154]--test_register.py--51--INFO:********************正在查询数据库********************
+[2020-06-25 10:38:50,205]--test_register.py--58--INFO:第1条用例执行结果为PASS
+[2020-06-25 10:38:50,205]--test_register.py--65--INFO:*************开始回写数据***************
+[2020-06-25 10:38:51,005]--test_register.py--68--INFO:正在回写实际结果actual：{'code': 0, 'msg': 'OK', 'data': {'id': 197247, 'reg_name': '烧烤', 'mobile_phone': '15650130157'}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-25 10:38:51,401]--test_register.py--71--INFO:正在回写测试结果test_result：PASS
+[2020-06-25 10:38:51,401]--test_register.py--72--INFO:*************结束回写数据***************
+[2020-06-25 10:38:51,496]--test_register.py--36--INFO:******************正在执行register模块用例******************
+[2020-06-25 10:38:51,496]--test_register.py--37--INFO:正在执行第2条用例:手机号输入为空
+[2020-06-25 10:38:51,496]--test_register.py--38--INFO:请求的数据是{'case_id': 2, 'interface': 'register', 'title': '手机号输入为空', 'method': 'POST', 'url': '/member/register', 'data': '{"mobile_phone":"","pwd":"assff12558！","type":1,"reg_name":"烧烤"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2"}', 'expected': '{"code": 1,"msg": "手机号为空"}', 'actucal': "{'code': 1, 'msg': '手机号为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-25 10:38:51,514]--test_register.py--51--INFO:********************正在查询数据库********************
+[2020-06-25 10:38:51,552]--test_register.py--58--INFO:第2条用例执行结果为PASS
+[2020-06-25 10:38:51,553]--test_register.py--65--INFO:*************开始回写数据***************
+[2020-06-25 10:38:52,066]--test_register.py--68--INFO:正在回写实际结果actual：{'code': 1, 'msg': '手机号为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-25 10:38:52,477]--test_register.py--71--INFO:正在回写测试结果test_result：PASS
+[2020-06-25 10:38:52,477]--test_register.py--72--INFO:*************结束回写数据***************
+[2020-06-25 10:38:52,571]--test_register.py--36--INFO:******************正在执行register模块用例******************
+[2020-06-25 10:38:52,571]--test_register.py--37--INFO:正在执行第3条用例:手机号输入为10位
+[2020-06-25 10:38:52,572]--test_register.py--38--INFO:请求的数据是{'case_id': 3, 'interface': 'register', 'title': '手机号输入为10位', 'method': 'POST', 'url': '/member/register', 'data': '{"mobile_phone":"1352258987","pwd":"assff12558！","type":1,"reg_name":"烧烤"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2"}', 'expected': '{"code": 2,"msg": "无效的手机格式"}', 'actucal': "{'code': 2, 'msg': '无效的手机格式', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-25 10:38:52,589]--test_register.py--51--INFO:********************正在查询数据库********************
+[2020-06-25 10:38:52,640]--test_register.py--58--INFO:第3条用例执行结果为PASS
+[2020-06-25 10:38:52,640]--test_register.py--65--INFO:*************开始回写数据***************
+[2020-06-25 10:38:53,023]--test_register.py--68--INFO:正在回写实际结果actual：{'code': 2, 'msg': '无效的手机格式', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-25 10:38:53,512]--test_register.py--71--INFO:正在回写测试结果test_result：PASS
+[2020-06-25 10:38:53,514]--test_register.py--72--INFO:*************结束回写数据***************
+[2020-06-25 10:38:53,577]--test_register.py--36--INFO:******************正在执行register模块用例******************
+[2020-06-25 10:38:53,578]--test_register.py--37--INFO:正在执行第4条用例:手机号输入为12位
+[2020-06-25 10:38:53,578]--test_register.py--38--INFO:请求的数据是{'case_id': 4, 'interface': 'register', 'title': '手机号输入为12位', 'method': 'POST', 'url': '/member/register', 'data': '{"mobile_phone":"135225898798","pwd":"assff12558！","type":1,"reg_name":"烧烤"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2"}', 'expected': '{"code": 2,"msg": "无效的手机格式"}', 'actucal': "{'code': 2, 'msg': '无效的手机格式', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-25 10:38:53,598]--test_register.py--51--INFO:********************正在查询数据库********************
+[2020-06-25 10:38:53,637]--test_register.py--58--INFO:第4条用例执行结果为PASS
+[2020-06-25 10:38:53,637]--test_register.py--65--INFO:*************开始回写数据***************
+[2020-06-25 10:38:54,223]--test_register.py--68--INFO:正在回写实际结果actual：{'code': 2, 'msg': '无效的手机格式', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-25 10:38:54,647]--test_register.py--71--INFO:正在回写测试结果test_result：PASS
+[2020-06-25 10:38:54,647]--test_register.py--72--INFO:*************结束回写数据***************
+[2020-06-25 10:38:54,744]--test_register.py--36--INFO:******************正在执行register模块用例******************
+[2020-06-25 10:38:54,746]--test_register.py--37--INFO:正在执行第5条用例:手机号输入为11位，但包含非法字符
+[2020-06-25 10:38:54,746]--test_register.py--38--INFO:请求的数据是{'case_id': 5, 'interface': 'register', 'title': '手机号输入为11位，但包含非法字符', 'method': 'POST', 'url': '/member/register', 'data': '{"mobile_phone":"1352258987.","pwd":"assff12558！","type":1,"reg_name":"烧烤"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2"}', 'expected': '{"code": 2,"msg": "无效的手机格式"}', 'actucal': "{'code': 2, 'msg': '无效的手机格式', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-25 10:38:54,764]--test_register.py--51--INFO:********************正在查询数据库********************
+[2020-06-25 10:38:54,820]--test_register.py--58--INFO:第5条用例执行结果为PASS
+[2020-06-25 10:38:54,822]--test_register.py--65--INFO:*************开始回写数据***************
+[2020-06-25 10:38:55,292]--test_register.py--68--INFO:正在回写实际结果actual：{'code': 2, 'msg': '无效的手机格式', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-25 10:38:55,667]--test_register.py--71--INFO:正在回写测试结果test_result：PASS
+[2020-06-25 10:38:55,667]--test_register.py--72--INFO:*************结束回写数据***************
+[2020-06-25 10:38:55,766]--test_register.py--36--INFO:******************正在执行register模块用例******************
+[2020-06-25 10:38:55,767]--test_register.py--37--INFO:正在执行第6条用例:手机号输入为11位，但不是正常手机号码
+[2020-06-25 10:38:55,768]--test_register.py--38--INFO:请求的数据是{'case_id': 6, 'interface': 'register', 'title': '手机号输入为11位，但不是正常手机号码', 'method': 'POST', 'url': '/member/register', 'data': '{"mobile_phone":"11152698877","pwd":"assff12558！","type":1,"reg_name":"烧烤"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2"}', 'expected': '{"code": 2,"msg": "无效的手机格式"}', 'actucal': "{'code': 2, 'msg': '无效的手机格式', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-25 10:38:55,785]--test_register.py--51--INFO:********************正在查询数据库********************
+[2020-06-25 10:38:55,843]--test_register.py--58--INFO:第6条用例执行结果为PASS
+[2020-06-25 10:38:55,843]--test_register.py--65--INFO:*************开始回写数据***************
+[2020-06-25 10:38:56,256]--test_register.py--68--INFO:正在回写实际结果actual：{'code': 2, 'msg': '无效的手机格式', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-25 10:38:56,868]--test_register.py--71--INFO:正在回写测试结果test_result：PASS
+[2020-06-25 10:38:56,869]--test_register.py--72--INFO:*************结束回写数据***************
+[2020-06-25 10:38:56,949]--test_register.py--36--INFO:******************正在执行register模块用例******************
+[2020-06-25 10:38:56,950]--test_register.py--37--INFO:正在执行第7条用例:手机号输入为已注册手机号
+[2020-06-25 10:38:56,950]--test_register.py--38--INFO:请求的数据是{'case_id': 7, 'interface': 'register', 'title': '手机号输入为已注册手机号', 'method': 'POST', 'url': '/member/register', 'data': '{"mobile_phone":"15520154479","pwd":"assff12558！","type":1,"reg_name":"烧烤"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2"}', 'expected': '{"code": 2,"msg": "账号已存在"}', 'actucal': "{'code': 2, 'msg': '账号已存在', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-25 10:38:57,009]--test_register.py--51--INFO:********************正在查询数据库********************
+[2020-06-25 10:38:57,060]--test_register.py--58--INFO:第7条用例执行结果为PASS
+[2020-06-25 10:38:57,060]--test_register.py--65--INFO:*************开始回写数据***************
+[2020-06-25 10:38:57,605]--test_register.py--68--INFO:正在回写实际结果actual：{'code': 2, 'msg': '账号已存在', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-25 10:38:58,227]--test_register.py--71--INFO:正在回写测试结果test_result：PASS
+[2020-06-25 10:38:58,228]--test_register.py--72--INFO:*************结束回写数据***************
+[2020-06-25 10:38:58,328]--test_register.py--36--INFO:******************正在执行register模块用例******************
+[2020-06-25 10:38:58,328]--test_register.py--37--INFO:正在执行第8条用例:手机号未注册，密码输入为空
+[2020-06-25 10:38:58,329]--test_register.py--38--INFO:请求的数据是{'case_id': 8, 'interface': 'register', 'title': '手机号未注册，密码输入为空', 'method': 'POST', 'url': '/member/register', 'data': '{"mobile_phone":"15841259987","pwd":"","type":1,"reg_name":"烧烤"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2"}', 'expected': '{"code": 1,"msg": "密码为空"}', 'actucal': "{'code': 1, 'msg': '密码为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-25 10:38:58,349]--test_register.py--51--INFO:********************正在查询数据库********************
+[2020-06-25 10:38:58,404]--test_register.py--58--INFO:第8条用例执行结果为PASS
+[2020-06-25 10:38:58,405]--test_register.py--65--INFO:*************开始回写数据***************
+[2020-06-25 10:38:58,882]--test_register.py--68--INFO:正在回写实际结果actual：{'code': 1, 'msg': '密码为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-25 10:38:59,356]--test_register.py--71--INFO:正在回写测试结果test_result：PASS
+[2020-06-25 10:38:59,357]--test_register.py--72--INFO:*************结束回写数据***************
+[2020-06-25 10:38:59,508]--test_register.py--36--INFO:******************正在执行register模块用例******************
+[2020-06-25 10:38:59,509]--test_register.py--37--INFO:正在执行第9条用例:手机号未注册，密码输入为7位
+[2020-06-25 10:38:59,509]--test_register.py--38--INFO:请求的数据是{'case_id': 9, 'interface': 'register', 'title': '手机号未注册，密码输入为7位', 'method': 'POST', 'url': '/member/register', 'data': '{"mobile_phone":"15841259987","pwd":"1234567","type":1,"reg_name":"烧烤"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2"}', 'expected': '{"code": 2,"msg": "密码格式为8到16位"}', 'actucal': "{'code': 2, 'msg': '密码格式为8到16位', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-25 10:38:59,550]--test_register.py--51--INFO:********************正在查询数据库********************
+[2020-06-25 10:38:59,603]--test_register.py--58--INFO:第9条用例执行结果为PASS
+[2020-06-25 10:38:59,604]--test_register.py--65--INFO:*************开始回写数据***************
+[2020-06-25 10:38:59,993]--test_register.py--68--INFO:正在回写实际结果actual：{'code': 2, 'msg': '密码格式为8到16位', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-25 10:39:00,429]--test_register.py--71--INFO:正在回写测试结果test_result：PASS
+[2020-06-25 10:39:00,429]--test_register.py--72--INFO:*************结束回写数据***************
+[2020-06-25 10:39:00,506]--test_register.py--36--INFO:******************正在执行register模块用例******************
+[2020-06-25 10:39:00,519]--test_register.py--37--INFO:正在执行第10条用例:手机号未注册，密码输入为17位
+[2020-06-25 10:39:00,520]--test_register.py--38--INFO:请求的数据是{'case_id': 10, 'interface': 'register', 'title': '手机号未注册，密码输入为17位', 'method': 'POST', 'url': '/member/register', 'data': '{"mobile_phone":"15841259987","pwd":"1234567assff12558","type":1,"reg_name":"烧烤"}', 'headers': '{"X-Lemonban-Media-Type": "lemonban.v2"}', 'expected': '{"code": 2,"msg": "密码格式为8到16位"}', 'actucal': "{'code': 2, 'msg': '密码格式为8到16位', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}", 'test_result': 'PASS'}
+[2020-06-25 10:39:00,538]--test_register.py--51--INFO:********************正在查询数据库********************
+[2020-06-25 10:39:00,575]--test_register.py--58--INFO:第10条用例执行结果为PASS
+[2020-06-25 10:39:00,576]--test_register.py--65--INFO:*************开始回写数据***************
+[2020-06-25 10:39:01,079]--test_register.py--68--INFO:正在回写实际结果actual：{'code': 2, 'msg': '密码格式为8到16位', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+[2020-06-25 10:39:01,623]--test_register.py--71--INFO:正在回写测试结果test_result：PASS
+[2020-06-25 10:39:01,623]--test_register.py--72--INFO:*************结束回写数据***************
